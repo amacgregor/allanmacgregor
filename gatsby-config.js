@@ -9,12 +9,12 @@ module.exports = {
     siteUrl: url,
     title: 'Allan MacGregor',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      'Software Engineer, Author, Technology Enthusiast, and Flow-based Programming Advocate.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
       {
-        label: 'Home',
+        label: 'Start Here',
         path: '/',
       },
       {
@@ -26,8 +26,12 @@ module.exports = {
         path: 'https://amgr.dev',
       },
       {
-        label: 'About me',
-        path: '/about/',
+        label: 'Publications',
+        path: '/publications/',
+      },
+      {
+        label: 'Resume',
+        path: '/resume/',
       },
       {
         label: 'Contact me',
@@ -42,6 +46,7 @@ module.exports = {
       github: 'amacgregor',
       rss: '#',
       vk: '#',
+      linkedin: 'allanmacgregor',
     },
   },
   plugins: [
@@ -121,6 +126,13 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow"
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',

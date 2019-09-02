@@ -10,6 +10,7 @@ class Links extends React.Component {
       twitter: author.twitter,
       github: author.github,
       vk: author.vk,
+      linkedin: author.linkedin,
       rss: author.rss,
       email: author.email,
     }
@@ -37,11 +38,11 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a
-              href={`https://www.vk.com/${links.vk}`}
+              href={`https://www.linkedin.com/in/${links.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="icon-vkontakte" />
+              <i className="icon-linkedin" />
             </a>
           </li>
         </ul>

@@ -4,27 +4,23 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import PageTemplateDetails from '../components/PageTemplateDetails'
 
 class IndexRoute extends React.Component {
   render() {
-    const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
+    const page = this.props.data.markdownRemark
+    const { title: pageTitle, description: pageDescription } = page.frontmatter
+    const description = pageDescription !== null ? pageDescription : subtitle
 
     return (
       <Layout>
         <div>
           <Helmet>
-            <title>{title}</title>
-            <meta name="description" content={subtitle} />
+            <title>{`${pageTitle} - ${title}`}</title>
+            <meta name="description" content={description} />
           </Helmet>
-          <Sidebar {...this.props} />
-          <div className="content">
-            <div className="content__inner">{items}</div>
-          </div>
+          <PageTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
@@ -34,7 +30,7 @@ class IndexRoute extends React.Component {
 export default IndexRoute
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query IndexPageQuery {
     site {
       siteMetadata {
         title
@@ -51,28 +47,18 @@ export const pageQuery = graphql`
           twitter
           github
           rss
+          linkedin
           vk
         }
       }
     }
-    allMarkdownRemark(
-      limit: 1000
-      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            categorySlug
-          }
-          frontmatter {
-            title
-            date
-            category
-            description
-          }
-        }
+    markdownRemark(fields: { slug: { eq: "/home" } }) {
+      id
+      html
+      frontmatter {
+        title
+        date
+        description
       }
     }
   }
