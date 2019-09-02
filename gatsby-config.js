@@ -3,6 +3,10 @@ const pxtorem = require('postcss-pxtorem')
 
 const url = 'https://allanmacgregor.com'
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     url,
@@ -192,5 +196,36 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: '@dschau/gatsby-source-github',
+      options: {
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, // https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+        },
+        queries: [
+          `query getLatestRepositories{
+            viewer { 
+              repositories(first: 4, privacy: PUBLIC, isLocked:false, isFork: false, ownerAffiliations:OWNER, orderBy: {field: CREATED_AT, direction: DESC}){
+                nodes {
+                  id
+                  name
+                  description
+                  descriptionHTML
+                  forkCount
+                  homepageUrl
+                  languages(first:1) {
+                    edges {
+                      node {
+                        name
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }`,
+        ],
+      },
+    },    
   ],
 }

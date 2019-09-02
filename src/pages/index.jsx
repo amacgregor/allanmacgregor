@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
-import PageTemplateDetails from '../components/PageTemplateDetails'
+import HomePageTemplateDetails from '../components/HomePageTemplateDetails'
 
 class IndexRoute extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class IndexRoute extends React.Component {
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
-          <PageTemplateDetails {...this.props} />
+          <HomePageTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
@@ -59,6 +59,21 @@ export const pageQuery = graphql`
         title
         date
         description
+      }
+    }
+    githubViewer { 
+      repositories{
+        nodes {
+          name
+          description
+          languages{
+            edges {
+              node {
+                name
+              }
+            }
+          }
+        }
       }
     }
   }

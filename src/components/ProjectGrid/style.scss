@@ -1,0 +1,52 @@
+
+$color-github: #4078c0;
+$gray: #ccc;
+$text: #555;
+$spacing: 20px;
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+//   width: 900px;
+}
+
+.github-card {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  margin: $spacing/2;
+  padding: $spacing;
+  color: $text;
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 250px;
+  
+  > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-github;
+    font-size: 15px;
+  }
+}
+
+.github-card__meta {
+  margin-right: $spacing;
+  font-size: 16px; 
+  > i {
+    font-size: 16px;
+  }
+  .github-card__language-icon {
+      font-size:24px;
+  }
+  .Elixir {
+      color: #4e2a8e;
+  }
+  .PHP {
+      color: #4C5E99;
+  }
+  .Ruby {
+      color: #7A0410;
+  }
+}
