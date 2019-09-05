@@ -11,7 +11,7 @@ tags:
 description: "I believe that information empower us to make better healthier decisions, and this has certainly proven to be true in my case after a my first month of using the Fitbit Flex"
 ---
 
-I recently bought a [Fitbit Flex](http://www.fitbit.com/flex), the **Flex** is a fitness tracker wristband, very similar to the Jawbone UP or the Nike Fuel band. However I have found the Flex to be extremely comfortable to use, accurate and very useful for keeping track of my daily fitness and health.
+I recently bought a [Fitbit Flex](https://www.fitbit.com/flex), the **Flex** is a fitness tracker wristband, very similar to the Jawbone UP or the Nike Fuel band. However I have found the Flex to be extremely comfortable to use, accurate and very useful for keeping track of my daily fitness and health.
 
 
 

@@ -23,7 +23,7 @@ To break down DHH's points and concerns against TDD:
 - 100% coverage is silly.
 - TDD created test-induced design damage.
 
-TDD is not dead, not really. And it won't really ever be dead, it will change or be replaced with something better; in fact it already has, and in my [Magento Extension Test Driven Development](http://magetdd.com) book we focus on Behavior Driven Development, an approach that emerged from the original TDD methodology.
+TDD is not dead, not really. And it won't really ever be dead, it will change or be replaced with something better; in fact it already has, and in my [Magento Extension Test Driven Development](https://magetdd.com) book we focus on Behavior Driven Development, an approach that emerged from the original TDD methodology.
 
 > Behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development. -- **[Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development)**
 
@@ -68,4 +68,4 @@ For the longest time, testing was something that wasn't discussed that much in t
 
 At the end of the day, it is the community's opinion what matters, so what do you think? Is Magento2 overusing dependency injection? Is the test suite useful? How will the introduction of all these new paradigms change the way you develop Magento extensions? Don't hesitate to leave a comment below.
 
-P.D: Parts of this post were taken from my new book [Magento Test Driven Extension Development](http://magetdd.com) if you are interested to learn more about TDD/BDD development in Magento go ahead and click the link!
+P.D: Parts of this post were taken from my new book [Magento Test Driven Extension Development](https://magetdd.com) if you are interested to learn more about TDD/BDD development in Magento go ahead and click the link!

@@ -15,8 +15,8 @@ description: "HHVM could change (is already at some extent) the way developers s
 
 **HHVM** has been generating a lot of buzz and excitement in the **PHP** world recently and if you haven't heard about HHVM yet you should check my first two posts about it.
 
-- [An Introduction to HHVM](http://coderoncode.com/2013/07/24/introduction-hhvm.html)
-- [First steps on HHVM](http://coderoncode.com/2013/07/24/introduction-hhvm.html)
+- [An Introduction to HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html)
+- [First steps on HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html)
 
 
 
@@ -31,7 +31,7 @@ Competition, that's the first thing that **HACK** and **HHVM** brings to the tab
 
 ## HACK Will Never Replace PHP
 
-Nor it should, seems one the most popular topics being used on Hack related articles is about how it could or could not replace PHP (see [Sitepoint 2](http://www.sitepoint.com/look-hack-php-replacement-hhvm/) or [Sitepoint 2](http://www.sitepoint.com/hhvm-hack-part-1/) ) but in my opinion HHVM/HACK was never meant to be a PHP replacement; it was designed to live side by side with PHP even in the same project.
+Nor it should, seems one the most popular topics being used on Hack related articles is about how it could or could not replace PHP (see [Sitepoint 2](https://www.sitepoint.com/look-hack-php-replacement-hhvm/) or [Sitepoint 2](https://www.sitepoint.com/hhvm-hack-part-1/) ) but in my opinion HHVM/HACK was never meant to be a PHP replacement; it was designed to live side by side with PHP even in the same project.
 
 Heck, you could even have **PHP** and Hack code running in the same class file and by setting the correct **'Mode'** parts of the code can be type checked and some can be ignored and treated as regular PHP; Hack's interoperability with PHP is one of its strongest features and truly lowers the entry curve for all PHP developers.
 

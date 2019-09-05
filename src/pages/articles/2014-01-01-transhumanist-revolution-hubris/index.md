@@ -21,7 +21,7 @@ description: "Why is **transhumanism** a revolution? The word revolution evokes 
 
 <br/>
 
-{% youtube http://youtu.be/bTMS9y8OVuY 780 439 %}
+{% youtube https://youtu.be/bTMS9y8OVuY 780 439 %}
 
 <br/>
 
@@ -42,7 +42,7 @@ This argument basically accuses humanity of trying to play 'God'. Now there are 
 
 ### Against 'God' plan
 
-The Vatican has been one of the main critics of the **transhumanist** movement and any related technologies, going as far as to calling genetic manipulation an 'immoral act against god'; this belief is derived from the notion that man was created in the image of God and that anything that changes the genetic identity of a man is [radically immoral](http://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_con_cfaith_doc_20040723_communion-stewardship_en.html).
+The Vatican has been one of the main critics of the **transhumanist** movement and any related technologies, going as far as to calling genetic manipulation an 'immoral act against god'; this belief is derived from the notion that man was created in the image of God and that anything that changes the genetic identity of a man is [radically immoral](https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_con_cfaith_doc_20040723_communion-stewardship_en.html).
 
 The problem is that the Vatican decided to draw the line of what defines a human being at the genetic code; but the fact of the matter is that defining what makes human is still very much out for debate. A hundred years ago a man with a prosthetic leg or even a hard would have probably raised the same concerns, or let's even forget the artificial aspect for a second; the catholic church battled for many years on the subject of organ transplant.
 

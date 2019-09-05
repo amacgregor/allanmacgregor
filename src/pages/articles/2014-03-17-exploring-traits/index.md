@@ -27,7 +27,7 @@ The main reason behind PHP lacking **multiple inheritance** is the lack of conce
 
 The **diamond problem** gets its name from the shape that the class inheritance takes in the particular situation where:
 
-> ... two classes B and C inherit from A, and class D inherits from both B and C. If there is a method in A that B and/or C has overridden, and D does not override it, then which version of the method does D inherit: that of B, or that of C? [wikipedia](http://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)
+> ... two classes B and C inherit from A, and class D inherits from both B and C. If there is a method in A that B and/or C has overridden, and D does not override it, then which version of the method does D inherit: that of B, or that of C? [wikipedia](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)
 
 So assuming **PHP** would allow for multiple class inheritance(which it doesn't) the diamond problem would look something like this:
 

@@ -130,8 +130,8 @@ These companies and teams are capable of handling this massive growth thanks to 
 
 For that reason functional programming needs to be a must on every developer’s toolbox of knowledge, you need to be ready to build the **next generation of applications** that will serve the **next billion of users**; and heck if that wasn't enough trust me functional programming is really fun, just take a look at **Elixir**:
 
-- [Introduction to Elixir](http://elixir-lang.org/getting-started/introduction.html)
-- [Learn Elixir the fun way](http://rob.conery.io/2016/01/04/learn-elixir-while-having-fun/)
+- [Introduction to Elixir](https://elixir-lang.org/getting-started/introduction.html)
+- [Learn Elixir the fun way](https://rob.conery.io/2016/01/04/learn-elixir-while-having-fun/)
 - [4 Reasons We're Having Fun Programming Elixir](https://teamgaslight.com/blog/4-reasons-were-having-fun-programming-elixir)
 
 Finally, If you have any comments, corrections or would you like to know more about the subject don't hesitate to leave a comment just below.

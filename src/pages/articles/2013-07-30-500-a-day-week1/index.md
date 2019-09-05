@@ -11,11 +11,11 @@ tags:
 description: "A week ago I decided to follow the example of the amazing Nathan Barry in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the habit of writing a specific amount of words every day no matter what."
 ---
 
-A week ago I decided to follow the example of the amazing [Nathan Barry](http://nathanbarry.com/) in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the **habit of writing** a specific amount of words every day no matter what. 
+A week ago I decided to follow the example of the amazing [Nathan Barry](https://nathanbarry.com/) in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the **habit of writing** a specific amount of words every day no matter what. 
 
 It has been a week since I started and so far it has been both a rewarding and challenging process, this method is not new by any means whatsoever some people recommend doing **750 words per day** others swear that 1000 words is the ideal amount.
 
-There is even an on-line editor which sole focus is on writing 750 words per day, the site is called [750words.com](http://750words.com/) -- **shocking right?** -- now it really all depends on what you are trying to say and the ability of the writer.
+There is even an on-line editor which sole focus is on writing 750 words per day, the site is called [750words.com](https://750words.com/) -- **shocking right?** -- now it really all depends on what you are trying to say and the ability of the writer.
 
 While **750words.com** sounded like an easy way to get started, I didn't felt comfortable writing what might be privates thoughts or at least sensitive information without any control or guarantees of how the information was stored and guarded.
 

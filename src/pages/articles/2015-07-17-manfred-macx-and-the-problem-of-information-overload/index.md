@@ -19,7 +19,7 @@ Glasses? What's so special about the glasses? Well this are not an ordinary pair
 We could call them **smart glasses**, in the book this glasses allow Manfred to be on the bleeding age of technology and information; to the extreme without them he is incapable of functioning.
 
 > In Charles Stross’ Accelerando, the arrival of the technological singularity is prefaced in the first section of the novel with the story of Manfred Macx, a hyper-connected, post-economic entrepreneur who relies on reputation and good-will rather than traditional monetary wealth.
-> -- **Source: [Post-human, post-memory: Mnemotechnology in Charles Stross' Accelerando](http://www.academia.edu/1247436/Post-human_post-memory_Mnemotechnology_in_Charles_Stross_Accelerando)**
+> -- **Source: [Post-human, post-memory: Mnemotechnology in Charles Stross' Accelerando](https://www.academia.edu/1247436/Post-human_post-memory_Mnemotechnology_in_Charles_Stross_Accelerando)**
 
 The attractive part here is not the augment reality glasses themselves but system that powers them, an exocortex.
 
@@ -52,7 +52,7 @@ Also would that be considered an exocortex or more akin to a metacortex, all rel
 
 More interesting are the advantages of a distributed system like this, and the mailability it could offer. A system that is comprised of microservices wouldn't care about the implementation of each service; as long as they respect the common contract for communication.
 
->The Web is literally a new layer of the human brain that transcends any individual brain. It is a global brain that connects all our brains together. It is intelligent. It is perhaps humanity’s greatest invention.  It collectively senses, reacts, interprets, learns, thinks, and acts in ways that we as individuals can barely comprehend or predict, and this activity comprises an emerging global mind. -- **Source: [Nova Spivak](http://www.novaspivack.com/web-3-0/a-new-layer-of-the-brain-is-evolving-the-metacortex)**
+>The Web is literally a new layer of the human brain that transcends any individual brain. It is a global brain that connects all our brains together. It is intelligent. It is perhaps humanity’s greatest invention.  It collectively senses, reacts, interprets, learns, thinks, and acts in ways that we as individuals can barely comprehend or predict, and this activity comprises an emerging global mind. -- **Source: [Nova Spivak](https://www.novaspivack.com/web-3-0/a-new-layer-of-the-brain-is-evolving-the-metacortex)**
 
 Although even in a distributed service architecture there has to be a central point of orchestration, a system or process that is in charge of defining and running the tasks.
 
@@ -69,7 +69,7 @@ Although even in a distributed service architecture there has to be a central po
 - Runs each step of the task passing the relevant data
 - Can track the progress of each task.
 
-At this point in time Option 2 seems more attractive, it also gives me the flexibility to integrate third party services into this structure without having to code the service myself. And I can leverage sites like [mashape.com](http://www.mashape.com) to help me with at least the initial implementation.
+At this point in time Option 2 seems more attractive, it also gives me the flexibility to integrate third party services into this structure without having to code the service myself. And I can leverage sites like [mashape.com](https://www.mashape.com) to help me with at least the initial implementation.
 
 > An exocortex is a theoretical artificial external information processing system that would augment a brain’s biological high-level cognitive processes.
 An individual’s exocortex would be composed of external memory modules, processors, IO devices and software systems that would interact with, and augment, a person’s biological brain. Typically this interaction is described as being conducted through a direct brain-computer interface, making these extensions functionally part of the individual’s mind. -- **Source: [Wikipedia](https://en.wikipedia.org/wiki/Exocortex)**

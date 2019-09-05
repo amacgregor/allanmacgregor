@@ -26,7 +26,7 @@ I'm a huge fan of science fiction and trans-humanism, that been said I've found 
 
 Ray Kurzweil, father of the singularity movement and probably the most famous futurologist is a clear example of over optimistic predictions while he is more than likely correct on his technological predictions he fails to factor the possible blow-back from political groups, religious institutions and the resistance that is common with change.
 
-Google Glass, which we could call the earlier beginning of  trans-humanist technologies is already getting resistance well before of its public release and efforts have started in the US, and UK to get it [banned](http://www.huffingtonpost.com/2013/04/10/google-glass-banned_n_3039935.html).
+Google Glass, which we could call the earlier beginning of  trans-humanist technologies is already getting resistance well before of its public release and efforts have started in the US, and UK to get it [banned](https://www.huffingtonpost.com/2013/04/10/google-glass-banned_n_3039935.html).
 
 What will happen when more esoteric technologies are made available to us, what kind of resistance we can expect when the first humans can and start modifying their own biology.
 

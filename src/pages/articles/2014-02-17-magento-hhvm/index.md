@@ -64,7 +64,7 @@ So you want to run **Magento** on top of **HHVM**? If that's the case you're in 
 To run **HHVM** we will have to compile from the source, since HHVM is still under active and heavy development this is the best way to guarantee that we will get the latest and greatest version.
 
 <div class="notice notice-warning">
-	This article is not a detailed walkthrough for installing HHVM, if you get stuck or want to learn more read <a href="http://coderoncode.com/2013/07/27/first-steps-on-hhvm.html">First steps on HHVM</a> or additional you can visist <a href="https://github.com/facebook/hhvm/wiki#building-hhvm">HHVM Wiki</a> for environment specific instructions.
+	This article is not a detailed walkthrough for installing HHVM, if you get stuck or want to learn more read <a href="https://coderoncode.com/2013/07/27/first-steps-on-hhvm.html">First steps on HHVM</a> or additional you can visist <a href="https://github.com/facebook/hhvm/wiki#building-hhvm">HHVM Wiki</a> for environment specific instructions.
 </div>
 
 We will need to get a copy of the **HHVM** repository:
@@ -153,7 +153,7 @@ Finally, we can get **Magento** up and running with **HHVM**, let's start HHVM u
 ````
 $ hhvm -m server -c example.hdf
 ````
-At this point, we should see our Magento website if we go to **http://localhost/**.
+At this point, we should see our Magento website if we go to **https://localhost/**.
 
 
 ### Measuring the Speed

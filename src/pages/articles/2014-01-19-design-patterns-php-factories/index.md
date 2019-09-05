@@ -54,7 +54,7 @@ You also notice when reading the existing code is that there are hundreds of cal
 
 <script src="https://gist.github.com/amacgregor/8506877.js"></script>
 
-A clearer example of how this can become problematic is if we had a controller running on **http://factory.ikea.com/product/create/{product_type}**, this controller is in charge of instantiating a new product objects based on the $product_type provided, validating and adding the information posted and saving the product.
+A clearer example of how this can become problematic is if we had a controller running on **https://factory.ikea.com/product/create/{product_type}**, this controller is in charge of instantiating a new product objects based on the $product_type provided, validating and adding the information posted and saving the product.
 
 We are going to ignore the logic for validating the data and saving the product, right now we only care  about how that product object is being instantiated without the use of a factory:
 

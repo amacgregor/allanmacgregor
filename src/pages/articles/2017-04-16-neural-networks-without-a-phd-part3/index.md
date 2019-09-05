@@ -13,7 +13,7 @@ description: "A series focused on presenting Neural Networks and the related con
 ---
 
 > Topology of a neural network refers to the way the Neurons are connected, and it is an important factor in network functioning and learning. A common topology in unsupervised learning is a direct mapping of inputs to a collection of units that represents categories (e.g., Self-organizing maps).
-> -- [Springer](http://link.springer.com/referenceworkentry/10.1007%2F978-0-387-30164-8_837)
+> -- [Springer](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-30164-8_837)
 
 In our previous post we learned about the components that form a neural network:
 
@@ -46,7 +46,7 @@ One a approach to topology selection is to simply make it a trial and error proc
 - Elman
 - Hopfield
 
-![Network types - Source: turingfinance.com](http://www.turingfinance.com/wp-content/uploads/2014/04/Recurrent-Neural-Network-Architectures.png)
+![Network types - Source: turingfinance.com](https://www.turingfinance.com/wp-content/uploads/2014/04/Recurrent-Neural-Network-Architectures.png)
 
 So outside of very simple applications, known problems or learning exercises **manual topology selection** is not a viable option, in order to find the ideal topology we have to let our neural network to learn the topology from the training data as well. The goal is to find a topology for our neural network that **minimizes the the error on new data. **
 

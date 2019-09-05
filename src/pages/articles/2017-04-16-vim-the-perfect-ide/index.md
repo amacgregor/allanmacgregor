@@ -24,7 +24,7 @@ But other than that Vim is my default Ruby, Elixir, Python, PHP IDE and as well 
 
 ## What it look like
 
-<a href="http://imgur.com/AQSIXwj"><img src="http://i.imgur.com/AQSIXwj.gif" title="source: imgur.com" /></a>
+<a href="https://imgur.com/AQSIXwj"><img src="https://i.imgur.com/AQSIXwj.gif" title="source: imgur.com" /></a>
 
 ## The Setup
 
@@ -104,6 +104,6 @@ As there is no quickest way to force one-self to use the home row for navigation
 
 I hope that for some of you this post has been helpful for some, and I'm far from done with my current setup, in that sense this is **very much a toy** that I continue playing on a nearly daily basis; now that being said and in order to get back to the original premise of the post; it is indeed a very powerful toy, specially when combined with other tools like **Tmux**, here is a sneak peak of my **Elixir** 'IDE' powered by **Vim** and **Tmux**:
 
-<a href="http://imgur.com/vI0KjXB"><img src="http://i.imgur.com/vI0KjXB.gif" title="source: imgur.com" /></a>
+<a href="https://imgur.com/vI0KjXB"><img src="https://i.imgur.com/vI0KjXB.gif" title="source: imgur.com" /></a>
 
 If you want to know more about my setup, or want to **share yours** please leave a comment below.

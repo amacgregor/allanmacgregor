@@ -11,7 +11,7 @@ tags:
 description: "Exploration of recursion in elixir with lists"
 ---
 
-Recently, I've been playing with a new language called [Elixir](http://elixir-lang.org/). Elixir is a **functional programming language** specifically designed with the intention of creating scalable and maintainable applications. 
+Recently, I've been playing with a new language called [Elixir](https://elixir-lang.org/). Elixir is a **functional programming language** specifically designed with the intention of creating scalable and maintainable applications. 
 
 As many developers my main experience with programming languages and paradigms has been with **object oriented programming**; functional programming is a completely different beast and as I explore and learn more, the more fascinating I find the promises and ideas behind functional programming.
 
@@ -23,7 +23,7 @@ Sounds confusing right? Let's look at an example:
 
 <script src="https://gist.github.com/amacgregor/93b23d7260b62a0b72e5.js"></script>
 
-The previous code is part of an exercise I did for [Exercism.io](http://exercism.io) that required to reimplement the functionality of the native List module; the count function will take a list of numbers and return a count of the elements inside the list.
+The previous code is part of an exercise I did for [Exercism.io](https://exercism.io) that required to reimplement the functionality of the native List module; the count function will take a list of numbers and return a count of the elements inside the list.
 
 If this is the first time you look at elixir the first thing to jump at you is that it seems we are defining the count function twice; this is not a mistake and is one of the most amazing features of the elixir language, it's called **pattern matching** I won't into detail on how that works on this post but suffice to say that the first definition will only be called if we recieve an empty list.
 

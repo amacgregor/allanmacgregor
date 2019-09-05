@@ -25,13 +25,13 @@ For the last couple of months I been working with Laravel and learning a lot, he
 
 ## Blogs
 
-- [Laravel Weekly - Newsletter](http://laravelweekly.com/)
-- [Jeffrey Way](http://jeffrey-way.com/)
-- [Taylor Otwell](http://taylorotwell.com/)
+- [Laravel Weekly - Newsletter](https://laravelweekly.com/)
+- [Jeffrey Way](https://jeffrey-way.com/)
+- [Taylor Otwell](https://taylorotwell.com/)
 
 
 ## Screencasts and Podcasts
 
 - [Laracasts](https://laracasts.com/)
 - [Build an eCommerce App in Laravel - Tuts+](https://tutsplus.com/course/laravel-ecommerce-application/)
-- [Laravel.io Podcast](http://www.buzzsprout.com/11908)
+- [Laravel.io Podcast](https://www.buzzsprout.com/11908)

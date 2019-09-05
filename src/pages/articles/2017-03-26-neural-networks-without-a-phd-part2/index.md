@@ -22,7 +22,7 @@ In essence **Neural networks** are digital representations of their biological c
 
 For illustration purposes let's take a look at the simplest possible Neural Network, the **perceptron**:
 
-![The Perceptron - Source: natureofcode.com](http://natureofcode.com/book/imgs/chapter10/ch10_03.png)
+![The Perceptron - Source: natureofcode.com](https://natureofcode.com/book/imgs/chapter10/ch10_03.png)
 
 The perceptron is a computational model of a single neuron, and as we can see it consists of 3 basic neural nodes, each of the with a unique function:
 
@@ -34,7 +34,7 @@ The perceptron is a computational model of a single neuron, and as we can see it
 
 Each node type will be typically arranged in a single layer, with the exception of Neurons which can have many more layers, to clarify let's take a look at a more complex Neural Network type, a **Feed-Forward Neural Network**:
 
-![MultiLayer Neural Network - Source: technobium.com](http://technobium.com/wordpress/wp-content/uploads/2015/04/MultiLayerNeuralNetwork.png)
+![MultiLayer Neural Network - Source: technobium.com](https://technobium.com/wordpress/wp-content/uploads/2015/04/MultiLayerNeuralNetwork.png)
 
 The input and output layers are self-explanatory, but what is a **hidden layer**?
 
@@ -58,7 +58,7 @@ In order to understand how neurons compute the input values and in turn make dec
 
 With those two new components let's review our original perceptron diagram:
 
-![The Perceptron Weights - Source: natureofcode.com](http://natureofcode.com/book/imgs/chapter10/ch10_05.png)
+![The Perceptron Weights - Source: natureofcode.com](https://natureofcode.com/book/imgs/chapter10/ch10_05.png)
 
 Alright, now that we have expanded our knowledge about how neurons are connected let's take a look at how they make a decision based on their inputs.
 

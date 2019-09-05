@@ -24,7 +24,7 @@ But before we jump into the nitty-gritty of service contracts let's get this out
 of the way:
 
 <p style="text-align:center"><img style="display:inline-block"
-src="http://i.imgur.com/m7oagqw.jpg" width="100%" alt="Magento Service Contracts
+src="https://i.imgur.com/m7oagqw.jpg" width="100%" alt="Magento Service Contracts
 is people"></p>
 
 Yes, Service contracts are nothing more than a set of interfaces used to define

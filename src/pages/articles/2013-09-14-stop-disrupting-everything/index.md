@@ -39,7 +39,7 @@ Let's put things into context and define what disrupt actually means and how is 
 > 	b : to throw into disorder agitators trying to disrupt the meeting
 > 2
 >	: to interrupt the normal course or unity of
-> definition from [merria-webster.com](http://www.merriam-webster.com/dictionary/disrupt)
+> definition from [merria-webster.com](https://www.merriam-webster.com/dictionary/disrupt)
 
 Let that definition sink for a second, disrupt means break apart and interrupt; by that definition a majority of the articles, startups and new techs have been called disruptive are **NOT** actually disruptive.
 

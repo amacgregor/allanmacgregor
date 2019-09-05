@@ -15,7 +15,7 @@ description: "Functional programming is often treated as the fad of hipster must
 
 Functional programming is often treated as the fad of hipster mustachioed programmers, and more often is dismissed without much consideration; after all Object Oriented Programming is superior. Well, at least that use to be the trend but in recent years Functional programming has experienced a renaissance and as result functional programming languages are gaining more and more adoption.
 
-But although functional programming is becoming more popular there is still a lot of friction and resistance to change specially when it comes to well seasoned OOP developers that are trying to make the transition, probably one of the best examples is the article titled [Functional Programming Is Not Popular Because It Is Weird.](http://probablydance.com/2016/02/27/functional-programming-is-not-popular-because-it-is-weird/) which starts with the following paragraph:
+But although functional programming is becoming more popular there is still a lot of friction and resistance to change specially when it comes to well seasoned OOP developers that are trying to make the transition, probably one of the best examples is the article titled [Functional Programming Is Not Popular Because It Is Weird.](https://probablydance.com/2016/02/27/functional-programming-is-not-popular-because-it-is-weird/) which starts with the following paragraph:
 
 > Writing functional code is often backwards and can feel more like solving puzzles than like explaining a process to the computer. In functional languages I often know what I want to say, but it feels like I have to solve a puzzle in order to express it to the language. -- Malte Skarupke
 

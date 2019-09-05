@@ -26,11 +26,11 @@ Or at least that used to be the case because **PHP5.3** is officially being depr
 
 This setup can quickly become cumbersome and it is not easily scalable: what happens if we want to test individual patch version or test code on all 3 versions, or add PHP5.5 depending of the host machine you use, it might not be able to run more than virtual machine at the same time.
 
-I ran into all these problems while working at [Demac Media](http://www.demacmedia.com/?utm_source=coderoncode.com) where I constantly need to work on multiple environments and specially when testing extensions for commercial distribution. In order to work more efficiently I came up with the following setup than can be ran locally or on a single **Virtual Machine** if you are on windows.
+I ran into all these problems while working at [Demac Media](https://www.demacmedia.com/?utm_source=coderoncode.com) where I constantly need to work on multiple environments and specially when testing extensions for commercial distribution. In order to work more efficiently I came up with the following setup than can be ran locally or on a single **Virtual Machine** if you are on windows.
 
 ## Meet PHPFarm
 
-Getting multiple **PHP** versions running side by side can be challenging and over the year devs have released multiple solutions like [PHPEnv](https://github.com/phpenv/phpenv) or the new [VirtPHP](http://virtphp.org/), personally I use **PHPFarm** which works very well with my workflow and is extremely easy to use, as well working seamlessly with Apache.
+Getting multiple **PHP** versions running side by side can be challenging and over the year devs have released multiple solutions like [PHPEnv](https://github.com/phpenv/phpenv) or the new [VirtPHP](https://virtphp.org/), personally I use **PHPFarm** which works very well with my workflow and is extremely easy to use, as well working seamlessly with Apache.
 
 <!-- Brief history about PHPfarm -->
 

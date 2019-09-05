@@ -33,7 +33,7 @@ Let's start by taking a closer look to the Code of Conduct original proposed for
 
 <script src="https://gist.github.com/amacgregor/1fb019c5a275d0ae7e38.js"></script>
 
-That document is called the [contributors covenant](http://contributor-covenant.org), a template for the code of conduct currently **in use by around 10,000 open source projects** — impressive number, specially considering some of them are quite large. Before I jump into some of my more controversial opinions about this document, let's analyze the language and the document itself solely based on its content.
+That document is called the [contributors covenant](https://contributor-covenant.org), a template for the code of conduct currently **in use by around 10,000 open source projects** — impressive number, specially considering some of them are quite large. Before I jump into some of my more controversial opinions about this document, let's analyze the language and the document itself solely based on its content.
 
 Let's break it down paragraph by paragraph.
 
@@ -84,7 +84,7 @@ Finally, a mention of scope  and limits … but no wait that's it ? Correct, aga
 
 Vagueness can lead to situations where people get easily banned for comments, views or postings that are completely unrelated to the actual project; **it doesn't matter if you say that your tweets are 'performance art';** if someone deems them offensive you run the risk of getting labeled and thrown away from the project.
 
-This exposes another weakness or oversight in the contributors covenant code of conduct, **it doesn't account for intent**, nor it takes provisions to restrict who can and can't report issues. Brandon Savage brought this point masterfully on the PHP mailing list — you can read the [full email here](http://news.php.net/php.internals/90850)—. 
+This exposes another weakness or oversight in the contributors covenant code of conduct, **it doesn't account for intent**, nor it takes provisions to restrict who can and can't report issues. Brandon Savage brought this point masterfully on the PHP mailing list — you can read the [full email here](https://news.php.net/php.internals/90850)—. 
 
 I won't cover the full extend of the issue as presented by **Brandon**, but here are his proposed  inclusions and corrections to the CoC:
 

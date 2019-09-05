@@ -23,8 +23,8 @@ terms of syntax but at the same time implements some of the more attractive feat
 
 I have covered **Hack** previously on the following articles:
 
-- [Hello Hack](http://www.coderoncode.com/2014/03/23/hello-hack.html)
-- [Is HHVM/Hack the new face of PHP?](http://www.coderoncode.com/2014/04/08/hhvm-hack-new-php.html)
+- [Hello Hack](https://www.coderoncode.com/2014/03/23/hello-hack.html)
+- [Is HHVM/Hack the new face of PHP?](https://www.coderoncode.com/2014/04/08/hhvm-hack-new-php.html)
 
 ## Learn by Doing
 
@@ -42,12 +42,12 @@ Let's call our new framework something clever:
 Get it? **Hack**, Slash (it's a clever name, shut up). Before we start writing any code let's think a little about what kind of micro-framework we want
 to build. There are many amazing **PHP** micro-frameworks out there, just to mention a few:
 
-- [Slim](http://www.slimframework.com/)
-- [Silex](http://silex.sensiolabs.org/)
-- [Phalcon](http://phalconphp.com/)
-- [BulletPHP](http://bulletphp.com/)
-- [Recess](http://www.recessframework.org/)
-- [Limonade](http://limonade-php.github.io/)
+- [Slim](https://www.slimframework.com/)
+- [Silex](https://silex.sensiolabs.org/)
+- [Phalcon](https://phalconphp.com/)
+- [BulletPHP](https://bulletphp.com/)
+- [Recess](https://www.recessframework.org/)
+- [Limonade](https://limonade-php.github.io/)
 
 Outside of the **PHP** world, there is **Sinatra** which is Ruby based and excellent example of a powerful micro-framework. Curiously enough Sinatra seems to
 be the source of inspiraton for many of these frameworks; so let's not break tradition and use Sinatra as our main source of inspiration.

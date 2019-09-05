@@ -38,7 +38,7 @@ Let's address elephant in the room, and talk about why **Singletons** are consid
 
 If you have read about **Singletons** before you are probably wondering what the hell am I doing?
 
-**Singletons** are evil, an Anti-pattern and should never be used! Well that's exactly what I want to address in this article; saying [Singletons are Evil!!](http://c2.com/cgi/wiki?SingletonsAreEvil) is not enough, we need to understand why **Singletons** shouldn't generally be avoided.
+**Singletons** are evil, an Anti-pattern and should never be used! Well that's exactly what I want to address in this article; saying [Singletons are Evil!!](https://c2.com/cgi/wiki?SingletonsAreEvil) is not enough, we need to understand why **Singletons** shouldn't generally be avoided.
 
 <!-- Add more information about why **Singletons** are evil -->
 
@@ -56,13 +56,13 @@ Singleton objects are responsible of both their purpose and controlling the numb
 
 ### Hidden dependencies
 
-What are hidden dependencies and how is that relevant to **Singletons**?, well if you read my previous article on [Dependency Injection](http://coderoncode.com/2014/01/06/dependency-injection-php.html) we saw how to pass dependencies as parameters to a function.
+What are hidden dependencies and how is that relevant to **Singletons**?, well if you read my previous article on [Dependency Injection](https://coderoncode.com/2014/01/06/dependency-injection-php.html) we saw how to pass dependencies as parameters to a function.
 
 Any parameters accepted by a function are called visible dependencies, on the other hand if a function requires something else to operate that is referred through a global variable -- read singleton -- then that dependency is considered hidden.
 
 Now this presents because there is no way for a third party to know about this hidden dependencies without taking a look at the actual function implementation.
 
-> A visible dependency is a dependency that developers can see from a class's interface. If a dependency cannot be seen from the class's interface, it is a hidden dependency. [jenkov.com](http://tutorials.jenkov.com/ood/understanding-dependencies.html#visiblehidden)
+> A visible dependency is a dependency that developers can see from a class's interface. If a dependency cannot be seen from the class's interface, it is a hidden dependency. [jenkov.com](https://tutorials.jenkov.com/ood/understanding-dependencies.html#visiblehidden)
 
 ### Testing
 

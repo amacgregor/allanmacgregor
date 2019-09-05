@@ -19,7 +19,7 @@ description: "Dependency Injection is a software design pattern that allows avoi
 
 By using **Dependency Injection** we can write more maintainable, testable, and modular code. All projects have dependencies. The larger the project the more dependencies is it bound to have; now having a great number of dependencies is nothing bad by itself however how those dependencies are managed and maintained is.
 
-**Dependency Injection** is not a new pattern and it has been commonly used on many languages like Java, but this pattern is somewhat new in the **PHP** world and it's gaining traction quickly thanks for frameworks like [laravel](http://laravel.com)
+**Dependency Injection** is not a new pattern and it has been commonly used on many languages like Java, but this pattern is somewhat new in the **PHP** world and it's gaining traction quickly thanks for frameworks like [laravel](https://laravel.com)
 
 Let's exemplify these concepts by creating a pair of classes first without dependency injection and then rewriting the code to use the dependency injection pattern; since I'm primarily a **Magento** developer I'll be really original (wink, wink) and create a **Product** and a **StockItem** class.
 

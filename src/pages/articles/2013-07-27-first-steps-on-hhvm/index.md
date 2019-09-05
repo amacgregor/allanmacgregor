@@ -13,7 +13,7 @@ tags:
 description: "Currently a few applications are fully supported like wordpress and drupal; more complex applications like Magento are still not 100% with HHVM due to bugs in the HHVM implementation."
 ---
 
-On a previous post [Introduction to HHVM](http://coderoncode.com/2013/07/24/introduction-hhvm.html) we went over [**HHVM**](http://www.hhvm.com/blog/)'s history and the potential of running our **PHP** applications on top of it. Currently a few applications are fully supported like wordpress and drupal; more complex applications like [**Magento**](http://www.magentocommerce.com/) are still not 100% with HHVM due to bugs in the HHVM implementation.
+On a previous post [Introduction to HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html) we went over [**HHVM**](https://www.hhvm.com/blog/)'s history and the potential of running our **PHP** applications on top of it. Currently a few applications are fully supported like wordpress and drupal; more complex applications like [**Magento**](https://www.magentocommerce.com/) are still not 100% with HHVM due to bugs in the HHVM implementation.
 
 
 
@@ -30,7 +30,7 @@ If you want to skip the whole setup you can download the configured vagrant box 
     vagrant box add hhvmdev https://www.dropbox.com/s/5qyjkes49nk5abt/package.box
 
 ## Installing Vagrant
-[Download](http://vagrantup.com/) and install the appropriate version of Vagrant for your machine.
+[Download](https://vagrantup.com/) and install the appropriate version of Vagrant for your machine.
 
 ## Downloading Ubuntu Precise (12.04)
 
@@ -40,7 +40,7 @@ If you want to skip the whole setup you can download the configured vagrant box 
 
 This will create a vagrant configuration file, this file is used for setting the configuration and provisioning our new vagrant box. We also need to download and ISO image of the **Ubuntu 12.04** vagrant can do this with a single command.
 
-    vagrant box add base http://files.vagrantup.com/precise64.box
+    vagrant box add base https://files.vagrantup.com/precise64.box
 
 Once vagrant finishes downloading the Ubuntu image we can start our vagrant box by typing:
 
@@ -99,14 +99,14 @@ Before jumping ahead and compiling HHVM we need to setup some third-party librar
 
 #### Google glog
 
-    svn checkout http://google-glog.googlecode.com/svn/trunk/ google-glog
+    svn checkout https://google-glog.googlecode.com/svn/trunk/ google-glog
     cd google-glog
     ./configure --prefix=$CMAKE_PREFIX_PATH
     sudo make && sudo make install
 
 #### JEMalloc 3.0
 
-    wget http://www.canonware.com/download/jemalloc/jemalloc-3.0.0.tar.bz2
+    wget https://www.canonware.com/download/jemalloc/jemalloc-3.0.0.tar.bz2
     tar xjvf jemalloc-3.0.0.tar.bz2
     cd jemalloc-3.0.0
     ./configure --prefix=$CMAKE_PREFIX_PATH
