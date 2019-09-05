@@ -15,7 +15,7 @@ class IndexRoute extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <div className="fullHeightContainer">
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
@@ -46,6 +46,7 @@ export const pageQuery = graphql`
           telegram
           twitter
           github
+          youtube
           rss
           linkedin
           vk

@@ -1,3 +1,4 @@
+@import "../../assets/scss/variables";
 
 $color-github: #4078c0;
 $gray: #ccc;
@@ -26,7 +27,7 @@ $spacing: 20px;
   > h3 {
     margin-top: 0;
     margin-bottom: 0;
-    color: $color-github;
+    color: $color-primary;
     font-size: 15px;
   }
 }
