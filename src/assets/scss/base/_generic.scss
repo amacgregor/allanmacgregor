@@ -141,10 +141,16 @@ figcaption {
     margin-bottom: 0;
     text-align: center;
 }
+
 .fullHeightContainer {
     height: 100%;
     display: flex;
 }
+
+.pagination {
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;list-style:none;padding:0;
+}
+
 .layout {
     lost-center: $layout-width;
     margin-left:0;
