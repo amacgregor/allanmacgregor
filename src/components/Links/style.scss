@@ -1,6 +1,20 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
 
+@font-face {
+    font-family: 'fontello';
+    src: url('./fonts/fontello.eot?72418887');
+    src: url('./fonts/fontello.eot?72418887#iefix') format('embedded-opentype'),
+         url('./fonts/fontello.woff2?72418887') format('woff2'),
+         url('./fonts/fontello.woff?72418887') format('woff'),
+         url('./fonts/fontello.ttf?72418887') format('truetype'),
+         url('./fonts/fontello.svg?72418887#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.icon-youtube:before { content: '\f315'; } /* '' */
+
 .links {
     @include margin-bottom(1);
     &__list {

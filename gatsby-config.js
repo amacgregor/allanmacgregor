@@ -49,6 +49,7 @@ module.exports = {
       twitter: 'allanmacgregor',
       github: 'amacgregor',
       rss: '#',
+      youtube: 'UCqcJE6lxT_vzGGSaUCy2efA',
       vk: '#',
       linkedin: 'allanmacgregor',
     },
@@ -136,6 +137,19 @@ module.exports = {
             options: {
               target: "_blank",
               rel: "nofollow"
+            }
+          },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              // Optional:
+    
+              // the github handler whose gists are to be accessed
+              username: 'amacgregor',
+    
+              // a flag indicating whether the github default gist css should be included or not
+              // default: true
+              includeDefaultCss: true
             }
           },
           'gatsby-remark-prismjs',

@@ -141,9 +141,13 @@ figcaption {
     margin-bottom: 0;
     text-align: center;
 }
-
+.fullHeightContainer {
+    height: 100%;
+    display: flex;
+}
 .layout {
     lost-center: $layout-width;
+    margin-left:0;
 }
 
 .content {

@@ -9,6 +9,7 @@ class Links extends React.Component {
       telegram: author.telegram,
       twitter: author.twitter,
       github: author.github,
+      youtube: author.youtube,
       vk: author.vk,
       linkedin: author.linkedin,
       rss: author.rss,
@@ -18,6 +19,15 @@ class Links extends React.Component {
     return (
       <div className="links">
         <ul className="links__list">
+        <li className="links__list-item">
+            <a
+              href={`https://www.youtube.com/channel/${links.youtube}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="icon-youtube" />
+            </a>
+          </li>
           <li className="links__list-item">
             <a
               href={`https://www.twitter.com/${links.twitter}`}
