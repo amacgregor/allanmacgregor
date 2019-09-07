@@ -2,7 +2,7 @@
 title: Upgraded to Gatsby v2
 date: "2019-09-03"
 layout: post
-draft: false
+draft: true
 path: "/posts/upgraded-to-gatsby/"
 category: "Gatsby"
 tags:
