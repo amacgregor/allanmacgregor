@@ -29,18 +29,18 @@ module.exports = {
         label: 'Long Form',
         path: 'https://amgr.dev',
       },
-      {
-        label: 'Publications',
-        path: '/publications/',
-      },
-      {
-        label: 'Resume',
-        path: '/resume/',
-      },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
+      // {
+      //   label: 'Publications',
+      //   path: '/publications/',
+      // },
+      // {
+      //   label: 'Resume',
+      //   path: '/resume/',
+      // },
+      // {
+      //   label: 'Contact me',
+      //   path: '/contact/',
+      // },
     ],
     author: {
       name: 'Allan MacGregor',
