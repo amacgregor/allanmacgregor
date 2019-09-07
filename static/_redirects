@@ -1,2 +1,5 @@
 /images/posts/*  /images/legacy/:splat
 /tools/2017/04/16/vim-the-perfect-ide.html  /posts/vim-is-the-perfect-ide 301
+/design-patterns/programming/php/development/2014/01/27/design-patterns-php-singletons.html /posts/design-patterns-in-php-singletons 301
+/dependency-injection/design-patterns/programming/php/development/2014/01/06/dependency-injection-php.html/posts/dependency-injection-in-php 301
+/design-patterns/programming/php/coding/development/2014/01/19/design-patterns-php-factories.html /posts/design-patterns-in-php-using-factories 301
