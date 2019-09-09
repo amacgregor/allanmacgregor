@@ -1,0 +1,12 @@
+---
+title: {{title}}
+date: "{{createdDate}}"
+layout: post
+draft: {{draft}}
+path: "/posts/{{dashCase title}"
+category: {{category}}
+{{tags}}
+description: ""
+--
+
+## TODO: Place some awesome content here
