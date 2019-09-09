@@ -2,41 +2,25 @@
 const { inputRequired } = require('./utils')
 
 module.exports = plop => {
-    plop.setGenerator('track entry', {
+    plop.setGenerator('article entry', {
         prompts: [
-            // question 1
             {
                 type: 'input',
                 name: 'title',
-                message: ' f',
+                message: ' Title: ',
                 validate: inputRequired('title')
             },
-            // question 2
             {
                 type: 'input',
-                name: 'artist',
-                message: 'Track artist?',
-                validate: inputRequired('artist')
+                name: 'category',
+                message: 'Category:',
+                validate: inputRequired('category')
             },
-            // question 3
-            {
-                type: 'input',
-                name: 'url',
-                message: 'Track URL?'
-            },
-            // question 4
             {
                 type: 'input',
                 name: 'tags',
-                message: 'Tags? (separate with comma)'
+                message: 'Tags (separate with comma): '
             },
-            // question 5
-            {
-                type: 'input',
-                name: 'body',
-                message: 'Body text?'
-            },
-            // question 6
             {
                 type: 'confirm',
                 name: 'draft',
@@ -44,7 +28,22 @@ module.exports = plop => {
                 default: false
             }
         ], 
-    })
-        actions: [], // empty for now
+        actions: data => {
+            // Get the Current date
+            data.createdDate = new Date().toISOString().split('T')[0];
+
+            // Parse tags as a yaml array
+            if(data.tags) {
+                data.tags = `tags:\n - ${data.tags.split(',').join('\n - ')}`;
+            }
+
+            return [
+                {
+                    type: 'add',
+                    path: '../src/pages/articles/{{createdDate}}---{{dashCase title}}/index.md',
+                    templateFile: 'templates/article-md.template'
+                }
+            ];
+        }
     })
 }
