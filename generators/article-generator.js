@@ -18,6 +18,12 @@ module.exports = plop => {
             },
             {
                 type: 'input',
+                name: 'description',
+                message: 'Description:',
+                validate: inputRequired('description')
+            },
+            {
+                type: 'input',
                 name: 'tags',
                 message: 'Tags (separate with comma): '
             },
