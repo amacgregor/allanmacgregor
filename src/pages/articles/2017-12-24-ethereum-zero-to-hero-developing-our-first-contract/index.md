@@ -39,7 +39,7 @@ For more details on ERC20 standard view the following links:
 
 Up to this point, we have worked directly on the **Geth** console, and while I highly recommend **Ethereum developers** to become familiar and acquainted with **Geth** in order to understand some of the **Ethereum** inner-workings in order to move faster and work smarter, we will switch to the official Ethereum wallet:
 
-![Ethereum Wallet](/images/posts/ethereum_03_01.png)
+![Ethereum Wallet](/images/legacy/ethereum_03_01.png)
 
 Make sure to [download](https://www.ethereum.org) and install the ethereum wallet before continuing. 
 
@@ -72,7 +72,7 @@ Here is the code for our minium viable token:
 
 Now grab the source code from above and paste it in the **Solidity Contract Source Code field**. The wallet will automatically check if the code **compiles** and if it does, you will see a "pick a contract" dropdown on the right like so:
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_02.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_02.png)
 
 One interesting thing to notice is that there is also one constructor parameter, in this case, an initial supply of **Hero Tokens**, that will be an issue on contract creation.
 
@@ -80,11 +80,11 @@ If you keep scrolling down, you'll see an **estimate of the computation cost** o
 
 Next, you will see a confirmation dialog like the following:
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_03.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_03.png)
 
 Once the contract has been submitted, you should see it in the latest transactions below, waiting for confirmation. Usually, it should take around 30 seconds for the contract to be confirmed but, at this point, we could wait and wait, and nothing would happen. 
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_04.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_04.png)
 
 This is because there are no other nodes in the network and no one is mining, and ethereum much like Bitcoin right now works as a **Proof of Work** network, I will not go into the details, but you can read the following article for a thorough explanation:
 
@@ -104,15 +104,15 @@ miner.stop()
 
 Looking at the latest transactions our contract should be now verified, we can confirm that by going into the "**Contracts**" tab and we should see our newly created contract. 
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_05.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_05.png)
 
 Click on it to go to its page. Click "copy address" and paste the contract address into a text editor, you will need it shortly.
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_06.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_06.png)
 
 If you click your wallet address, there is no indication of those tokens being there, did something went wrong? Well no, Wallets only track **tokens** it knows about, and we have not told our wallet to track our brand new token. 
 
-![Ethereum Wallet Contract](/images/posts/ethereum_03_07.png)
+![Ethereum Wallet Contract](/images/legacy/ethereum_03_07.png)
 
 
 ## Tracking Tokens

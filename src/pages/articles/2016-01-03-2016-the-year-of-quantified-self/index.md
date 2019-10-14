@@ -13,7 +13,7 @@ author: allanmacgregor
 
 tags: [health, quantified self, productivity, self improvement]
 categories: health
-image: '/images/posts/quantified_self_001.jpeg'
+image: '/images/legacy/quantified_self_001.jpeg'
 ---
 Quantified self and self-improvement have been on my radar for a few years now, and with a new year starting I finally decided to give it a serious try and see what outcomes I get from it. 
 

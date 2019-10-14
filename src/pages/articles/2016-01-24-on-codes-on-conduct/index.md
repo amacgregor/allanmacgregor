@@ -14,7 +14,7 @@ author: allanmacgregor
 
 tags: [codes of conduct, community, social justice, equality]
 categories: community
-image: '/images/posts/code_conduct_001.jpeg'
+image: '/images/legacy/code_conduct_001.jpeg'
 ---
 
 Recently, there has been a lot of controversy and discussion surrounding the adoption of a code of conduct for the PHP project; there has been endless back and forth between proponents and opponents of the motion. I've debated if I should publish my opinions on the subject or simply remain quite and hope for the best; however as emails from the internals list continued to flood my inbox, I found it harder and harder to just sit idly silent. 

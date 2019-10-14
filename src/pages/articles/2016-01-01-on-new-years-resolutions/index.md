@@ -12,7 +12,7 @@ author: allanmacgregor
 
 tags: ["2016", new year, resolutions, productivity, goals]
 categories: productivity
-image: '/images/posts/new_year_001.jpeg'
+image: '/images/legacy/new_year_001.jpeg'
 ---
 Another year came and went, and as we do every year we are expected setup new resolutions and new goals for the upcoming year. It's the usual thing to do that society expects of every single one of us.
 

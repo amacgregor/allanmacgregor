@@ -55,7 +55,7 @@ Which should give you an output similar to the following:
 
 # Step 2: Genesis Block
 
-![Genesis Block](/images/posts/ethereum_01_genesis.jpg)
+![Genesis Block](/images/legacy/ethereum_01_genesis.jpg)
 
 To get our on private testnet started, we are going to need a Genesis Block. Every Blockchain requires a genesis block, which is essentially the configuration file for our blockchain. 
 
