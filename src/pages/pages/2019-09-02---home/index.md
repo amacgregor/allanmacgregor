@@ -10,7 +10,7 @@ My name is **Allan MacGregor**. I write code, build ecommerce applications, work
 
 I started building ecommerce applications over **13 years ago**; and I'm always exploring new and better ways to tackle my industry challenges.
 
-The best way to describe what I do for a living is **VP of Commerce Platforms** by day, **[startup](https://bloccs.io)** founder by night.
+The best way to describe what I do for a living is **Director of Engineering** by day, **[startup](https://bloccs.io)** founder by night.
 
 <!-- Hey there! [(Looking for the Blog? Click Here)](/blog)
 
