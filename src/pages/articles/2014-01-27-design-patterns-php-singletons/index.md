@@ -50,7 +50,6 @@ This first problem that we encounter when using **Singletons** is that their usa
 
 Singleton objects are responsible of both their purpose and controlling the number of instances the produce, while the **Single Responsibility Principle** states that:
 
-<!-- Add Quote for the Single responsibility principle -->  
 
 > ... every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class.
 

@@ -4,3 +4,6 @@
 
 TODO
 
+# References
+
+[Intro to MDX](https://alligator.io/gatsbyjs/mdx-in-gatsby/)

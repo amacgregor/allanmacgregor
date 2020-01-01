@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
 
 class PostTemplateDetails extends React.Component {
   render() {
     const { subtitle, author } = this.props.data.site.siteMetadata
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.mdx
     const tags = post.fields.tagSlugs
 
     const homeBlock = (
@@ -50,9 +51,7 @@ class PostTemplateDetails extends React.Component {
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
             <div
               className="post-single__body"
-              /* eslint-disable-next-line react/no-danger */
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
+            ><MDXRenderer>{post.body}</MDXRenderer></div>
             <div className="post-single__date">
               <em>
                 Published {moment(post.frontmatter.date).format('D MMM YYYY')}
