@@ -23,7 +23,7 @@ I apologize beforehand if this article is more of a **rant** than usual. The ins
 
 ## The Swiss Army Knife
 
-<p style="text-align:center"><img style="display:inline-block" src="https://digital.hammacher.com/Items/74670/74670_1000x1000.jpg" width="500" alt="Largest swiss army knife in the world"></p>
+<p style="text-align:center"><img style="display:inline-block" src="https://digital.hammacher.com/Items/74670/74670_1000x1000.jpg" width="500" alt="Largest swiss army knife in the world"/></p>
 
 The term 'Swiss Army Knife' is often used to describe a collection of useful items or tools that are able to perform well in multiple scenarios.
 
@@ -50,8 +50,7 @@ And that's how **Swiss Army Knife Syndrome** begins: with a 'but'. The tool was 
 
 ## Clear Purpose
 
-<!-- INSERT A CHEF'S KNIFE IMAGE -->
-<p style="text-align:center"><img style="display:inline-block" src="https://www.euro-knife.com/sub/euro-noze.sk/images/shop-active-images/kuchynske-noze-victorinox-kucharsky-noz-7.7403.20..jpg" width="750" alt="Largest swiss army knife in the world"></p>
+<p style="text-align:center"><img style="display:inline-block" src="https://www.euro-knife.com/sub/euro-noze.sk/images/shop-active-images/kuchynske-noze-victorinox-kucharsky-noz-7.7403.20..jpg" width="750" alt="Largest swiss army knife in the world"/></p>
 
 {% excerpt %}
 **Software needs to be as clean and as simple as it can practically be.** To follow the knife analogy, good code should be like a chef's knife. A chef's knife has a clear and defined set of uses. A professional chef will use the right kind of knife for the job. This is how we should think about our code.

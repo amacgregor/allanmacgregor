@@ -25,7 +25,7 @@ of the way:
 
 <p style="text-align:center"><img style="display:inline-block"
 src="https://i.imgur.com/m7oagqw.jpg" width="100%" alt="Magento Service Contracts
-is people"></p>
+is people"/></p>
 
 Yes, Service contracts are nothing more than a set of interfaces used to define
 the public api of a module.

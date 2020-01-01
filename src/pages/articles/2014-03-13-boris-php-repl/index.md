@@ -28,7 +28,7 @@ However the PHP Interactive Shell lacks several features that other modern langu
 
 [Boris](https://github.com/d11wtq/boris), was developed by [Chris Corbyn](https://github.com/d11wtq) a PHP developer that after making the transition to Ruby was disappointed by the lack of a true PHP REPL.
 
-<p style="text-align:center;"><img src="https://github-camo.global.ssl.fastly.net/18c23fa613beeb044a7ba1ba58a5dfefe120ca6f/687474703a2f2f646c2e64726f70626f782e636f6d2f752f3530383630372f426f72697344656d6f2d76342e676966"></p>
+<p style="text-align:center;"><img src="https://github-camo.global.ssl.fastly.net/18c23fa613beeb044a7ba1ba58a5dfefe120ca6f/687474703a2f2f646c2e64726f70626f782e636f6d2f752f3530383630372f426f72697344656d6f2d76342e676966"/></p>
 
 After playing around with Boris for while, I can honestly say that it has the right to call itself 'The Missing PHP REPL'; not only provides the basic features that you would expect from a standard REPL but also:
 
