@@ -38,7 +38,7 @@ We are in particular interested in the vimrc file, let's break it down:
 
 Each plugin in this setup is separated in the following categories:
 
-###Utility
+### Utility
 This kind of a miscellaneous category and is comprised of plugins used to enhance or change the behaivour of core vim; the most useful important ones are:
 
 - **Nerdtree**: It gives you easy access to the file system in the form of a directory tree on the left side of the screen, as well provides shortcuts for filesystem manipulation(create, delete, move files and directories)
@@ -46,26 +46,26 @@ This kind of a miscellaneous category and is comprised of plugins used to enhanc
 - **FZF**: Fuzzy finder, another handy utility for finding files and commands.
 - Neocomplete: Vim Autocomplete on steroids.
 
-###Generic Programming Support
+### Generic Programming Support
 These plugins fall directly on the category of programming and are used my all or most of the **programming languages** that I currently have setup:
 
 - **Exuberant-Ctags**: tags are named definitions of classes, functions, abstract types and so on; adding support to Vim gives you some of that 'magic' IDE code navigation functionality.
 - **Syntastic**: THE syntax checking plugin for Vim, if you are familiar with the way that code inspections work on Jetbrains and similar IDEs, syntastic will make feel right at home.
 - **Vim-autoclose**: Automatically closes a character that could/should have a matching closing counterpart, like () "" [] {} and so on.
 
-###Markdown/Writing
+### Markdown/Writing
 As I mentioned Vim is my go to editor for drafting new posts be it books, blogs or random angry letters. From this particular section only language tools deservers a special shot-out as it makes for a great Grammar checker directly from inside Vim.
 
-###Erlang/Elixir/PHP/Elm Support
+### Erlang/Elixir/PHP/Elm Support
 
 When it comes down to the **individual language support** there isn't really much to highlight other than I've tried (and somewhat failed) to keep the plugins to a minimum and focus only on the **essential language support**.
 
 So far elixir is winning the battle in terms of plugins as I've added additional functionality like the ability to run tests and generate content from inside Vim, I have yet to decide if I'm keeping all the plugins for it.
 
-###Git Support
+### Git Support
 Standard git support that I'm afraid I rarely use, I find myself going directly back to the **shell** and doing the **git workflow** outside of Vim, so I'm open to suggestions and to hear what everyone else is using in terms of setup.
 
-###Themes and Interfaces
+### Themes and Interfaces
 Ok this is a big one but mostly because I keep forgetting to remove unused themes and colorschemes, let's highlight the important ones:
 
 - **Vimarline**: Lean and mean status/tabline for Vim; it also looks cool as fuck.
@@ -98,7 +98,6 @@ As there is no quickest way to force one-self to use the home row for navigation
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 
 # Final Remarks
 
