@@ -63,65 +63,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                url
-                title
-                description: subtitle
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge =>
-                Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.frontmatter.description,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.url + edge.node.fields.slug,
-                  guid: site.siteMetadata.url + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                })
-              ),
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
-                ) {
-                  edges {
-                    node {
-                      html
-                      fields {
-                        slug
-                      }
-                      frontmatter {
-                        title
-                        date
-                        layout
-                        draft
-                        description
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss.xml',
-          },
-        ],
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -164,9 +109,65 @@ module.exports = {
           },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-        ],
+        ]
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-feed',
+    //   options: {
+    //     query: `
+    //       {
+    //         site {
+    //           siteMetadata {
+    //             url
+    //             title
+    //             description: subtitle
+    //           }
+    //         }
+    //       }
+    //     `,
+    //     feeds: [
+    //       {
+    //         serialize: ({ query: { site, allMarkdownRemark } }) =>
+    //           allMarkdownRemark.edges.map(edge =>
+    //             Object.assign({}, edge.node.frontmatter, {
+    //               description: edge.node.frontmatter.description,
+    //               date: edge.node.frontmatter.date,
+    //               url: site.siteMetadata.url + edge.node.fields.slug,
+    //               guid: site.siteMetadata.url + edge.node.fields.slug,
+    //               custom_elements: [{ 'content:encoded': edge.node.html }],
+    //             })
+    //           ),
+    //         query: `
+    //           {
+    //             allMarkdownRemark(
+    //               limit: 1000,
+    //               sort: { order: DESC, fields: [frontmatter___date] },
+    //               filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+    //             ) {
+    //               edges {
+    //                 node {
+    //                   html
+    //                   fields {
+    //                     slug
+    //                   }
+    //                   frontmatter {
+    //                     title
+    //                     date
+    //                     layout
+    //                     draft
+    //                     description
+    //                   }
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         `,
+    //         output: '/rss.xml',
+    //       },
+    //     ],
+    //   },
+    // },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

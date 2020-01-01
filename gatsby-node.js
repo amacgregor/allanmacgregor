@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     graphql(`
       {
-        allMarkdownRemark(
+        allMdx(
           limit: 1000
           filter: { frontmatter: { draft: { ne: true } } }
         ) {
@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       // Create blog-list pages
-      const posts = result.data.allMarkdownRemark.edges
+      const posts = result.data.allMdx.edges
       const postsPerPage = 6
       const numPages = Math.ceil(posts.length / postsPerPage)
       Array.from({ length: numPages }).forEach((_, i) => {
@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-      _.each(result.data.allMarkdownRemark.edges, edge => {
+      _.each(result.data.allMdx.edges, edge => {
         if (_.get(edge, 'node.frontmatter.layout') === 'page') {
           createPage({
             path: edge.node.fields.slug,
@@ -113,11 +113,39 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === 'File') {
     const parsedFilePath = path.parse(node.absolutePath)
-    const slug = `/${parsedFilePath.dir.split('---')[1]}/`
+    let slug = `/${parsedFilePath.dir.split('---')[1]}/`
     createNodeField({ node, name: 'slug', value: slug })
   } else if (
+    node.internal.type === 'Mdx'&&
+    typeof node.slug === 'undefined' 
+  ) {
+    const fileNode = getNode(node.parent)
+    if (typeof node.frontmatter.path !== 'undefined') {
+      slug = node.frontmatter.path
+    }
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    })
+
+
+    if (node.frontmatter.tags) {
+      const tagSlugs = node.frontmatter.tags.map(
+        tag => `/tags/${_.kebabCase(tag)}/`
+      )
+      createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
+    }
+
+    if (typeof node.frontmatter.category !== 'undefined') {
+      const categorySlug = `/categories/${_.kebabCase(
+        node.frontmatter.category
+      )}/`
+      createNodeField({ node, name: 'categorySlug', value: categorySlug })
+    }
+  } else if (
     node.internal.type === 'MarkdownRemark' &&
-    typeof node.slug === 'undefined'
+    typeof node.slug === 'undefined' 
   ) {
     const fileNode = getNode(node.parent)
     let slug = fileNode.fields.slug
@@ -144,4 +172,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({ node, name: 'categorySlug', value: categorySlug })
     }
   }
+
+}
+
+// gatsby-node.js
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+  })
 }

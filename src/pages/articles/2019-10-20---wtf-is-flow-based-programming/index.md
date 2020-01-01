@@ -39,4 +39,4 @@ Connections between process are predefined and externally to the process itself.
 
 Overall, the fact that FBP forces the idea of compartmentalized logic and a data first approach makes FBP an extremely powerful tool on your developer arsenal when correctly applied. 
 
-In subsequent articles will go into more detail of the advantages, disadvantages, and implementation options for you to start experimenting with **Flow-Based Programming.**
+In subsequent articles will go into more detail of the advantages, disadvantages, and implementation options for you to start experimenting with **Flow-Based Programming.*

@@ -1,11 +1,12 @@
 import React from 'react'
 import Sidebar from '../Sidebar'
 import ProjectGrid from '../ProjectGrid'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
 
 class HomePageTemplateDetails extends React.Component {
   render() {
-    const page = this.props.data.markdownRemark
+    const page = this.props.data.mdx
     const projects = this.props.data.githubViewer.repositories.nodes
 
     return (
@@ -17,9 +18,8 @@ class HomePageTemplateDetails extends React.Component {
               <h1 className="page__title">{page.frontmatter.title}</h1>
               <div
                 className="page__body"
-                /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: page.html }}
-              />
+              ><MDXRenderer>{page.body}</MDXRenderer></div>
+
             </div>
             <ProjectGrid { ... this.props } />
           </div>

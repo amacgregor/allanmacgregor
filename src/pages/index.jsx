@@ -9,7 +9,7 @@ import HomePageTemplateDetails from '../components/HomePageTemplateDetails'
 class IndexRoute extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
-    const page = this.props.data.markdownRemark
+    const page = this.props.data.mdx
     const { title: pageTitle, description: pageDescription } = page.frontmatter
     const description = pageDescription !== null ? pageDescription : subtitle
 
@@ -53,9 +53,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: "/home" } }) {
+    mdx(fields: { slug: { eq: "/home" } }) {
       id
-      html
+      body
       frontmatter {
         title
         date
