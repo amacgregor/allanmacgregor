@@ -13,8 +13,8 @@ module.exports = {
     siteUrl: url,
     title: 'Allan MacGregor',
     subtitle:
-      'Software Engineer, Author, Technology Enthusiast, and Flow-based Programming Advocate.',
-    copyright: '© All rights reserved.',
+      'Director of Engineering at Hopper • Writer • Functional Programming Advocate',
+    copyright: 'Copyright Allan MacGregor © 2019',
     disqusShortname: '',
     menu: [
       {
