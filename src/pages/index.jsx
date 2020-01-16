@@ -19,6 +19,8 @@ class IndexRoute extends React.Component {
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+
           </Helmet>
           <HomePageTemplateDetails {...this.props} />
         </div>
