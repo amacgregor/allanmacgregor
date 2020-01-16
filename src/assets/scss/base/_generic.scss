@@ -105,6 +105,11 @@ a {
     }
 }
 
+a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+}
+
 b,
 strong {
     font-weight: 600;
@@ -163,6 +168,14 @@ figcaption {
 .content {
     &__inner {
         padding: 25px 20px;
+    }
+}
+
+.sidebar {
+    .links {
+        a[target="_blank"]:after {
+            content: "";
+        }
     }
 }
 

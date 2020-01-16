@@ -27,6 +27,8 @@ class BlogRoute extends React.Component {
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
+            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
