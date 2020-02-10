@@ -15,6 +15,11 @@ class Post extends React.Component {
 
     return (
       <div className="post">
+        <h2 className="post__title">
+          <Link className="post__title-link" to={slug}>
+            {title}
+          </Link>
+        </h2>
         <div className="post__meta">
           <time
             className="post__meta-time"
@@ -29,15 +34,7 @@ class Post extends React.Component {
             </Link>
           </span>
         </div>
-        <h2 className="post__title">
-          <Link className="post__title-link" to={slug}>
-            {title}
-          </Link>
-        </h2>
         <p className="post__description">{description}</p>
-        <Link className="post__readmore" to={slug}>
-          Read
-        </Link>
       </div>
     )
   }

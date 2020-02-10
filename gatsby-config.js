@@ -22,13 +22,17 @@ module.exports = {
         path: '/',
       },
       {
-        label: 'Short Form',
+        label: 'Blog',
         path: '/blog'
       },
       {
         label: 'Long Form',
         path: 'https://amgr.dev',
       },
+      {
+        label: 'Stack Overflow',
+        path: 'https://stackoverflow.com/users/801506/allan-macgregor'
+      }
       // {
       //   label: 'Publications',
       //   path: '/publications/',
