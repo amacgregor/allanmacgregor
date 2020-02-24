@@ -12,6 +12,8 @@ I lead the engineering team at [Hopper](https://hopper.com) in charge of revolut
 
 ## Streaming and More
 
+
+
 ## Writing Past and Future
 
 I'm currently working on a new book proposal dealing with **Functional Programming**. I have wrote a couple books specialized on **Magento Software development**, if you are interested you can find more [here](/publications#books)
