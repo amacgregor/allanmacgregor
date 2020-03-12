@@ -28,7 +28,7 @@
     "@dschau/gatsby-source-github": "^0.0.1",
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
-    "axobject-query": "^2.1.1",
+    "axobject-query": "^2.1.2",
     "bluebird": "^3.7.2",
     "bufferutil": "^4.0.1",
     "eslint-config-react-app": "^5.1.0",
