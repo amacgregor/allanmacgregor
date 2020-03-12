@@ -37,7 +37,7 @@
     "gatsby-plugin-feed": "^2.3.25",
     "gatsby-plugin-google-analytics": "^2.1.31",
     "gatsby-plugin-google-fonts": "latest",
-    "gatsby-plugin-mdx": "^1.0.64",
+    "gatsby-plugin-mdx": "^1.0.73",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sass": "^2.1.26",
