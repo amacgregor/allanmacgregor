@@ -111,6 +111,16 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          {
+            resolve: `gatsby-remark-custom-blocks`,
+            options: {
+              blocks: {
+                snippet: {
+                  classes: `snippet`
+                }
+              }
+            }
+          }, 
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ]

@@ -64,6 +64,31 @@ export const pageQuery = graphql`
         description
       }
     }
+    allMdx(
+      limit: 5
+      filter: { 
+        frontmatter: { 
+          draft: { ne: true } 
+          layout: { eq: "post" }
+        } 
+      }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          fields {
+            tagSlugs
+            slug
+          }
+          frontmatter {
+            title
+            tags
+            date
+            description
+          }
+        }
+      }
+    }
     githubViewer { 
       repositories{
         nodes {
