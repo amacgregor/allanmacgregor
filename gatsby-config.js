@@ -12,9 +12,10 @@ module.exports = {
     url,
     siteUrl: url,
     title: 'Allan MacGregor',
+    description: 'Hi, I\'m Allan, this is where I write. I lead the engineering team at Hopper in charge of revolutionizing the world of corporate travel. I also run several side projects under the umbrella of Bloccs.io',
     subtitle:
       'Director of Engineering at Hopper • Writer • Functional Programming Advocate',
-    copyright: 'Copyright Allan MacGregor © 2019',
+    copyright: 'Copyright Allan MacGregor © 2020',
     disqusShortname: '',
     menu: [
       {
@@ -126,62 +127,6 @@ module.exports = {
         ]
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-feed',
-    //   options: {
-    //     query: `
-    //       {
-    //         site {
-    //           siteMetadata {
-    //             url
-    //             title
-    //             description: subtitle
-    //           }
-    //         }
-    //       }
-    //     `,
-    //     feeds: [
-    //       {
-    //         serialize: ({ query: { site, allMarkdownRemark } }) =>
-    //           allMarkdownRemark.edges.map(edge =>
-    //             Object.assign({}, edge.node.frontmatter, {
-    //               description: edge.node.frontmatter.description,
-    //               date: edge.node.frontmatter.date,
-    //               url: site.siteMetadata.url + edge.node.fields.slug,
-    //               guid: site.siteMetadata.url + edge.node.fields.slug,
-    //               custom_elements: [{ 'content:encoded': edge.node.html }],
-    //             })
-    //           ),
-    //         query: `
-    //           {
-    //             allMarkdownRemark(
-    //               limit: 1000,
-    //               sort: { order: DESC, fields: [frontmatter___date] },
-    //               filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
-    //             ) {
-    //               edges {
-    //                 node {
-    //                   html
-    //                   fields {
-    //                     slug
-    //                   }
-    //                   frontmatter {
-    //                     title
-    //                     date
-    //                     layout
-    //                     draft
-    //                     description
-    //                   }
-    //                 }
-    //               }
-    //             }
-    //           }
-    //         `,
-    //         output: '/rss.xml',
-    //       },
-    //     ],
-    //   },
-    // },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -237,6 +182,61 @@ module.exports = {
         ],
         precision: 8,
       },
+    },
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Allan's Feed",
+            match: "^/posts/"
+          }
+        ]
+      }
     },
     {
       resolve: '@dschau/gatsby-source-github',
