@@ -4,7 +4,7 @@ layout: page
 path: "/home"
 ---
 
-I lead the engineering team at [Hopper](https://hopper.com/business) in charge of revolutionizing the world of corporate travel. I also run several side projects under the umbrella of [Bloccs.io](https://bloccs.io)
+I lead [Hopper's](https://hopper.com/business) Corporate Travel engineering team. I also run several side projects under the umbrella of [Bloccs.io](https://bloccs.io)
 
 <!-- 
 ## Current Work 
