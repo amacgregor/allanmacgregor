@@ -9,6 +9,8 @@ html {
 body {
     font-family: $typographic-font-family;
     color: $typographic-base-font-color;
+    background-image: url("./blog-bg.png");
+    background-repeat: repeat;
     line-height: $typographic-base-line-height;
     font-size: $typographic-base-font-size;
     -ms-text-size-adjust: 100%;
@@ -163,9 +165,11 @@ figcaption {
 .layout {
     lost-center: $layout-width;
     margin-left:0;
+    background-color: #ffffff;
 }
 
 .content {
+    border-left: $color-gray-border 1px solid;
     &__inner {
         padding: 25px 20px;
     }
