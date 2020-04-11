@@ -11,9 +11,9 @@ class HomePageTemplateDetails extends React.Component {
     const projects = this.props.data.githubViewer.repositories.nodes
 
     return (
-      <div>
+      <div className="h-screen flex overflow-hidden bg-gray-100">
         <Sidebar {...this.props} />
-        <div className="content">
+        <div className="content flex flex-col w-0 flex-1">
           <div className="content__inner">
             <div className="page">
               <h1 className="page__title">{page.frontmatter.title}</h1>

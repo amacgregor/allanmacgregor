@@ -12,7 +12,7 @@ class CategoryTemplate extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <div className="h-screen flex overflow-hidden bg-gray-100">
           <Helmet title={`${category} - ${title}`} />
           <Sidebar {...this.props} />
           <CategoryTemplateDetails {...this.props} />

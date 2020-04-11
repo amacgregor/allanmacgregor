@@ -5,9 +5,8 @@ import '../../assets/scss/init.scss'
 class Layout extends React.Component {
   render() {
     const { children } = this.props
-
     return (
-      <div className="layout">
+      <div className="h-screen flex overflow-hidden bg-gray-100">
         <Helmet defaultTitle="Blog by John Doe" />
         {children}
       </div>

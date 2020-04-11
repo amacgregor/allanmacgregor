@@ -23,12 +23,11 @@ class BlogRoute extends React.Component {
 
     return (
       <Layout>
-        <div>
+      <div className="h-screen flex overflow-hidden bg-gray-100">
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
             <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
-
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">

@@ -151,6 +151,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         postCssPlugins: [
+          require('tailwindcss')('./tailwind.config.js'),
           lost(),
           pxtorem({
             rootValue: 16,

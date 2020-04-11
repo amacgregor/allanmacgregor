@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
+import Sidebar from '../Sidebar'
+
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
 
@@ -44,9 +46,10 @@ class PostTemplateDetails extends React.Component {
     )
 
     return (
-      <div>
-        {homeBlock}
-        <div className="post-single">
+      <div className="h-screen flex overflow-hidden bg-gray-100">
+        <Sidebar {...this.props} />
+
+        <div className="post-single overflow-y-auto p-5 m-5">
           <div className="post-single__inner">
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
             <div

@@ -7,7 +7,7 @@ class PageTemplateDetails extends React.Component {
     const page = this.props.data.mdx
 
     return (
-      <div>
+      <div className="h-screen flex overflow-hidden bg-gray-100">
         <Sidebar {...this.props} />
         <div className="content">
           <div className="content__inner">

@@ -110,6 +110,7 @@ a {
 a[target="_blank"]:after {
     font-family: 'FontAwesome';
     content: " \f08e";
+    padding-left: 5px;
 }
 
 b,
@@ -175,7 +176,7 @@ figcaption {
     }
 }
 
-.sidebar {
+#socialLinks {
     .links {
         a[target="_blank"]:after {
             content: "";
