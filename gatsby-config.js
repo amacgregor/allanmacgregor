@@ -12,9 +12,9 @@ module.exports = {
     url,
     siteUrl: url,
     title: 'Allan MacGregor',
-    description: 'Hi, I\'m Allan, this is where I write. I lead the engineering team at Hopper in charge of revolutionizing the world of corporate travel. I also run several side projects under the umbrella of Bloccs.io',
+    description: 'Hi, I\'m Allan, this is where I write. I\'m an experienced software engineer and manager, currently looking for my next opportunity. I also run several side projects under the umbrella of Bloccs.io',
     subtitle:
-      'Director of Engineering at Hopper • Writer • Functional Programming Advocate',
+      'Expert Software Engineer and Manager • Writer • Functional Programming Advocate',
     copyright: 'Copyright Allan MacGregor © 2020',
     disqusShortname: '',
     menu: [
