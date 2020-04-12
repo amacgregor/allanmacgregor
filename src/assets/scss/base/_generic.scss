@@ -119,6 +119,7 @@ strong {
 }
 
 ul {
+    padding-left: 50px;
     list-style: square;
     @include margin-bottom(1);
     & li {
