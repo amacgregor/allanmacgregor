@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import RecentPublications from '../components/Tailwind/PageSection/RecentPublications'
+
 import { Link } from 'gatsby'
 
 class BlogRoute extends React.Component {
@@ -15,6 +17,11 @@ class BlogRoute extends React.Component {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
 
+    const publication = {
+      title: "Recent publications",
+      subtext: "Recent articles, videos and other content on software engineering and technology."
+    }
+
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
@@ -23,17 +30,14 @@ class BlogRoute extends React.Component {
 
     return (
       <Layout>
-      <div className="h-screen flex overflow-hidden bg-gray-100">
+      <div className="h-screen flex overflow-hidden bg-white">
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
             <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
           </Helmet>
           <Sidebar {...this.props} />
-          <div className="content">
-            <div className="content__inner">
-              {items}
-              <div className="pagination">
+          <div className="h-screen flex overflow-hidden bg-white">
                 {!isFirst && (
                   <Link to={prevPage} rel="prev">
                     ← Previous Page
@@ -45,9 +49,9 @@ class BlogRoute extends React.Component {
                   </Link>
                 )}
               </div>
-            </div>
           </div>
-        </div>
+          <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
+
       </Layout>
     )
   }
@@ -89,6 +93,8 @@ export const pageQuery = graphql`
             slug
             categorySlug
           }
+          excerpt(pruneLength: 200)
+          timeToRead
           frontmatter {
             title
             date
