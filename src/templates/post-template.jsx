@@ -41,10 +41,13 @@ export const pageQuery = graphql`
         }
         author {
           name
+          email
           twitter
+          github
+          youtube
+          rss
+          linkedin
         }
-        disqusShortname
-        url
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
