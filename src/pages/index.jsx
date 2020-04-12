@@ -106,5 +106,20 @@ export const pageQuery = graphql`
         }
       }
     }
+    allAirtable(filter: {table: {eq: "Main"}, data: {Enabled: {eq: true}}}) {
+      nodes {
+        data {
+          Name
+          Logo {
+            url
+          }
+          Enabled
+          Description
+          Tagline
+          Url
+          Categories
+        }
+      }
+    }
   }
 `

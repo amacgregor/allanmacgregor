@@ -185,6 +185,12 @@ figcaption {
     }
 }
 
+#projectList {
+    a[target="_blank"]:after {
+        content: "";
+    }
+}
+
 @include breakpoint-sm {
     figure.float-left,
     figure.float-right {
