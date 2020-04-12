@@ -23,9 +23,7 @@ class HomePageTemplateDetails extends React.Component {
         <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
           <CTASimple { ... cta_content } /> 
           <RecentPublications { ... this.props }/> 
-          <div className="content__inner ">
-            <ProjectGrid { ... this.props } />
-          </div>
+          <ProjectGrid { ... this.props } />
         </main>
       </div>
     )
