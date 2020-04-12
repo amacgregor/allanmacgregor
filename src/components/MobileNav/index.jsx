@@ -4,9 +4,8 @@ import { Link } from 'gatsby'
 import Menu from '../Menu'
 import Links from '../Links'
 import profilePic from '../../pages/logo.png'
-import './style.scss'
 
-class Sidebar extends React.Component {
+class MobileNav extends React.Component {
   render() {
     const { location } = this.props
     const {
@@ -48,40 +47,25 @@ class Sidebar extends React.Component {
     /* eslint-enable jsx-a11y/img-redundant-alt */
 
     return(
-        <div className="hidden md:flex md:flex-shrink-0">
-          <div className="flex flex-col w-64 border-r border-gray-200 bg-indigo-800">
-            <div className="h-0 flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-              <div className="flex items-center flex-shrink-0 px-4">
-                <Link to="/">
-                  <img
-                    src={profilePic}
-                    className="sidebar__author-photo"
-                    width="75"
-                    height="75"
-                    alt={author.name}
-                  />
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 px-4">
-                  <h3 className="text-white mt-0">
-                    <Link className="text-white" to="/">
-                      {author.name}
-                    </Link>
-                  </h3>
-                  <p className="text-white">{subtitle}</p>
-              </div>
-              <nav className="mt-5 flex-1 px-2 bg-indigo-800">
-                <Menu data={menu} />
-              </nav>
-              <div id="socialLinks" className="grid grid-cols-1 px-4">
-                <div><Links data={author} /></div>
-                <div className="text-white text-xs">{copyright}</div>
+      <nav className="bg-indigo-700 md:hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">      
+              <span className="font-semibold text-xl tracking-tight"><a className="no-underline text-white" href="/">Allan MacGregor</a></span>
+            </div>
+          </div>
+          <div className="md:hidden block pt-4 pb-3 border-t border-indigo-800">
+            <div className="border-indigo-800">
+              <div className="mt-1 px-0" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                <Link to="/" className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600">Start Here</Link>   
+                <Link to="/blog" className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600">Blog</Link>       
               </div>
             </div>
           </div>
         </div>
+      </nav>
     )
   }
 }
 
-export default Sidebar
+export default MobileNav

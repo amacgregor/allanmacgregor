@@ -110,6 +110,7 @@ a {
 a[target="_blank"]:after {
     font-family: 'FontAwesome';
     content: " \f08e";
+    padding-left: 5px;
 }
 
 b,
@@ -118,6 +119,7 @@ strong {
 }
 
 ul {
+    padding-left: 50px;
     list-style: square;
     @include margin-bottom(1);
     & li {
@@ -175,7 +177,7 @@ figcaption {
     }
 }
 
-.sidebar {
+#socialLinks {
     .links {
         a[target="_blank"]:after {
             content: "";

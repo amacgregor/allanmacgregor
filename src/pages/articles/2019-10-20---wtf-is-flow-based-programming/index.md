@@ -33,10 +33,10 @@ Connections between process are predefined and externally to the process itself.
 - Applications are broken down into **repeatable individual components**.
 - **Connections** between components are handled externally
 - Components are **blackboxes** to each other
-- **Data-centric approach,** think about the application as a series of transformations to the dat
+- **Data-centric approach,** think about the application as a series of transformations to the data
 
 ## Summary
 
 Overall, the fact that FBP forces the idea of compartmentalized logic and a data first approach makes FBP an extremely powerful tool on your developer arsenal when correctly applied. 
 
-In subsequent articles will go into more detail of the advantages, disadvantages, and implementation options for you to start experimenting with **Flow-Based Programming.*
+In subsequent articles will go into more detail of the advantages, disadvantages, and implementation options for you to start experimenting with **Flow-Based Programming.**

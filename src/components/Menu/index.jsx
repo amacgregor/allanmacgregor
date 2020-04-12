@@ -7,19 +7,17 @@ class Menu extends React.Component {
     const menu = this.props.data
 
     const menuBlock = (
-      <ul className="menu__list">
+      <div>
         {menu.map(item => (
-          <li className="menu__list-item" key={item.path}>
             <Link
               to={item.path}
-              className="menu__list-item-link"
-              activeClassName="menu__list-item-link menu__list-item-link--active"
+              className="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-indigo-300 rounded-md hover:text-white hover:bg-indigo-700 focus:outline-none focus:text-white focus:bg-indigo-700 transition ease-in-out duration-150"
+              activeClassName="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-white rounded-md bg-indigo-900 focus:outline-none focus:bg-indigo-700 transition ease-in-out duration-150"
             >
               {item.label}
             </Link>
-          </li>
         ))}
-      </ul>
+      </div>
     )
 
     return <nav className="menu">{menuBlock}</nav>

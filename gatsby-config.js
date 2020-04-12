@@ -121,7 +121,8 @@ module.exports = {
                 }
               }
             }
-          }, 
+          },
+          `gatsby-remark-reading-time`, 
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ]
@@ -151,6 +152,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         postCssPlugins: [
+          require('tailwindcss')('./tailwind.config.js'),
           lost(),
           pxtorem({
             rootValue: 16,

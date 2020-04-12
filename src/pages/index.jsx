@@ -15,7 +15,7 @@ class IndexRoute extends React.Component {
 
     return (
       <Layout>
-        <div className="fullHeightContainer">
+        <div>
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(
-      limit: 5
+      limit: 6
       filter: { 
         frontmatter: { 
           draft: { ne: true } 
@@ -77,11 +77,15 @@ export const pageQuery = graphql`
           fields {
             tagSlugs
             slug
+            categorySlug
           }
+          excerpt(pruneLength: 200)
+          timeToRead
           frontmatter {
             title
             tags
             date
+            category
             description
           }
         }

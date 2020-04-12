@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
+import Sidebar from '../Sidebar'
+import MobileNav from '../MobileNav'
+
+import PostHeading from '../Tailwind/PostHeading'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
 
@@ -10,6 +14,10 @@ class PostTemplateDetails extends React.Component {
     const { subtitle, author } = this.props.data.site.siteMetadata
     const post = this.props.data.mdx
     const tags = post.fields.tagSlugs
+    const post_content = {
+      title: post.frontmatter.title,
+      subtitle: post.frontmatter.description
+    }
 
     const homeBlock = (
       <div>
@@ -45,20 +53,14 @@ class PostTemplateDetails extends React.Component {
 
     return (
       <div>
-        {homeBlock}
-        <div className="post-single">
-          <div className="post-single__inner">
-            <h1 className="post-single__title">{post.frontmatter.title}</h1>
-            <div
-              className="post-single__body"
-            ><MDXRenderer>{post.body}</MDXRenderer></div>
-            <div className="post-single__date">
-              <em>
-                Published {moment(post.frontmatter.date).format('D MMM YYYY')}
-              </em>
-            </div>
-          </div>
-          <div className="post-single__footer">
+      <MobileNav {...this.props} />
+
+      <div className="h-screen flex overflow-hidden bg-white">
+        <Sidebar {...this.props} />
+        <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
+          <PostHeading { ... post_content } />
+          <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8"><MDXRenderer>{post.body}</MDXRenderer></div> 
+          <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
             {tagsBlock}
             <hr />
             <p className="post-single__footer-text">
@@ -73,7 +75,9 @@ class PostTemplateDetails extends React.Component {
             </p>
             {commentsBlock}
           </div>
-        </div>
+
+        </main>
+      </div>
       </div>
     )
   }

@@ -11,6 +11,7 @@ class InlinePost extends React.Component {
       category,
       description,
     } = this.props.data.node.frontmatter
+
     const { slug, categorySlug } = this.props.data.node.fields
 
     return (

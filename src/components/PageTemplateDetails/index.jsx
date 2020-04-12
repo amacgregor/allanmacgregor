@@ -1,5 +1,7 @@
 import React from 'react'
 import Sidebar from '../Sidebar'
+import MobileNav from '../MobileNav'
+
 import './style.scss'
 
 class PageTemplateDetails extends React.Component {
@@ -8,6 +10,9 @@ class PageTemplateDetails extends React.Component {
 
     return (
       <div>
+      <MobileNav {...this.props} />
+
+      <div className="h-screen flex overflow-hidden bg-gray-100">
         <Sidebar {...this.props} />
         <div className="content">
           <div className="content__inner">
@@ -21,6 +26,7 @@ class PageTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     )
   }
