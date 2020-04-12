@@ -10,15 +10,16 @@ class Publication extends React.Component {
       category,
       description,
     } = this.props.data.node.frontmatter
+    const excerpt = this.props.data.node.excerpt
+    const timeToRead = this.props.data.node.timeToRead
     const { slug, categorySlug } = this.props.data.node.fields
 
     return (
-
         <div>
         <div>
           <a href="#" className="inline-block">
             <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
-              Article
+              {category}
             </span>
           </a>
         </div>
@@ -27,7 +28,7 @@ class Publication extends React.Component {
             {title}
           </h3>
           <p className="mt-3 text-base leading-6 text-gray-500">
-            {description}
+            {excerpt}
           </p>
         </a>
         <div className="mt-6 flex items-center">
@@ -39,16 +40,11 @@ class Publication extends React.Component {
                 &middot;
               </span>
               <span>
-                6 min read
+               {timeToRead} min read
               </span>
             </div>
         </div>
       </div>
-
-
-
-
-
     )
   }
 }

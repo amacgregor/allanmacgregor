@@ -78,10 +78,13 @@ export const pageQuery = graphql`
             tagSlugs
             slug
           }
+          excerpt(pruneLength: 200)
+          timeToRead
           frontmatter {
             title
             tags
             date
+            category
             description
           }
         }

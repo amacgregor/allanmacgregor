@@ -121,7 +121,8 @@ module.exports = {
                 }
               }
             }
-          }, 
+          },
+          `gatsby-remark-reading-time`, 
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ]
