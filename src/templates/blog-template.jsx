@@ -18,8 +18,8 @@ class BlogRoute extends React.Component {
     })
 
     const publication = {
-      title: "Recent publications",
-      subtext: "Recent articles, videos and other content on software engineering and technology."
+      title: "From the Blog",
+      subtext: ""
     }
 
     const { currentPage, numPages } = this.props.pageContext
@@ -37,20 +37,22 @@ class BlogRoute extends React.Component {
             <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
           </Helmet>
           <Sidebar {...this.props} />
-          <div className="h-screen flex overflow-hidden bg-white">
+          <main>
+            <div className="relative bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
                 {!isFirst && (
-                  <Link to={prevPage} rel="prev">
+                  <Link className="absolute inset-y-0 left-0 w-18 m-5" to={prevPage} rel="prev">
                     ← Previous Page
                   </Link>
                 )}
                 {!isLast && (
-                  <Link to={nextPage} rel="next">
+                  <Link className="absolute inset-y-0 right-0 w-18 m-5" to={nextPage} rel="next">
                     Next Page →
                   </Link>
                 )}
               </div>
-          </div>
-          <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
+            <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
+          </main>
+</div>
 
       </Layout>
     )
