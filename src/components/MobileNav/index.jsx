@@ -3,7 +3,7 @@ import get from 'lodash/get'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
 import Links from '../Links'
-import profilePic from '../../pages/logo.png'
+import logo from '../../pages/logo-white.png'
 
 class MobileNav extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class MobileNav extends React.Component {
       <div>
         <Link to="/">
           <img
-            src={profilePic}
+            src={logo}
             className="sidebar__author-photo"
             width="75"
             height="75"
@@ -50,7 +50,16 @@ class MobileNav extends React.Component {
       <nav className="bg-indigo-700 md:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">      
+            <div className="flex items-center">    
+              <Link to="/">
+                <img
+                  src={logo}
+                  className="sidebar__author-photo"
+                  width="50"
+                  height="50"
+                  alt={author.name}
+                />
+              </Link>  
               <span className="font-semibold text-xl tracking-tight"><a className="no-underline text-white" href="/">Allan MacGregor</a></span>
             </div>
           </div>
