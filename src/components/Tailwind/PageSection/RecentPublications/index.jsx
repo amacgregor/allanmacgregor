@@ -18,7 +18,7 @@ class RecentPublications extends React.Component {
                         Recent publications
                     </h2>
                     <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
-                        Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                        Recent articles, videos and other content on software engineering and technology.
                     </p>
                     </div>
                     <div className="mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-5 lg:row-gap-12">

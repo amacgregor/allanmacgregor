@@ -20,13 +20,13 @@ class HomePageTemplateDetails extends React.Component {
     return (
       <div className="h-screen flex overflow-hidden">
         <Sidebar {...this.props} />
-        <div className="content flex flex-col w-0 flex-1">
+        <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
           <CTASimple { ... cta_content } /> 
           <RecentPublications { ... this.props }/> 
           <div className="content__inner ">
             <ProjectGrid { ... this.props } />
           </div>
-        </div>
+        </main>
       </div>
     )
   }
