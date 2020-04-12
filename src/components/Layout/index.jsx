@@ -6,7 +6,7 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
     return (
-      <div className="h-screen flex overflow-hidden bg-gray-100">
+      <div className="h-screen bg-white flex overflow-hidden">
         <Helmet defaultTitle="Blog by John Doe" />
         {children}
       </div>
