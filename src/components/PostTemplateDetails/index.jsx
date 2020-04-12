@@ -49,7 +49,7 @@ class PostTemplateDetails extends React.Component {
       <div className="h-screen flex overflow-hidden bg-gray-100">
         <Sidebar {...this.props} />
 
-        <div className="post-single overflow-y-auto p-5 m-5">
+        <div className="post-single overflow-auto p-5 m-5">
           <div className="post-single__inner">
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
             <div
