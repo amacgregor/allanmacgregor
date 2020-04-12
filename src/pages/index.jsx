@@ -63,7 +63,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(
-      limit: 5
+      limit: 6
       filter: { 
         frontmatter: { 
           draft: { ne: true } 

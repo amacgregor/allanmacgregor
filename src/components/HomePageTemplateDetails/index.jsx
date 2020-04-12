@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar'
 import ProjectGrid from '../ProjectGrid'
 import LatestPosts from '../Reusable/LatestPosts'
 import CTASimple from '../Tailwind/CTASimple'
+import RecentPublications from '../Tailwind/PageSection/RecentPublications'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
 import { Link } from 'gatsby'
@@ -20,13 +21,9 @@ class HomePageTemplateDetails extends React.Component {
       <div className="h-screen flex overflow-hidden">
         <Sidebar {...this.props} />
         <div className="content flex flex-col w-0 flex-1">
-          <CTASimple { ... cta_content } />  
+          <CTASimple { ... cta_content } /> 
+          <RecentPublications { ... this.props }/> 
           <div className="content__inner ">
-            <div className="page">
-              <div className="page__body max-w-screen-xl mx-auto py-5 px-4 sm:px-5 md:py-5 lg:px-5 lg:py-5">
-                <LatestPosts { ... this.props } />
-              </div>
-            </div>
             <ProjectGrid { ... this.props } />
           </div>
         </div>
