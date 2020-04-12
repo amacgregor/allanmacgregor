@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../Sidebar'
+import MobileNav from '../MobileNav'
 import ProjectGrid from '../ProjectGrid'
 import LatestPosts from '../Reusable/LatestPosts'
 import CTASimple from '../Tailwind/CTASimple'
@@ -22,6 +23,8 @@ class HomePageTemplateDetails extends React.Component {
     }
 
     return (
+    <div>
+       <MobileNav {...this.props} />
       <div className="h-screen flex overflow-hidden">
         <Sidebar {...this.props} />
         <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
@@ -29,6 +32,7 @@ class HomePageTemplateDetails extends React.Component {
           <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
           {/* <ProjectGrid { ... this.props } /> */}
         </main>
+      </div>
       </div>
     )
   }

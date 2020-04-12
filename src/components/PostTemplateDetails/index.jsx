@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
 import Sidebar from '../Sidebar'
+import MobileNav from '../MobileNav'
+
 import PostHeading from '../Tailwind/PostHeading'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import './style.scss'
@@ -50,6 +52,9 @@ class PostTemplateDetails extends React.Component {
     )
 
     return (
+      <div>
+      <MobileNav {...this.props} />
+
       <div className="h-screen flex overflow-hidden bg-white">
         <Sidebar {...this.props} />
         <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
@@ -72,6 +77,7 @@ class PostTemplateDetails extends React.Component {
           </div>
 
         </main>
+      </div>
       </div>
     )
   }
