@@ -77,6 +77,7 @@ export const pageQuery = graphql`
           fields {
             tagSlugs
             slug
+            categorySlug
           }
           excerpt(pruneLength: 200)
           timeToRead

@@ -17,7 +17,7 @@ class Publication extends React.Component {
     return (
         <div>
         <div>
-          <a href="#" className="inline-block">
+          <a href={categorySlug} className="inline-block">
             <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
               {category}
             </span>
