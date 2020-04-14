@@ -236,6 +236,42 @@ module.exports = {
             output: "/rss.xml",
             title: "Allan's Feed",
             match: "^/posts/"
+          },
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/feed.xml",
+            title: "Allan's Feed",
+            match: "^/posts/"
           }
         ]
       }
