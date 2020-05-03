@@ -22,7 +22,7 @@ class HomePageTemplateDetails extends React.Component {
     }
     const project_list = {
       title: "Active Projects",
-      subtext: "List of OpenSource and Side projects I'm actively working on."
+      subtext: "List of Open Source and side projects I'm actively working on."
     }
   
     return (
