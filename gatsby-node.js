@@ -9,6 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
+    const essayTemplate = path.resolve('./src/templates/essay-template.jsx')
     const tagTemplate = path.resolve('./src/templates/tag-template.jsx')
     const categoryTemplate = path.resolve(
       './src/templates/category-template.jsx'
@@ -105,6 +106,78 @@ exports.createPages = ({ graphql, actions }) => {
 
       resolve()
     })
+
+    graphql(`
+      {
+        allMdx(
+          limit: 1000
+          filter: { frontmatter: { layout: { eq: "essay" }, draft: { ne: true } } }
+          ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                tags
+                layout
+                category
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) {
+        console.log(result.errors)
+        reject(result.errors)
+      }
+      // Create essays-list pages
+      const essays = result.data.allMdx.edges
+      const essaysPerPage = 9
+      const numPages = Math.ceil(essays.length / essaysPerPage)
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: i === 0 ? `/essays` : `/essays/${i + 1}`,
+          component: path.resolve("./src/templates/essays-template.jsx"),
+          context: {
+            limit: essaysPerPage,
+            skip: i * essaysPerPage,
+            numPages,
+            currentPage: i + 1,
+          },
+        })
+      })
+
+
+      _.each(result.data.allMdx.edges, edge => {
+        if (_.get(edge, 'node.frontmatter.layout') === 'essay') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(essayTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+
+          let tags = []
+          if (_.get(edge, 'node.frontmatter.tags')) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+          }
+
+          tags = _.uniq(tags)
+          _.each(tags, tag => {
+            const tagPath = `/tags/${_.kebabCase(tag)}/`
+            createPage({
+              path: tagPath,
+              component: tagTemplate,
+              context: { tag },
+            })
+          })
+        } 
+      })
+
+      resolve()
+    })
+
   })
 }
 
@@ -129,6 +202,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: slug,
     })
 
+    createNodeField({
+      node,
+      name: 'modifiedTime',
+      value: fileNode.mtime
+    });
 
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
