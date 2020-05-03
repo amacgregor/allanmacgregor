@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PageTemplateDetails from '../components/PageTemplateDetails'
+import EssayTemplateDetails from '../components/EssayTemplateDetails'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 class EssayTemplate extends React.Component {
@@ -20,8 +20,7 @@ class EssayTemplate extends React.Component {
             <meta name="description" content={description} />
             <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
           </Helmet>
-          <MDXRenderer>{page.body}</MDXRenderer>
-          <PageTemplateDetails {...this.props} />
+          <EssayTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
@@ -55,10 +54,19 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       id
       body
+      fields {
+        tagSlugs
+        slug
+      }
+      tableOfContents
       frontmatter {
         title
+        tags
+        status
+        confidence
         date
         description
+        abstract
       }
     }
   }
