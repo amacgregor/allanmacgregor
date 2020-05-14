@@ -29,7 +29,19 @@ module.exports = ({ config }) => {
     // Make whatever fine-grained changes you need
     config.module.rules.push({
         test: /\.scss$/,
-        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: "./src/assets/scss/"
+              }
+            } 
+          },
+          {loader: 'sass-loader'}
+        ],
         include: path.resolve(__dirname, '../'),
     });
   

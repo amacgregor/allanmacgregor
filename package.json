@@ -96,6 +96,7 @@
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
+    "faker": "^4.1.0",
     "gh-pages": "^1.1.0",
     "lost": "^8.3.1",
     "postcss-pxtorem": "^4.0.1",
