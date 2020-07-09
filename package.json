@@ -63,7 +63,7 @@
     "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.3.9",
     "graphql": "^14.5.8",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.16",
     "node-sass": "^4.13.0",
     "plop": "^2.5.3",
     "prismjs": "^1.17.1",
