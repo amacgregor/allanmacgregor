@@ -191,6 +191,26 @@ figcaption {
     }
 }
 
+main {
+    a{
+        color: $color-primary;
+        text-decoration: underline;
+    }
+    a[target="_blank"]:after {
+        font-family: 'FontAwesome';
+        content: " \f08e";
+        padding-left: 0;
+        font-size: 9px;
+        
+    }
+    a.gatsby-resp-image-link:after {
+        content: "";
+    }
+    a.block {
+        text-decoration: none;
+    }
+}
+
 @include breakpoint-sm {
     figure.float-left,
     figure.float-right {
