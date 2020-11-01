@@ -27,13 +27,17 @@ module.exports = {
         path: '/blog'
       },
       {
-        label: 'Long Form',
-        path: '/essays',
+        label: 'Digital Garden',
+        path: 'https://publish.obsidian.md/allanmacgregor/'
       },
+      // {
+      //   label: 'Long Form',
+      //   path: '/essays',
+      // },
       {
         label: 'Stack Overflow',
         path: 'https://stackoverflow.com/users/801506/allan-macgregor'
-      }
+      },
       // {
       //   label: 'Publications',
       //   path: '/publications/',
