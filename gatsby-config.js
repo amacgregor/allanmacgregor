@@ -333,6 +333,13 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://allanmacgregor.com`,
+        stripQueryString: true
+      }
+    }
     // { 
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: {
