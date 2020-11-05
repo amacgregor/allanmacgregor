@@ -25,19 +25,19 @@ Enter the **Circuit breaker** pattern; the pattern was popularized in the book R
 
 The idea behind this pattern is very simple; **Failures are inevitable, and trying to prevent them altogether is not realistic**. 
 
-A way to handle this failures is wrapping this operations into some kind of proxy. This proxy is responsible for monitoring recent failures, and use this information to decide whether to allow the operation to proceed or return an early failure instead. 
+A way to handle these failures is wrapping these operations into some kind of proxy. This proxy is responsible for monitoring recent failures, and use this information to decide whether to allow the operation to proceed or return an early failure instead. 
 
-This proxy is typically implemented as a state machine miminc the functinonality of a physical **circuit breaker** which my have 3 states:
+This proxy is typically implemented as a state machine that mimics the functinonality of a physical **circuit breaker** which my have 3 states:
 
-- **Closed:** In this state the circuit breaker let's all the requests go through, while keeping track of the number of recent failures, and if the number of failures exceeds a specific threshold within a specific timeframe, it will switch to the **Open** state.
-- **Open:** In this states any request are not sent to external service instead we either fail immediatly returning an extension or fall back to a secondary system like a cache.  
-- **Half-Open:** In this state a limited number of requestfrom the application are allowed to pass-through and call our external service. Depending on the result of these requests the **circuit breakre** will either flip to a Closed state or go back to the Open state reseting the counter before trying to open again. 
+- **Closed:** In this state the circuit breaker let's all the requests go through while keeping track of the number of recent failures, and if the number of failures exceeds a specific threshold within a specific timeframe, it will switch to the **Open** state.
+- **Open:** In this state, any requests are not sent to external service instead we either fail immediately returning an extension or fall back to a secondary system like a cache.  
+- **Half-Open:** In this state, a limited number of requests from the application are allowed to pass-through and call our external service. Depending on the result of these requests the **circuit breaker** will either flip to a Closed state or go back to the Open state reseting the counter before trying to open again. 
 
 The Circuit Breaker pattern offers a few key advantages worth noting:
 
 - The **Half-Open** state gives the external system from recovering without getting flooded.
 - The **Open** state implementation gives options for how we want to handle failure wether failing right away or falling back to a caching layer or secondary system. 
-- This pattern can also be leveraged to help maintaining response times by **quickly rejecting calls** that are likely to fail or timeout. 
+- This pattern can also be leveraged to help to maintain response times by **quickly rejecting calls** that are likely to fail or timeout. 
 
 ## Example
 
@@ -64,7 +64,7 @@ end
 ```
 **file**: [lib/circuit_breaker/api/github_jobs.ex](https://github.com/amacgregor/circuit_breaker_example/blob/main/lib/circuit_breaker/api/github_jobs.ex)
 
-All this connector is doing is making a request to `jobs.github.com` retrieving the json, parsing and returning the list of jobs. If we want to test this we can manually call `get_positions` on our console:
+All this connector is doing is making a request to `jobs.github.com` retrieving the json, parsing, and returning the list of jobs. If we want to test this we can manually call `get_positions` on our console:
 
 ```elixir
 iex(1)> CircuitBreaker.Api.GithubJobs.get_positions
@@ -97,11 +97,11 @@ end
 ```
 **file**: [lib/circuit_breaker/api/switch.ex](https://github.com/amacgregor/circuit_breaker_example/blob/main/lib/circuit_breaker/api/switch.ex)
 
-For implementing our circuit breaker we could use the `gen_statem` behaivour directly or in this case leverage the **GenStateMachine** package which give us tracking, error reporting and will work with the supervision tree.
+For implementing our circuit breaker we could use the `gen_statem` behavior directly or in this case leverage the **GenStateMachine** package which gives us tracking, error reporting and will work with the supervision tree.
 
 The first two functions we added are:
 
-- `start_link`: will start the circuit breaker with initial state and an specific name. 
+- `start_link`: will start the circuit breaker with an initial state and a specific name.
 - `get_positions`: this is our public client api that wraps around the **Github Jobs** adapter we just built.
 
 An important thing to note here is the first line:
@@ -179,24 +179,24 @@ And let's add a couple of private utility functions:
 
 Most of the magic is happening on the `open_circuit` function which is doing two things:
 
-- First, we schedule a message to set our circuit breaker state to `half_open` after our specificed delay
+- First, we schedule a message to set our circuit breaker state to `half_open` after our specified delay
 - Second, we return a new state setting the circuit breaker fully `open`
 
-After **8000 miliseconds**, the circuit breaker now on open state will receive our scheduled message and change the state to half open. 
+After **8000 milliseconds**, the circuit breaker now on open state will receive our scheduled message and change the state to **half_open**. 
 
-Finally, during **half_open** state, we will try to make the calls to the api endpoint and in case of failure we will swich automatically back to fully **open** and try again.  
+Finally, during **half_open** state, we will try to make the calls to the api endpoint and in case of failure, we will switch automatically back to fully **open** and try again.  
 
 ## Conclusions
 
 **Circuit Breakers** are a valuable pattern to have in our arsenal, as they can help increase system stability and have a more reliable way to handle errors with remote services. 
 
-This example just scratched the surface of what you can do with circuit breakers, there is plenty of opportunities to expland this pattern furtner, e.g.
+This example just scratched the surface of what you can do with circuit breakers, there is plenty of opportunities to expand this pattern further, e.g.
 
 - Improve the logic for tripping the breaker by also looking at the type of errors, and frequency.
 - Add Monitoring and logging once the circuit breaker changes state
 - Fallback to a secondary service or cache layer before returning failure. 
 
-Finally, as with any pattern is important to keep in mind the use case and decided if this kind of behaviour is desired.
+Finally, as with any pattern is important to keep in mind the use case and decided if this kind of behavior is desired.
 
 The full code for this example can be found in [circuit_breaker_example](https://github.com/amacgregor/circuit_breaker_example)
 
