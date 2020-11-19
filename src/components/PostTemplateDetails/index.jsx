@@ -55,7 +55,7 @@ class PostTemplateDetails extends React.Component {
       <div>
       <MobileNav {...this.props} />
 
-      <div className="h-screen flex overflow-hidden bg-white">
+      <div className="lg:h-screen md:flex lg:overflow-hidden bg-white">
         <Sidebar {...this.props} />
         <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
           <PostHeading { ... post_content } />

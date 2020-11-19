@@ -30,7 +30,7 @@ class BlogRoute extends React.Component {
 
     return (
       <Layout>
-      <div className="h-screen flex overflow-hidden bg-white">
+      <div className="lg:h-screen lg:flex lg:overflow-hidden bg-white">
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
