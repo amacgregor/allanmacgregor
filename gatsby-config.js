@@ -57,7 +57,7 @@ module.exports = {
       telegram: '#',
       twitter: 'allanmacgregor',
       github: 'amacgregor',
-      rss: 'rss.xml',
+      rss: 'https://allanmacgregor.com/rss.xml',
       youtube: 'UCqcJE6lxT_vzGGSaUCy2efA',
       vk: '#',
       linkedin: 'allanmacgregor',
