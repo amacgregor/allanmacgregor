@@ -1,1 +1,1 @@
-require("./src/assets/prismjs/themes/prism-synthwave84.css")
+require("./src/assets/prismjs/themes/prism-duotone-dark.css")

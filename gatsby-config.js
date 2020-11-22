@@ -30,14 +30,14 @@ module.exports = {
         label: 'Digital Garden',
         path: 'https://publish.obsidian.md/allanmacgregor/'
       },
-      // {
-      //   label: 'Long Form',
-      //   path: '/essays',
-      // },
       {
         label: 'Stack Overflow',
         path: 'https://stackoverflow.com/users/801506/allan-macgregor'
       },
+      // {
+      //   label: 'Long Form',
+      //   path: '/essays',
+      // },
       // {
       //   label: 'Publications',
       //   path: '/publications/',
@@ -104,13 +104,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-embed-gist",
             options: {
-              // Optional:
-    
-              // the github handler whose gists are to be accessed
               username: 'amacgregor',
-    
-              // a flag indicating whether the github default gist css should be included or not
-              // default: true
               includeDefaultCss: true
             }
           },
@@ -120,7 +114,7 @@ module.exports = {
               classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
-              showLineNumbers: false,
+              showLineNumuers: false,
               noInlineHighlight: false,
             },
           },
