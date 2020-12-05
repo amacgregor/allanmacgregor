@@ -33,7 +33,7 @@ class Publication extends React.Component {
         </a>
         <div className="mt-6 flex items-center">
             <div className="flex text-sm leading-5 text-gray-500">
-              <time datetime="2020-03-16">
+              <time dateTime="2020-03-16">
                 {moment(date).format('MMMM D, YYYY')}
               </time>
               <span className="mx-1">

@@ -30,7 +30,7 @@ class HomePageTemplateDetails extends React.Component {
        <MobileNav {...this.props} />
       <div className="h-screen flex overflow-hidden">
         <Sidebar {...this.props} />
-        <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
+        <main className="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
           <CTASimple { ... cta_content } /> 
           <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/>
           <ProjectList title={project_list.title} subtext={project_list.subtext} {...this.props } />

@@ -15,7 +15,7 @@ class ProjectCard extends React.Component {
 
     return (
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div class="align-middle bg-indigo-800 flex items-centre px-4 pt-5 pb-2 border-b border-gray-200 sm:px-6">
+        <div className="align-middle bg-indigo-800 flex items-centre px-4 pt-5 pb-2 border-b border-gray-200 sm:px-6">
             <Link to={Url}>
               <img
                 src={Logo[0].url}
@@ -26,7 +26,7 @@ class ProjectCard extends React.Component {
               />
             </Link>
             <Link to={Url}>
-              <h3 class="text-2xl m-0 p-0 pl-2 pt-3 leading-6 font-strong text-white">
+              <h3 className="text-2xl m-0 p-0 pl-2 pt-3 leading-6 font-strong text-white">
                 {Name}
               </h3>
             </Link>            
