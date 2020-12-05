@@ -9,7 +9,7 @@ tags:
  - programming
  - software development
  - career
-description: "When Software Kills, and what can we do about it"
+description: "The deadly consequences of software bugs"
 ---
 
 <!--When Software Kills, and what can we do about it-->
@@ -21,7 +21,6 @@ Let's take a look at two of these catastrophes.
 
 ## Deadly Theraphy
 ![Emulated Terminal](https://upload.wikimedia.org/wikipedia/commons/9/90/Therac25_Interface.png)
-
 
 From 1985 to 1987, a bug in the control terminal of the [Therac-25 radio therapy machine](https://en.wikipedia.org/wiki/Therac-25#Root_causes), developed by [Atomic Energy of Canada Limited](https://en.wikipedia.org/wiki/Atomic_Energy_of_Canada_Limited), caused at least 6 cases of massive overdoses of radiation, resulting in death or permanent injury.  
 
@@ -67,3 +66,4 @@ Although Boieng engineers were still responsible for setting specifications, the
 - Similar fashion, the company developing some instrument testing software lacked the expertize.
 - **Lack of oversight** from Boeing as supervising the output of the contractors as they where actively working to reduce their 'expensive' headcount of senior software engineers.
 
+## What can be done about it?
