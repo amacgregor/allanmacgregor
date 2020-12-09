@@ -27,6 +27,10 @@ module.exports = {
         path: '/blog'
       },
       {
+        label: 'About me',
+        path: '/about'
+      },
+      {
         label: 'Digital Garden',
         path: 'https://publish.obsidian.md/allanmacgregor/'
       },
