@@ -57,7 +57,7 @@ class PostTemplateDetails extends React.Component {
 
       <div className="lg:h-screen md:flex lg:overflow-hidden bg-white">
         <Sidebar {...this.props} />
-        <main class="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
+        <main className="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
           <PostHeading { ... post_content } />
           <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8"><MDXRenderer>{post.body}</MDXRenderer></div> 
           <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
