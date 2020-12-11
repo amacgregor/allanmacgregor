@@ -84,6 +84,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `allanmacgregor.com`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
