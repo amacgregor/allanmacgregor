@@ -33,7 +33,7 @@
     "bluebird": "^3.7.2",
     "bufferutil": "^4.0.1",
     "eslint-config-react-app": "^5.1.0",
-    "gatsby": "^2.18.17",
+    "gatsby": "^2.20.21",
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-excerpts": "^1.1.0",
     "gatsby-plugin-feed": "^2.3.25",
