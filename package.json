@@ -68,7 +68,7 @@
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
     "plop": "^2.5.3",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.21.0",
     "react": "^16.12.0",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.12.0",
