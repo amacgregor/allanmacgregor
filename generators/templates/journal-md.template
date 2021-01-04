@@ -1,0 +1,12 @@
+---
+title: {{title}}
+date: "{{createdDate}}"
+layout: journal
+draft: {{draft}}
+path: "/til/{{dashCase title}}"
+category: {{category}}
+{{tags}}
+description: "{{description}}"
+---
+
+<!--{{description}}-->
