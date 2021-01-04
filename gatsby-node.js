@@ -10,11 +10,13 @@ exports.createPages = ({ graphql, actions }) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
     const essayTemplate = path.resolve('./src/templates/essay-template.jsx')
+    const journalTemplate = path.resolve('./src/templates/journal-template.jsx')
     const tagTemplate = path.resolve('./src/templates/tag-template.jsx')
     const categoryTemplate = path.resolve(
       './src/templates/category-template.jsx'
     )
 
+    // Main articles
     graphql(`
       {
         allMdx(
@@ -107,6 +109,7 @@ exports.createPages = ({ graphql, actions }) => {
       resolve()
     })
 
+    // Essays
     graphql(`
       {
         allMdx(
@@ -155,6 +158,77 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(essayTemplate),
+            context: { slug: edge.node.fields.slug },
+          })
+
+          let tags = []
+          if (_.get(edge, 'node.frontmatter.tags')) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+          }
+
+          tags = _.uniq(tags)
+          _.each(tags, tag => {
+            const tagPath = `/tags/${_.kebabCase(tag)}/`
+            createPage({
+              path: tagPath,
+              component: tagTemplate,
+              context: { tag },
+            })
+          })
+        } 
+      })
+
+      resolve()
+    })
+
+    // Jounrla entries
+    graphql(`
+      {
+        allMdx(
+          limit: 1000
+          filter: { frontmatter: { layout: { eq: "journal" }, draft: { ne: true } } }
+          ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                tags
+                layout
+                category
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) {
+        console.log(result.errors)
+        reject(result.errors)
+      }
+      // Create essays-list pages
+      const journals = result.data.allMdx.edges
+      const journalsPerPage = 9
+      const numPages = Math.ceil(journals.length / journalsPerPage)
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: i === 0 ? `/til` : `/til/${i + 1}`,
+          component: path.resolve("./src/templates/til-template.jsx"),
+          context: {
+            limit: journalsPerPage,
+            skip: i * journalsPerPage,
+            numPages,
+            currentPage: i + 1,
+          },
+        })
+      })
+
+      _.each(result.data.allMdx.edges, edge => {
+        if (_.get(edge, 'node.frontmatter.layout') === 'journal') {
+          createPage({
+            path: edge.node.fields.slug,
+            component: slash(journalTemplate),
             context: { slug: edge.node.fields.slug },
           })
 
