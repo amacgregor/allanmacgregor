@@ -17,6 +17,11 @@ class PostTemplate extends React.Component {
           <Helmet>
             <title>{`${postTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:image"
+              content={`${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}/twitter-card.jpg`}
+            />
             <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
           </Helmet>
           <PostTemplateDetails {...this.props} />
@@ -35,6 +40,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        siteUrl 
         menu {
           label
           path
