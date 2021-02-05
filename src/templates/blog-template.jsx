@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
 import RecentPublications from '../components/Tailwind/PageSection/RecentPublications'
-
 import { Link } from 'gatsby'
 
 class BlogRoute extends React.Component {
