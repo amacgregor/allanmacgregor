@@ -1,4 +1,4 @@
-const inputRequired = name => {
-    return value => (/.+/.test(value) ? true : `${name} is required`)
+const inputRequired = (name) => {
+  return (value) => (/.+/.test(value) ? true : `${name} is required`)
 }
 module.exports = { inputRequired }
