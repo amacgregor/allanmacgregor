@@ -9,7 +9,7 @@ class Layout extends React.Component {
     return (
       <div className="lg:h-screen bg-white lg:flex lg:overflow-hidden">
         <Helmet defaultTitle="Blog by Allan MacGregor">
-           <link rel="icon" href={favicon} />
+          <link rel="icon" href={favicon} />
         </Helmet>
         {children}
       </div>

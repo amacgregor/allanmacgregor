@@ -17,7 +17,7 @@ class Links extends React.Component {
     return (
       <div className="links">
         <ul className="links__list">
-        <li className="links__list-item">
+          <li className="links__list-item">
             <a
               href={`https://www.youtube.com/channel/${links.youtube}`}
               target="_blank"
@@ -44,7 +44,6 @@ class Links extends React.Component {
               <i className="icon-github" />
             </a>
           </li>
-
         </ul>
         <ul className="links__list">
           <li className="links__list-item">

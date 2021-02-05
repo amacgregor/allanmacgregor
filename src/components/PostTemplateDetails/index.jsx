@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar'
 import MobileNav from '../MobileNav'
 
 import PostHeading from '../Tailwind/PostHeading'
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import './style.scss'
 
 class PostTemplateDetails extends React.Component {
@@ -16,7 +16,7 @@ class PostTemplateDetails extends React.Component {
     const tags = post.fields.tagSlugs
     const post_content = {
       title: post.frontmatter.title,
-      subtitle: post.frontmatter.description
+      subtitle: post.frontmatter.description,
     }
 
     const homeBlock = (
@@ -53,31 +53,32 @@ class PostTemplateDetails extends React.Component {
 
     return (
       <div>
-      <MobileNav {...this.props} />
+        <MobileNav {...this.props} />
 
-      <div className="lg:h-screen md:flex lg:overflow-hidden bg-white">
-        <Sidebar {...this.props} />
-        <main className="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
-          <PostHeading { ... post_content } />
-          <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8"><MDXRenderer>{post.body}</MDXRenderer></div> 
-          <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
-            {tagsBlock}
-            <hr />
-            <p className="post-single__footer-text">
-              {subtitle}
-              <a
-                href={`https://twitter.com/${author.twitter}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <br /> <strong>{author.name}</strong> on Twitter
-              </a>
-            </p>
-            {commentsBlock}
-          </div>
-
-        </main>
-      </div>
+        <div className="lg:h-screen md:flex lg:overflow-hidden bg-white">
+          <Sidebar {...this.props} />
+          <main className="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none">
+            <PostHeading {...post_content} />
+            <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
+              <MDXRenderer>{post.body}</MDXRenderer>
+            </div>
+            <div className="max-w-screen-lg bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
+              {tagsBlock}
+              <hr />
+              <p className="post-single__footer-text">
+                {subtitle}
+                <a
+                  href={`https://twitter.com/${author.twitter}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <br /> <strong>{author.name}</strong> on Twitter
+                </a>
+              </p>
+              {commentsBlock}
+            </div>
+          </main>
+        </div>
       </div>
     )
   }

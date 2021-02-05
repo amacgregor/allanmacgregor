@@ -1,4 +1,4 @@
-@import "../../assets/scss/variables";
+@import '../../assets/scss/variables';
 
 $color-github: #4078c0;
 $gray: #ccc;
@@ -9,7 +9,7 @@ $spacing: 20px;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-//   width: 900px;
+  //   width: 900px;
 }
 
 .github-card {
@@ -23,7 +23,7 @@ $spacing: 20px;
   font-size: 13px;
   flex: 1;
   min-width: 250px;
-  
+
   > h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -34,20 +34,20 @@ $spacing: 20px;
 
 .github-card__meta {
   margin-right: $spacing;
-  font-size: 16px; 
+  font-size: 16px;
   > i {
     font-size: 16px;
   }
   .github-card__language-icon {
-      font-size:24px;
+    font-size: 24px;
   }
   .Elixir {
-      color: #4e2a8e;
+    color: #4e2a8e;
   }
   .PHP {
-      color: #4C5E99;
+    color: #4c5e99;
   }
   .Ruby {
-      color: #7A0410;
+    color: #7a0410;
   }
 }

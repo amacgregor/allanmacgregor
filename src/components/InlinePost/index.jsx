@@ -15,19 +15,19 @@ class InlinePost extends React.Component {
     const { slug, categorySlug } = this.props.data.node.fields
 
     return (
-
       <li class="listing-item">
-        <Link className="inline_post__title-link" to={slug}>{title}</Link> 
-        <span class="date">{moment(date).format('MMMM D, YYYY')}</span> 
-        <span class="excerpt-dash">-</span> 
+        <Link className="inline_post__title-link" to={slug}>
+          {title}
+        </Link>
+        <span class="date">{moment(date).format('MMMM D, YYYY')}</span>
+        <span class="excerpt-dash">-</span>
         <span class="excerpt">
           {description}
-          <Link className="more-link" to={slug}>Continue reading <span class="meta-nav">→</span></Link> 
+          <Link className="more-link" to={slug}>
+            Continue reading <span class="meta-nav">→</span>
+          </Link>
         </span>
       </li>
-
-
-
     )
   }
 }

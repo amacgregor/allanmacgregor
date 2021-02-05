@@ -46,11 +46,11 @@ class MobileNav extends React.Component {
     )
     /* eslint-enable jsx-a11y/img-redundant-alt */
 
-    return(
+    return (
       <nav className="bg-indigo-700 md:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">    
+            <div className="flex items-center">
               <Link to="/">
                 <img
                   src={logo}
@@ -59,15 +59,34 @@ class MobileNav extends React.Component {
                   height="50"
                   alt={author.name}
                 />
-              </Link>  
-              <span className="font-semibold text-xl tracking-tight"><a className="no-underline text-white" href="/">Allan MacGregor</a></span>
+              </Link>
+              <span className="font-semibold text-xl tracking-tight">
+                <a className="no-underline text-white" href="/">
+                  Allan MacGregor
+                </a>
+              </span>
             </div>
           </div>
           <div className="md:hidden block pt-4 pb-3 border-t border-indigo-800">
             <div className="border-indigo-800">
-              <div className="mt-1 px-0" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-                <Link to="/" className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600">Start Here</Link>   
-                <Link to="/blog" className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600">Blog</Link>       
+              <div
+                className="mt-1 px-0"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="user-menu"
+              >
+                <Link
+                  to="/"
+                  className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600"
+                >
+                  Start Here
+                </Link>
+                <Link
+                  to="/blog"
+                  className="block m-0 px-0 py-2 rounded-md text-base font-medium text-indigo-300 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600"
+                >
+                  Blog
+                </Link>
               </div>
             </div>
           </div>
