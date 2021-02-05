@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostTemplateDetails from '../components/PostTemplateDetails'
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 class JournalTemplate extends React.Component {
   render() {
@@ -18,7 +18,10 @@ class JournalTemplate extends React.Component {
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
-            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+            <script
+              src="https://kit.fontawesome.com/9a1f3c9439.js"
+              crossorigin="anonymous"
+            ></script>
           </Helmet>
           <PostTemplateDetails {...this.props} />
         </div>

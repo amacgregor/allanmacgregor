@@ -13,20 +13,22 @@ class TilRoute extends React.Component {
     const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMdx.edges
-    posts.forEach(post => {
+    posts.forEach((post) => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
 
     const publication = {
-      title: "TIL",
-      subtext: "A collection of short tips, tricks and finding discovered while working." 
+      title: 'TIL',
+      subtext:
+        'A collection of short tips, tricks and finding discovered while working.',
     }
 
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? "/til/" : "/til/" + (currentPage - 1).toString()
-    const nextPage = "/til/" +(currentPage + 1).toString()
+    const prevPage =
+      currentPage - 1 === 1 ? '/til/' : '/til/' + (currentPage - 1).toString()
+    const nextPage = '/til/' + (currentPage + 1).toString()
 
     return (
       <Layout>
@@ -34,23 +36,38 @@ class TilRoute extends React.Component {
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
-            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+            <script
+              src="https://kit.fontawesome.com/9a1f3c9439.js"
+              crossorigin="anonymous"
+            ></script>
           </Helmet>
           <Sidebar {...this.props} />
           <main className="overflow-y-auto">
             <div className="relative bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
-                {!isFirst && (
-                  <Link className="absolute inset-y-0 left-0 w-18 m-5" to={prevPage} rel="prev">
-                    ← Previous Page
-                  </Link>
-                )}
-                {!isLast && (
-                  <Link className="absolute inset-y-0 right-0 w-18 m-5" to={nextPage} rel="next">
-                    Next Page →
-                  </Link>
-                )}
-              </div>
-            <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
+              {!isFirst && (
+                <Link
+                  className="absolute inset-y-0 left-0 w-18 m-5"
+                  to={prevPage}
+                  rel="prev"
+                >
+                  ← Previous Page
+                </Link>
+              )}
+              {!isLast && (
+                <Link
+                  className="absolute inset-y-0 right-0 w-18 m-5"
+                  to={nextPage}
+                  rel="next"
+                >
+                  Next Page →
+                </Link>
+              )}
+            </div>
+            <RecentPublications
+              title={publication.title}
+              subtext={publication.subtext}
+              {...this.props}
+            />
           </main>
         </div>
       </Layout>
@@ -85,7 +102,9 @@ export const pageQuery = graphql`
     allMdx(
       limit: $limit
       skip: $skip
-      filter: { frontmatter: { layout: { eq: "journal" }, draft: { ne: true } } }
+      filter: {
+        frontmatter: { layout: { eq: "journal" }, draft: { ne: true } }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

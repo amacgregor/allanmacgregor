@@ -22,7 +22,10 @@ class PostTemplate extends React.Component {
               name="twitter:image"
               content={`${this.props.data.site.siteMetadata.siteUrl}${post.fields.slug}/twitter-card.jpg`}
             />
-            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+            <script
+              src="https://kit.fontawesome.com/9a1f3c9439.js"
+              crossorigin="anonymous"
+            ></script>
           </Helmet>
           <PostTemplateDetails {...this.props} />
         </div>
@@ -40,7 +43,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
-        siteUrl 
+        siteUrl
         menu {
           label
           path

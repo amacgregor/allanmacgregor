@@ -13,47 +13,65 @@ class EssaysRoute extends React.Component {
     const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMdx.edges
-    posts.forEach(post => {
+    posts.forEach((post) => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
 
     const publication = {
-      title: "Long Form",
-      subtext: "Long-term content which is intended to improve over time, and is meant to be more of a research and exploration section. Content in this section intentionally explores the rabbit-holes within a particular subject or topics." 
+      title: 'Long Form',
+      subtext:
+        'Long-term content which is intended to improve over time, and is meant to be more of a research and exploration section. Content in this section intentionally explores the rabbit-holes within a particular subject or topics.',
     }
 
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? "/essays/" : "/essays/" + (currentPage - 1).toString()
-    const nextPage = "/essays/" +(currentPage + 1).toString()
+    const prevPage =
+      currentPage - 1 === 1
+        ? '/essays/'
+        : '/essays/' + (currentPage - 1).toString()
+    const nextPage = '/essays/' + (currentPage + 1).toString()
 
     return (
       <Layout>
-      <div className="h-screen flex overflow-hidden bg-white">
+        <div className="h-screen flex overflow-hidden bg-white">
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
-            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
+            <script
+              src="https://kit.fontawesome.com/9a1f3c9439.js"
+              crossorigin="anonymous"
+            ></script>
           </Helmet>
           <Sidebar {...this.props} />
           <main className="overflow-y-auto">
             <div className="relative bg-white pt-0 pb-5 px-4 my-0 sm:px-6 lg:pt-5 lg:pb-5 lg:px-5 mx-8">
-                {!isFirst && (
-                  <Link className="absolute inset-y-0 left-0 w-18 m-5" to={prevPage} rel="prev">
-                    ← Previous Page
-                  </Link>
-                )}
-                {!isLast && (
-                  <Link className="absolute inset-y-0 right-0 w-18 m-5" to={nextPage} rel="next">
-                    Next Page →
-                  </Link>
-                )}
-              </div>
-            <RecentPublications title={publication.title} subtext={publication.subtext} { ... this.props }/> 
+              {!isFirst && (
+                <Link
+                  className="absolute inset-y-0 left-0 w-18 m-5"
+                  to={prevPage}
+                  rel="prev"
+                >
+                  ← Previous Page
+                </Link>
+              )}
+              {!isLast && (
+                <Link
+                  className="absolute inset-y-0 right-0 w-18 m-5"
+                  to={nextPage}
+                  rel="next"
+                >
+                  Next Page →
+                </Link>
+              )}
+            </div>
+            <RecentPublications
+              title={publication.title}
+              subtext={publication.subtext}
+              {...this.props}
+            />
           </main>
-</div>
-
+        </div>
       </Layout>
     )
   }
