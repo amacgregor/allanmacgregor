@@ -1,22 +1,20 @@
 ---
-title: "Exploring Hack: Building a MicroFramework"
-date: "2014-08-06"
+title: 'Exploring Hack: Building a MicroFramework'
+date: '2014-08-06'
 layout: post
 draft: false
-path: "/posts/exploring-hack-building-a-microframework"
-category: "Programming"
+path: '/posts/exploring-hack-building-a-microframework'
+category: 'Programming'
 tags:
-    - "HHVM"
-    - "Programming"
-    - "HackLang"
+  - 'HHVM'
+  - 'Programming'
+  - 'HackLang'
 description: "So to get started I've decided to build a micro-framework using HACK and HHVM, building a simple microframework should be a challenging enough task to illustrate some of the more interesting features of the language and at the same time it has an achievable goal so we don't end on a never ending development cycle."
 ---
 
 As a full-time **Magento Developer** I deal with a very specific kind of **PHP** every single day; this can at time get rather boring since rarely one can apply
 new technologies or programming concepts. One of the new languages that keeps grabbing my attention is **HACK**, which is almost identical to **PHP** in
 terms of syntax but at the same time implements some of the more attractive features from statically typed languages.
-
-
 
 > **Hack** is a language for HHVM that interopates seamlessly with **PHP**. The barrier to entry for Hack is low. To get started, all that is needed is to
 > generally understand the features that **Hack** provides and how to call the Hack type checker (hh_client invokes the type checker at the command line)

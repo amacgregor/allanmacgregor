@@ -1,22 +1,20 @@
 ---
-title: "Getting Started With Magento and Docker for Development"
-date: "2015-03-05"
+title: 'Getting Started With Magento and Docker for Development'
+date: '2015-03-05'
 layout: post
 draft: false
-path: "/posts/getting-started-with-magento-and-docker"
-category: "Programming"
+path: '/posts/getting-started-with-magento-and-docker'
+category: 'Programming'
 tags:
-    - "Magento"
-    - "Programming"
-    - "Docker"
-description: "Setting up a Magento development Environment with docker"
+  - 'Magento'
+  - 'Programming'
+  - 'Docker'
+description: 'Setting up a Magento development Environment with docker'
 ---
 
 Docker has taken the DevOps community by storm and is rapidly changing the ecosystem towards distributed architectures, and in case you haven't heard about Docker here is the quick definition:
 
 > Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications.
-
-
 
 And while Docker brings amazing things to the table in terms of application architecture, scalability and so on, in this post we are going to use docker to streamline the development pipeline.
 
@@ -64,12 +62,12 @@ This image is not really meant to be used directly but rather as a base for your
 In your project base create a folder named docker and add the following file:
 
 **Filename:** Dockerfile
+
 <script src="https://gist.github.com/amacgregor/867b858fafe6b9ab1358.js"></script>
 
 > A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image. By calling docker build from your terminal, you can have Docker build your image step by step, executing the instructions successively.
 
 All we are doing above is setting up the vhost for our current project, speaking of which we will need to create said vhost file inside our docker/vhost folder, since we are copying it to our newly created image in the following line
-
 
 ```
 COPY config/vhosts/ /etc/apache2/sites-available
@@ -78,17 +76,16 @@ COPY config/vhosts/ /etc/apache2/sites-available
 So let's go ahead and create the file
 
 **Filename:** config/vhosts/localhost.com.conf
+
 <script src="https://gist.github.com/amacgregor/1112523b865211e79240.js"></script>
 
 Wait, that's it? Yes, it's that simple; the example above is using one of the coolest Apache2.4 features, Macros.
 
 The base image has a macro for each of the php versions and as you can see is the first thing we are telling our vhost file to use
 
-
 ```
 Use VHost-PHP5.4
 ```
-
 
 The values after that are variables to be used by our macro file, in this case:
 
@@ -109,30 +106,23 @@ In my case I will create a folder and file example project, in practice we would
 
 We will also need to create an empty file inside the public folder called **.htaccess-combined**
 
-
 And now we build our project image:
-
 
 ```
 docker build -t amacgregor/localhost_com .
 ```
 
-
 Finally we can go ahead and run our newly created image using the following command:
 
 <script src="https://gist.github.com/amacgregor/b391628b2f8aea902a2a.js"></script>
 
-
-
 The above might look intimidating at first but let's break it down:
-
 
 ```
 -v /home/amacgregor/Projects/DemacMedia/demac-docker-example/public:/srv/www/localhost.com/public_html
 ```
 
 With this option we are telling Docker to mount a directory from the host filesystem (the one that we just created) into the vhost root directory, this way we can reuse our local project files and test changes on the fly.
-
 
 ```
 -p 127.0.0.1:80:80

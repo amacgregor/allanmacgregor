@@ -1,26 +1,24 @@
 ---
-title: "Design Patterns in PHP: Using Factories"
-date: "2014-01-19"
+title: 'Design Patterns in PHP: Using Factories'
+date: '2014-01-19'
 layout: post
 draft: false
-path: "/posts/design-patterns-in-php-using-factories"
-category: "Programming"
+path: '/posts/design-patterns-in-php-using-factories'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Design Patterns"
-    - "Programming"
-description: "The factory pattern is a class that has some methods that create objects for you. Instead of using new directly, you use the factory class to create objects. That way, if you want to change the types of objects created, you can change just the factory. All the code that uses the factory changes automatically."
+  - 'PHP'
+  - 'Design Patterns'
+  - 'Programming'
+description: 'The factory pattern is a class that has some methods that create objects for you. Instead of using new directly, you use the factory class to create objects. That way, if you want to change the types of objects created, you can change just the factory. All the code that uses the factory changes automatically.'
 ---
 
 The factory pattern is one of the most commonly used Design Patterns, it is useful when we need to choose between several interchangeable classes at runtime. By using factories we are also separating the creation of an object from the actual implementation.
-
-
 
 We can define a factory as a simple design pattern that give us a convenient way to instantiate objects. A factory is capable of creating different types of objects without necessarily knowing what type of object is actually being created.
 
 **Factories** try to address the problem of tight coupling in large application, with a factory instead of calling new directly, we use our factory class to take care of creating of the object.
 
-There are __several implementations__ and variants of design pattern among of which we have:
+There are **several implementations** and variants of design pattern among of which we have:
 
 - Simple Factory
 - Abstract Factory
@@ -56,7 +54,7 @@ You also notice when reading the existing code is that there are hundreds of cal
 
 A clearer example of how this can become problematic is if we had a controller running on **https://factory.ikea.com/product/create/{product_type}**, this controller is in charge of instantiating a new product objects based on the $product_type provided, validating and adding the information posted and saving the product.
 
-We are going to ignore the logic for validating the data and saving the product, right now we only care  about how that product object is being instantiated without the use of a factory:
+We are going to ignore the logic for validating the data and saving the product, right now we only care about how that product object is being instantiated without the use of a factory:
 
 <script src="https://gist.github.com/amacgregor/8507273/ce8353737d091d4a25fd807ce5ca699bb264ae97.js"></script>
 
@@ -64,7 +62,7 @@ What's the biggest problem with this code? Simply put since our controller doesn
 
 Now you might be thinking that doesn't look so bad? It gets the job done, right? Well remember that it is our fictional **IkeaFactory** and we have hundreds of different product classes; meaning that if this was a fully implement class we would have hundreds of different cases on our switch statement.
 
-The previous example is not only messy but hard to maintain too, what would a happen if we suddenly added a new parameter to our **__construct()** function? You guessed right; that would mean updating every single instance where we call new on any of the product classes; that would mean a few hundred lines changed on our example controller function.
+The previous example is not only messy but hard to maintain too, what would a happen if we suddenly added a new parameter to our **\_\_construct()** function? You guessed right; that would mean updating every single instance where we call new on any of the product classes; that would mean a few hundred lines changed on our example controller function.
 
 Let's see how implementing a basic factory can help us write better and more maintainable code. First we need to create a new class called **ProductFactory**
 

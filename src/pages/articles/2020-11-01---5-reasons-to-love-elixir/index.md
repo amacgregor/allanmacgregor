@@ -1,27 +1,28 @@
 ---
 title: 5 Reasons to love Elixir
-date: "2020-11-01"
+date: '2020-11-01'
 layout: post
 draft: false
-path: "/posts/5-reasons-to-love-elixir"
+path: '/posts/5-reasons-to-love-elixir'
 category: Programming
 tags:
- - functional programming
- - programming
- - elixir
+  - functional programming
+  - programming
+  - elixir
 description: "Five reasons that will make you love the Elixir language and stack if you don't already"
 ---
 
 <!--Five reasons that will make you love the Elixir language and stack if you don&#x27;t already-->
-Whenever I have a new side project idea, the need to build a quick prototype or even opportunity to build something from scratch at at work, I keep coming back to [Elixir](https://publish.obsidian.md/allanmacgregor/Programming+Languages/Elixir/Elixir) time and time again. 
 
-Elixir has a strong pull on me, and not without reason. The language creators have done an exceptional job at building not only a fantastic language but also a thriving ecosystem. 
+Whenever I have a new side project idea, the need to build a quick prototype or even opportunity to build something from scratch at at work, I keep coming back to [Elixir](https://publish.obsidian.md/allanmacgregor/Programming+Languages/Elixir/Elixir) time and time again.
+
+Elixir has a strong pull on me, and not without reason. The language creators have done an exceptional job at building not only a fantastic language but also a thriving ecosystem.
 
 The following 5 are some of the reasons why I keep coming back to Elixir.
 
-## Mix 
+## Mix
 
-Mix is a build tool that ships with Elixir and provides tasks for creating, compiling, testing, debugging, managing dependencies and much more. 
+Mix is a build tool that ships with Elixir and provides tasks for creating, compiling, testing, debugging, managing dependencies and much more.
 
 Mix is comparable to tools like `rake` or `artisan` if you are coming from the **Ruby** and **PHP** worlds respectively
 
@@ -31,7 +32,7 @@ Mix is comparable to tools like `rake` or `artisan` if you are coming from the *
 mix new myproject
 ```
 
-Running that command will generate our new project with the boilerplate structure and necessary files. The output will look something like 
+Running that command will generate our new project with the boilerplate structure and necessary files. The output will look something like
 
 ```bash
 - creating README.md
@@ -71,7 +72,7 @@ defmodule Myexample.Mixfile do
 end
 ```
 
-Overall, mix is really powerful and easy to extend; and is one of the reasons why using elixir is so friendly to new developers. 
+Overall, mix is really powerful and easy to extend; and is one of the reasons why using elixir is so friendly to new developers.
 
 ### Additional Resources
 
@@ -80,11 +81,11 @@ Overall, mix is really powerful and easy to extend; and is one of the reasons wh
 
 ## Credo and Dialyxir
 
-**Credo** is a static code analyzer for elixir, that has a very particular focus on teaching and building code consistency. 
+**Credo** is a static code analyzer for elixir, that has a very particular focus on teaching and building code consistency.
 
 ![Credo Example](./credo-example.png)
 
-**Dialyxir** is a mix wrapper for [Erlang](https://publish.obsidian.md/allanmacgregor/Programming+Languages/Erlang/Erlang) Dialyzer; which is another tool for static code analysis. 
+**Dialyxir** is a mix wrapper for [Erlang](https://publish.obsidian.md/allanmacgregor/Programming+Languages/Erlang/Erlang) Dialyzer; which is another tool for static code analysis.
 
 ```elixir
 $ mix dialyzer
@@ -94,7 +95,7 @@ The success typing is (_) -> number()
 ...
 ```
 
-While both tools are static analysers they fill different needs and offer different kinds of insights into our code. 
+While both tools are static analysers they fill different needs and offer different kinds of insights into our code.
 
 **Credo** is better suited to see of our code follows the common **'good' code practices** accepted by the community; while Dialyxir on the other hand let us catch things like **type errors** and unreachable code.
 
@@ -103,8 +104,9 @@ While both tools are static analysers they fill different needs and offer differ
 - [Credo](https://github.com/rrrene/credo)
 - [Dialyxir](https://github.com/jeremyjh/dialyxir)
 
-## Processes 
-One of Elixir's biggest selling points is the concurrency support, and the scalability and fault tolerance that comes with it; at the core of this concurrency model we have elixir processes. 
+## Processes
+
+One of Elixir's biggest selling points is the concurrency support, and the scalability and fault tolerance that comes with it; at the core of this concurrency model we have elixir processes.
 
 **Processes** in the context of elixir are not the same as operating system processes, elixir processes are incredibly lightweight in comparision and can be describe as having the following characteristics:
 
@@ -116,7 +118,7 @@ One of Elixir's biggest selling points is the concurrency support, and the scala
 Process can be created and spawn directly like:
 
 ```elixir
-pid = spawn fn -> 1 + 3 end 
+pid = spawn fn -> 1 + 3 end
 ```
 
 Which all it does it spawns a process to execute the anonymous function; to more complex uses cases with message passing and supervision trees. One of the main abstractiosn that builds upon these processes is **Tasks**.
@@ -135,6 +137,7 @@ iex(1)> Task.start fn -> raise "oops" end
 Function: #Function<20.99386804/0 in :erl_eval.expr/5>
     Args: []
 ```
+
 Tasks are incredibly handy and enable us to run work both synchronously with `Task.await/1` and asynchronously with `Task.async/1`
 
 ### Additional Resources
@@ -144,10 +147,10 @@ Tasks are incredibly handy and enable us to run work both synchronously with `Ta
 
 ## The Syntax
 
-Elixir syntax is one of its main appeals; and at times you can clearly see the **Ruby** influence in the language and the clear focus on developer happiness and usability. 
+Elixir syntax is one of its main appeals; and at times you can clearly see the **Ruby** influence in the language and the clear focus on developer happiness and usability.
 
-```elixir 
-defmodule Article do 
+```elixir
+defmodule Article do
     defp read(:content, [paragraph | article]), do: read({:content, article})
     defp read(:content, []), do: {:done, []}
 
@@ -157,26 +160,28 @@ defmodule Article do
     end
 end
 ```
+
 But looking at the snippet above makes it clear that while syntax is highly readable this is not Ruby, there are a couple things happening in the code above:
 
-- mix of inline and fully expanded functions 
-- multiple function heads with pattern matching 
-- simple recursion 
+- mix of inline and fully expanded functions
+- multiple function heads with pattern matching
+- simple recursion
 - function parameter decomposition
 
-Elixir, in my opinion can pack a lot of expressiveness into a very small amount of code that is also highly readable. 
+Elixir, in my opinion can pack a lot of expressiveness into a very small amount of code that is also highly readable.
 
 ### Additional Resources
+
 - [Elixir Crash Course](https://elixir-lang.org/crash-course.html)
 - [Elixir Syntax Reference](https://hexdocs.pm/elixir/syntax-reference.html)
 
 ## Phoenix Framework
 
->Phoenix is a web development framework written in the functional programming language Elixir. Phoenix uses a server-side model-view-controller pattern. Based on the Plug library, and ultimately the Cowboy Erlang framework, it was developed to provide highly performant and scalable web applications. - [wikipedia](https://en.wikipedia.org/wiki/Phoenix_(web_framework))
+> Phoenix is a web development framework written in the functional programming language Elixir. Phoenix uses a server-side model-view-controller pattern. Based on the Plug library, and ultimately the Cowboy Erlang framework, it was developed to provide highly performant and scalable web applications. - [wikipedia](<https://en.wikipedia.org/wiki/Phoenix_(web_framework)>)
 
-Saving the best for last we have the **Phoenix Framework**, which often gets compared to the Laravel or Ruby on rails; but in my honest opinion is much much better. 
+Saving the best for last we have the **Phoenix Framework**, which often gets compared to the Laravel or Ruby on rails; but in my honest opinion is much much better.
 
-Frameworks like **RubyOnRails** and **Laravel** suffer of a capital sin, there is too much freaking automagic. By this I mean those frameworks try to abstract too much and hide too much complexity to the point where they become more of a hindrance in certain scenarios. 
+Frameworks like **RubyOnRails** and **Laravel** suffer of a capital sin, there is too much freaking automagic. By this I mean those frameworks try to abstract too much and hide too much complexity to the point where they become more of a hindrance in certain scenarios.
 
 Phoenix, has the right amount of scaffolding and abstractions without taking anything away from your control. Getting a Phoenix project up and running is easy as:
 

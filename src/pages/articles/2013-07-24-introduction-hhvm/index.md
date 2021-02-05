@@ -1,19 +1,18 @@
 ---
-title: "An Introduction to HHVM"
-date: "2013-07-24"
+title: 'An Introduction to HHVM'
+date: '2013-07-24'
 layout: post
 draft: false
-path: "/posts/an-introduction-to-hhvm"
-category: "Programming"
-tags: 
-    - "HHVM"
-    - "Vagrant"
-    - "Programming" 
-description: "In early 2008 Facebook began working on **HipHop**(now HPHP), a PHP execution engine; its original motivation was to convert Facebook massive PHP code base into C++ in order to save resources and increase the application performance. The original release was known as HPHPc a **PHP** to **C++** compiler."
+path: '/posts/an-introduction-to-hhvm'
+category: 'Programming'
+tags:
+  - 'HHVM'
+  - 'Vagrant'
+  - 'Programming'
+description: 'In early 2008 Facebook began working on **HipHop**(now HPHP), a PHP execution engine; its original motivation was to convert Facebook massive PHP code base into C++ in order to save resources and increase the application performance. The original release was known as HPHPc a **PHP** to **C++** compiler.'
 ---
 
 > HHVM (HipHop Virtual Machine) converts PHP code into a high-level bytecode (commonly known as an intermediate language). This bytecode is then translated into x64 machine code dynamically at runtime by a just-in-time (JIT) compiler. In these respects, HHVM has similarities to virtual machines for other languages including C#/CLR and Java/JVM.
-
 
 ## A little big of history
 
@@ -23,7 +22,7 @@ For next 2 years Facebook continued working on **HipHop** adding **HPHPi** ( a '
 
 At it's peak, **HipHop** PHP code showed up to 6x times better performance than its **ZEND** counterpart. However, there where several drawbacks to this first iteration of HipHop:
 
-- HPHPc did not fully supported the PHP language, most noticeably the lack of support for _create\_function()_ and eval() --Honestly, I don't see the lack of support for the last one as something bad-- functions.
+- HPHPc did not fully supported the PHP language, most noticeably the lack of support for _create_function()_ and eval() --Honestly, I don't see the lack of support for the last one as something bad-- functions.
 - Facebook developers had to maintain two difference engines (**HPHPc** and **HPHPi**) with resulted in duplication of efforts and waste of resources.
 - Finally, **HPHPc** required a vastly different deployment process which will hurt adoption by **PHP** developers.
 
@@ -48,4 +47,5 @@ The performance and speed gained by applying these techniques is what gives **Hi
 Currently HHVM supports PHP 5.4 almost on its entirety, however there are still numerous bugs that prevent some applications from running, for that reason Facebook has set as goal to have the top 20 open source PHP applications running on HHVM. The first popular application to achieve this was Wordpress.
 
 ## What's next
+
 So now that we have a better understanding of what HHVM does and the advantages if running it we can start testing our applications on HHVM. In a subsequent post I will be covering the setup of a dedicated Vhost for HHVM, running benchmarks against your applications and eventually (fingers crossed) how to run Magento on HHVM.

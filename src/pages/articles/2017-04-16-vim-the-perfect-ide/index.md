@@ -3,13 +3,13 @@ title: Vim Is The Perfect IDE
 date: 2017-04-16T11:55:59-04:00
 layout: post
 draft: false
-path: "/posts/vim-is-the-perfect-ide"
-category: "Programming"
+path: '/posts/vim-is-the-perfect-ide'
+category: 'Programming'
 tags:
-     - "Programming"
-     - "VIM"
-     - "Tooling"
-     - "Productivity"
+  - 'Programming'
+  - 'VIM'
+  - 'Tooling'
+  - 'Productivity'
 description: "I've have tried Atom, SublimeText, TextMate, Eclipse, Visual Studio, and most of the Jetbrains products, I'm constantly tweaking and looking for a better setup, however Vim always feels like home to me; and I'm to the point now where I rarely use IDEs – exception being messy and complex projects where IDEs can do a lot of heavily lifting (yes, Magento I'm talking about you.)"
 ---
 
@@ -18,7 +18,6 @@ Over the years I've jumped back and forth between many code editors, **IDEs** an
 {% excerpt %}
 I've have tried Atom, SublimeText, TextMate, Eclipse, Visual Studio, and most of the Jetbrains products, I'm constantly **tweaking and looking for a better setup**, however Vim always feels like home to me; and I'm to the point now where I rarely use IDEs – exception being messy and complex projects where IDEs can do a lot of heavily lifting (yes, Magento I'm talking about you.)
 {% endexcerpt %}
-
 
 But other than that Vim is my default Ruby, Elixir, Python, PHP IDE and as well the main tool that I use for writing drafts and books.
 
@@ -39,6 +38,7 @@ We are in particular interested in the vimrc file, let's break it down:
 Each plugin in this setup is separated in the following categories:
 
 ### Utility
+
 This kind of a miscellaneous category and is comprised of plugins used to enhance or change the behaivour of core vim; the most useful important ones are:
 
 - **Nerdtree**: It gives you easy access to the file system in the form of a directory tree on the left side of the screen, as well provides shortcuts for filesystem manipulation(create, delete, move files and directories)
@@ -47,6 +47,7 @@ This kind of a miscellaneous category and is comprised of plugins used to enhanc
 - Neocomplete: Vim Autocomplete on steroids.
 
 ### Generic Programming Support
+
 These plugins fall directly on the category of programming and are used my all or most of the **programming languages** that I currently have setup:
 
 - **Exuberant-Ctags**: tags are named definitions of classes, functions, abstract types and so on; adding support to Vim gives you some of that 'magic' IDE code navigation functionality.
@@ -54,6 +55,7 @@ These plugins fall directly on the category of programming and are used my all o
 - **Vim-autoclose**: Automatically closes a character that could/should have a matching closing counterpart, like () "" [] {} and so on.
 
 ### Markdown/Writing
+
 As I mentioned Vim is my go to editor for drafting new posts be it books, blogs or random angry letters. From this particular section only language tools deservers a special shot-out as it makes for a great Grammar checker directly from inside Vim.
 
 ### Erlang/Elixir/PHP/Elm Support
@@ -63,9 +65,11 @@ When it comes down to the **individual language support** there isn't really muc
 So far elixir is winning the battle in terms of plugins as I've added additional functionality like the ability to run tests and generate content from inside Vim, I have yet to decide if I'm keeping all the plugins for it.
 
 ### Git Support
+
 Standard git support that I'm afraid I rarely use, I find myself going directly back to the **shell** and doing the **git workflow** outside of Vim, so I'm open to suggestions and to hear what everyone else is using in terms of setup.
 
 ### Themes and Interfaces
+
 Ok this is a big one but mostly because I keep forgetting to remove unused themes and colorschemes, let's highlight the important ones:
 
 - **Vimarline**: Lean and mean status/tabline for Vim; it also looks cool as fuck.
@@ -74,7 +78,6 @@ Ok this is a big one but mostly because I keep forgetting to remove unused theme
 The remaining parts of the configuration file are either plugin configuration or personal key re-mappings that I use for quality of like; I've done my best to document and segment each section so it should be easy enough to understand what each setting is doing.
 
 For anyone getting starting with Vim, I do want to bring special attention to the following:
-
 
 ```
 " Disable arrow movement, resize splits instead.
@@ -89,12 +92,14 @@ endif
 As there is no quickest way to force one-self to use the home row for navigation.
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-6937861309533018"
      data-ad-slot="9206842858"></ins>
+
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

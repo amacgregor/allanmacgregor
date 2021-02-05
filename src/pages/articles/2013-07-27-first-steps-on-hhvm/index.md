@@ -1,22 +1,19 @@
 ---
-title: "First steps on HHVM "
-date: "2013-07-27"
+title: 'First steps on HHVM '
+date: '2013-07-27'
 draft: false
-path: "/posts/first-steps-on-hhvm"
+path: '/posts/first-steps-on-hhvm'
 layout: post
-category: "Programming"
-tags: 
-    - "HHVM"
-    - "Programming"
-    - "PHP"
-    - "Vagrant"
-description: "Currently a few applications are fully supported like wordpress and drupal; more complex applications like Magento are still not 100% with HHVM due to bugs in the HHVM implementation."
+category: 'Programming'
+tags:
+  - 'HHVM'
+  - 'Programming'
+  - 'PHP'
+  - 'Vagrant'
+description: 'Currently a few applications are fully supported like wordpress and drupal; more complex applications like Magento are still not 100% with HHVM due to bugs in the HHVM implementation.'
 ---
 
 On a previous post [Introduction to HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html) we went over [**HHVM**](https://www.hhvm.com/blog/)'s history and the potential of running our **PHP** applications on top of it. Currently a few applications are fully supported like wordpress and drupal; more complex applications like [**Magento**](https://www.magentocommerce.com/) are still not 100% with HHVM due to bugs in the HHVM implementation.
-
-
-
 
 The first thing that we need to in order to start developing with HHVM is to setup a proper environment, for this case we are going to use a Vagrant Box.
 
@@ -30,6 +27,7 @@ If you want to skip the whole setup you can download the configured vagrant box 
     vagrant box add hhvmdev https://www.dropbox.com/s/5qyjkes49nk5abt/package.box
 
 ## Installing Vagrant
+
 [Download](https://vagrantup.com/) and install the appropriate version of Vagrant for your machine.
 
 ## Downloading Ubuntu Precise (12.04)
@@ -55,9 +53,11 @@ Windows users can still run the command to get instructions on how to connect wi
 Once we are logged it into our brand new vagrant box we are ready to start installing HHVM
 
 ## Installing HHVM
+
 **Facebook** currently provides binary distributions of the HHVM, but unfortunately this binary files are nowhere near the latest updates; so in order to have the latest bug fixes and patches we have to build HHVM from the repository HEAD
 
 ### Setting up the build tools
+
 We need to install some base tools before we can actually build HHVM:
 
     sudo apt-get update
@@ -71,6 +71,7 @@ We need to install some base tools before we can actually build HHVM:
     libcloog-ppl0 libelf-dev libdwarf-dev libunwind7-dev subversion
 
 ### Building HHVM
+
 Next, we need to get a copy of [HHVM GitHub repository](https://github.com/facebook/hiphop-php):
 
     mkdir ~/hhvm-dev/
@@ -127,7 +128,6 @@ If the compiler ran successfully and we didn't get any errors, we should be able
 Let's create a **symlink** to make our lives a little easier:
 
     sudo ln -s ~/hhvm-dev/hiphop-php/hphp/hhvm/hhvm /usr/bin/hhvm
-
 
 ## Next steps
 

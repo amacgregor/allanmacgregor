@@ -1,21 +1,18 @@
 ---
-title: "Design Patterns in PHP: Adapters"
+title: 'Design Patterns in PHP: Adapters'
 date: 2015-01-25T09:53:16-05:00
 layout: post
-draft: false 
-path: "/posts/design-patterns-in-php-adapters"
-category: "Programming"
+draft: false
+path: '/posts/design-patterns-in-php-adapters'
+category: 'Programming'
 tags:
-    - "Programming"
-    - "Design Patterns"
-    - "PHP"
-description: "The adapter pattern also referred as the wrapper pattern, I find that wrapper is a more fitting name since it describes clearly what this pattern does; it encapsulates the functionality of a class or object into a class with a common public interfaces."
+  - 'Programming'
+  - 'Design Patterns'
+  - 'PHP'
+description: 'The adapter pattern also referred as the wrapper pattern, I find that wrapper is a more fitting name since it describes clearly what this pattern does; it encapsulates the functionality of a class or object into a class with a common public interfaces.'
 ---
 
-
 The **adapter pattern** also referred as the wrapper pattern, I find that wrapper is a more fitting name since it describes clearly what this pattern does; it encapsulates the functionality of a class or object into a class with a common public interfaces.
-
-
 
 > In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used for another interface.[1] It is often used to make existing classes work with others without modifying their source code.
 
@@ -64,7 +61,7 @@ However, there is still a problem with the _NotificationManager_ class:
 
 Fortunately, this can be solve easily if we use the **Dependency Inversion Principle** and since this is a bit out of the scope of this article, I won't go into much detail about the specifics of this principle.
 
->In object-oriented programming, the dependency inversion principle refers to a specific form of decoupling software modules.
+> In object-oriented programming, the dependency inversion principle refers to a specific form of decoupling software modules.
 
 <script src="https://gist.github.com/amacgregor/0fc56114ea4fba62d9e1.js"></script>
 

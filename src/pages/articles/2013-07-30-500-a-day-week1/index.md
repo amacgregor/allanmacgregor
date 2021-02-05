@@ -1,17 +1,17 @@
 ---
-title: "Week 1: 500 Words a day"
-date: "2013-07-30"
+title: 'Week 1: 500 Words a day'
+date: '2013-07-30'
 layout: post
 draft: false
-path: "/posts/500-words-a-day"
-category: "Writing"
+path: '/posts/500-words-a-day'
+category: 'Writing'
 tags:
-    - "Writing"
-    - "Productivity"
-description: "A week ago I decided to follow the example of the amazing Nathan Barry in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the habit of writing a specific amount of words every day no matter what."
+  - 'Writing'
+  - 'Productivity'
+description: 'A week ago I decided to follow the example of the amazing Nathan Barry in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the habit of writing a specific amount of words every day no matter what.'
 ---
 
-A week ago I decided to follow the example of the amazing [Nathan Barry](https://nathanbarry.com/) in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the **habit of writing** a specific amount of words every day no matter what. 
+A week ago I decided to follow the example of the amazing [Nathan Barry](https://nathanbarry.com/) in order to try kick start this blog and work on a couple of book projects that I want to launch. The basic idea revolves around creating the **habit of writing** a specific amount of words every day no matter what.
 
 It has been a week since I started and so far it has been both a rewarding and challenging process, this method is not new by any means whatsoever some people recommend doing **750 words per day** others swear that 1000 words is the ideal amount.
 
@@ -27,17 +27,17 @@ Setting a habit is hard, specially when is something that requires effort or mak
 
 So I took preventive methods to help me out and basically tricky myself pass any obstacles, the first thing that I'm doing is keeping record of how many days in a row I been keeping up with my goal, for tracking this I'm using and iPhone app called [**Commit**](https://itunes.apple.com/us/app/commit/id473527073?mt=8) by **Nathan Barry.**
 
-The app is very simple and easy to use, you can set daily goals and if you want to a reminder; the app will ask you each day if you have met your goal. The more you keep the chain going the less likely is for you to break it; you also get instant feedback and a sense of achievement. 
+The app is very simple and easy to use, you can set daily goals and if you want to a reminder; the app will ask you each day if you have met your goal. The more you keep the chain going the less likely is for you to break it; you also get instant feedback and a sense of achievement.
 
-And thats exactly what I wanted, to feel that sense of achievement each day, that rush of satisfaction of completing a challenging task, basically I was trying to trick my brain into becoming addicting to writing. 
+And thats exactly what I wanted, to feel that sense of achievement each day, that rush of satisfaction of completing a challenging task, basically I was trying to trick my brain into becoming addicting to writing.
 
-> We are what we repeatedly do. Excellence, then, is not an act, but a habit. 
+> We are what we repeatedly do. Excellence, then, is not an act, but a habit.
+>
 > - **Aristotle**
 
-The first two days writing 500 daily words seemed easy enough, I was even exceeding the quote for a few hundreds words during the first days. By Thursday I was starting to slowdown. 
+The first two days writing 500 daily words seemed easy enough, I was even exceeding the quote for a few hundreds words during the first days. By Thursday I was starting to slowdown.
 
 Slowing down is not a bad thing unless you stop completely, I found that changing topics and working a different draft helped me to write pass my mental roadblocks and get back into a writing flow.
-
 
 ## The result
 

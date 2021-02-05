@@ -1,25 +1,23 @@
 ---
-title: "Swiss Army Knife Syndrome"
-date: "2014-05-20"
+title: 'Swiss Army Knife Syndrome'
+date: '2014-05-20'
 layout: post
 draft: false
-path: "/posts/swiss-army-knife-syndrome"
-category: "Programming"
-tags: 
-  - "Software Design"
-  - "Software Architecture"
-  - "Programming"
-description: "A tool with so many features and implements that ends up being completely useless, in my experience the same problem can apply to software; more often than not as developers we will try to include a feature or a piece of code"
+path: '/posts/swiss-army-knife-syndrome'
+category: 'Programming'
+tags:
+  - 'Software Design'
+  - 'Software Architecture'
+  - 'Programming'
+description: 'A tool with so many features and implements that ends up being completely useless, in my experience the same problem can apply to software; more often than not as developers we will try to include a feature or a piece of code'
 ---
+
 <!--
   We need more chef knives and less swiss army knifes
   Good software is like a chef's knife sharp and with purpose
 -->
 
 I apologize beforehand if this article is more of a **rant** than usual. The inspiration for the **"Swiss Army Knife Syndrome"** came from my frustration in dealing with project managers, clients, and even other developers, that think in too much of a narrow, particular way. I call it the "Swiss Army Knife Syndrome".
-
-
-
 
 ## The Swiss Army Knife
 
@@ -45,7 +43,6 @@ I coded the simple concept over the course of one weekend. Upon showing this to 
  ... but it would be so much better if ...
 </div>
 
-
 And that's how **Swiss Army Knife Syndrome** begins: with a 'but'. The tool was shared with other teams. Before they even started using it, we had a list of half a dozen features that were 'needed' or would add more value to the application. Suddenly, we had a number of requests well beyond the initial scope of the application.
 
 ## Clear Purpose
@@ -66,7 +63,7 @@ We find the same principle in software design, often referred as the Single Resp
 
 ## Conclusion
 
-No company, project manager, developer, or client is exempt from falling for this faulty logic. We are inclined to think that having and doing more is equivalent to being better or having more value. **Software should be elegant, and elegant code is where simplicity meets a good solution.** Therefore, it is our responsibility as developers to ensure that every bit of code we produce is as elegant and succinct as possible.  
+No company, project manager, developer, or client is exempt from falling for this faulty logic. We are inclined to think that having and doing more is equivalent to being better or having more value. **Software should be elegant, and elegant code is where simplicity meets a good solution.** Therefore, it is our responsibility as developers to ensure that every bit of code we produce is as elegant and succinct as possible.
 
 **Special Thanks to:**
 

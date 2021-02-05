@@ -1,9 +1,9 @@
 ---
-title: "2016 the Year of Quantified Self"
+title: '2016 the Year of Quantified Self'
 date: 2016-01-03T11:10:06-05:00
-path: "/posts/2016-the-year-of-the-quantified-self"
+path: '/posts/2016-the-year-of-the-quantified-self'
 draft: true
-description: "Quantified self and self-improvement have been on my radar for a few years now, and with a new year starting I finally decided to give it a serious try and see what outcomes I get from it."
+description: 'Quantified self and self-improvement have been on my radar for a few years now, and with a new year starting I finally decided to give it a serious try and see what outcomes I get from it.'
 
 published: true
 type: post
@@ -15,7 +15,8 @@ tags: [health, quantified self, productivity, self improvement]
 categories: health
 image: '/images/legacy/quantified_self_001.jpeg'
 ---
-Quantified self and self-improvement have been on my radar for a few years now, and with a new year starting I finally decided to give it a serious try and see what outcomes I get from it. 
+
+Quantified self and self-improvement have been on my radar for a few years now, and with a new year starting I finally decided to give it a serious try and see what outcomes I get from it.
 
 For anyone not familiar with the concept, quantified self is a movement to incorporate data acquisition technologies on aspects of a person's daily life; for example mood over time, food consumed, weight, heart rate, etc.
 

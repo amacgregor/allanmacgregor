@@ -1,24 +1,23 @@
 ---
-title: "More than human"
-date: "2013-07-21"
+title: 'More than human'
+date: '2013-07-21'
 layout: post
 draft: false
-path: "/posts/more-than-human"
-category: "Technology"
+path: '/posts/more-than-human'
+category: 'Technology'
 tags:
-    - "Technology"
-    - "Futurism"
-    - "Singularity"
-description: "In the last couple years, we have seen the emergence of new and exciting technologies aimed towards closing the gap between man and machine"
+  - 'Technology'
+  - 'Futurism'
+  - 'Singularity'
+description: 'In the last couple years, we have seen the emergence of new and exciting technologies aimed towards closing the gap between man and machine'
 ---
 
 In the last couple years, we have seen the emergence of new and exciting technologies aimed towards closing the gap between man and machine; projects like Google glass, scanadu the real life 'tricorder' and the myriad of fitness bands are only a few examples of how not only technology has become part of daily lives but is slowly becoming part of what we are and how we define our identity.
 
-
->Transhumanism is an international intellectual and cultural movement supporting the use
->of science and technology to improve the human condition...
+> Transhumanism is an international intellectual and cultural movement supporting the use
+> of science and technology to improve the human condition...
 >
->**en.wikipedia.org/wiki/Transhumanism**
+> **en.wikipedia.org/wiki/Transhumanism**
 
 From a technologist point of view, this phenomenon is really interesting, but I find even more interesting the social implications of this line of technological development; which is what I intent do explore on this particular article.
 
@@ -26,7 +25,7 @@ I'm a huge fan of science fiction and trans-humanism, that been said I've found 
 
 Ray Kurzweil, father of the singularity movement and probably the most famous futurologist is a clear example of over optimistic predictions while he is more than likely correct on his technological predictions he fails to factor the possible blow-back from political groups, religious institutions and the resistance that is common with change.
 
-Google Glass, which we could call the earlier beginning of  trans-humanist technologies is already getting resistance well before of its public release and efforts have started in the US, and UK to get it [banned](https://www.huffingtonpost.com/2013/04/10/google-glass-banned_n_3039935.html).
+Google Glass, which we could call the earlier beginning of trans-humanist technologies is already getting resistance well before of its public release and efforts have started in the US, and UK to get it [banned](https://www.huffingtonpost.com/2013/04/10/google-glass-banned_n_3039935.html).
 
 What will happen when more esoteric technologies are made available to us, what kind of resistance we can expect when the first humans can and start modifying their own biology.
 

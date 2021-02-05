@@ -1,14 +1,14 @@
 ---
-title: "Neural Networks Without a PhD: Topologies"
+title: 'Neural Networks Without a PhD: Topologies'
 date: 2017-04-16T15:25:04-04:00
 layout: post
 draft: false
-path: "/posts/neural-networks-without-a-phd-topologies"
-category: "Programming"
+path: '/posts/neural-networks-without-a-phd-topologies'
+category: 'Programming'
 tags:
-    - "Machine Learning"
-    - "Programming"
-    - "Neural Networks"
+  - 'Machine Learning'
+  - 'Programming'
+  - 'Neural Networks'
 description: "A series focused on presenting Neural Networks and the related concepts in layman's terms, that is to say without specialized knowledge in math or machine learning."
 ---
 

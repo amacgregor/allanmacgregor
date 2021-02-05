@@ -1,21 +1,19 @@
 ---
-title: "Playing with dependency injection in PHP"
-date: "2014-01-06"
+title: 'Playing with dependency injection in PHP'
+date: '2014-01-06'
 layout: post
 draft: false
-path: "/posts/dependency-injection-in-php"
-category: "Programming"
+path: '/posts/dependency-injection-in-php'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Dependency Injection"
-    - "Design Patterns"
-    - "Programming"
-description: "Dependency Injection is a software design pattern that allows avoiding hard-coding dependencies and makes possible to change the dependencies both at runtime and compile time."
+  - 'PHP'
+  - 'Dependency Injection'
+  - 'Design Patterns'
+  - 'Programming'
+description: 'Dependency Injection is a software design pattern that allows avoiding hard-coding dependencies and makes possible to change the dependencies both at runtime and compile time.'
 ---
 
 **Dependency Injection** is a software design pattern that allows avoiding hard-coding dependencies and makes possible to change the dependencies both at runtime and compile time.
-
-
 
 By using **Dependency Injection** we can write more maintainable, testable, and modular code. All projects have dependencies. The larger the project the more dependencies is it bound to have; now having a great number of dependencies is nothing bad by itself however how those dependencies are managed and maintained is.
 
@@ -38,7 +36,6 @@ At first glance the code looks pretty normal and it's what many PHP developers w
 ## Let's Inject something!
 
 In the other hand by using dependency injection we can correct most of these problems, let's take at the same code but using dependency injection:
-
 
 <script src="https://gist.github.com/amacgregor/8275062.js"></script>
 
@@ -75,7 +72,6 @@ As we can see, with Setter Injection the dependencies are provided to our class 
 - **Adding new dependencies is as easy** as adding a new setter method and it won't break any existing code.
 
 **Setter Injection** might be more suitable for situations where more flexibility is required.
-
 
 ## So is Dependency Injection right for my application?
 

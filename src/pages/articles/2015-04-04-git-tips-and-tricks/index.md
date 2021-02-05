@@ -1,15 +1,15 @@
 ---
-title: "Git Tips and Tricks"
-date: "2015-04-04"
+title: 'Git Tips and Tricks'
+date: '2015-04-04'
 layout: post
 draft: false
-path: "/posts/git-tips-and-tricks"
-category: "Programming"
-tags: 
-    - "Git"
-    - "Programming"
-    - "Tips"
-description: "Useful collection of git tips and tricks"
+path: '/posts/git-tips-and-tricks'
+category: 'Programming'
+tags:
+  - 'Git'
+  - 'Programming'
+  - 'Tips'
+description: 'Useful collection of git tips and tricks'
 ---
 
 Recently I've been collecting a large collection of git shortcuts, tips and tricks. The following

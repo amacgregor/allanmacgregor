@@ -1,28 +1,25 @@
 ---
-title: "Burnout"
-date: "2013-08-02"
+title: 'Burnout'
+date: '2013-08-02'
 layout: post
 draft: false
-path: "/posts/burnout"
-category: "Health"
+path: '/posts/burnout'
+category: 'Health'
 tags:
-    - "Burnout"
-    - "Health"
-    - "Lifestyle"
+  - 'Burnout'
+  - 'Health'
+  - 'Lifestyle'
 
-description: "We all been there, feeling tired, bored and even sick of our work; burnout is very common in the tech industry, probably more common that most people want to realize."
+description: 'We all been there, feeling tired, bored and even sick of our work; burnout is very common in the tech industry, probably more common that most people want to realize.'
 ---
 
 > Burnout:
-> A state of emotional and physical exhaustion caused by a prolonged period of stress and frustration; 
-> an inevitable corporate condition characterized by frequent displays of unprofessional behavior, a blithe 
-> refusal to do any work, and most important, a distinct aura of not giving a shit. 
-> -- __Urban Dictionary__
+> A state of emotional and physical exhaustion caused by a prolonged period of stress and frustration;
+> an inevitable corporate condition characterized by frequent displays of unprofessional behavior, a blithe
+> refusal to do any work, and most important, a distinct aura of not giving a shit.
+> -- **Urban Dictionary**
 
 We all been there, feeling tired, bored and even sick of our work; burnout is very common in the tech industry, probably more common that most people want to realize.
-
-
-
 
 There are countless posts, articles and even books that talk about preventing and/or dealing with burnout; exercise, meditation, changing jobs, go in on vacation, changing your diet or taking a bunch of pills (vitamins). All of those have been suggested by the internet gurus, web doctors and startup celebrities.
 
@@ -34,8 +31,8 @@ According to wikipedia:
 
 > Burnout is a psychological term that refers to long-term exhaustion and diminished interest in work.
 
-Ok, so first two signs of burnout is feeling tired and not giving a shit, but how do we get at this point in the first place; burning out it's a gradual process, 
-you don't wake up one morning and suddenly think **"I'm tired of my life and no longer give a shit"**  --...well maybe you but that's a different set of issues not burnout.--
+Ok, so first two signs of burnout is feeling tired and not giving a shit, but how do we get at this point in the first place; burning out it's a gradual process,
+you don't wake up one morning and suddenly think **"I'm tired of my life and no longer give a shit"** --...well maybe you but that's a different set of issues not burnout.--
 
 Burnout starts to set in when that feeling of accomplishment and satisfaction starts to vanish from your daily lives --burnout not only affects our professional lives but our personal ones too, for example one can be emotionally burnout-- this is very noticeable in our professional lives where the majority of people expects to achieve clear results every time.
 

@@ -1,30 +1,29 @@
 ---
-title: "Boris The Missing PHP REPL"
-date: "2014-03-13"
+title: 'Boris The Missing PHP REPL'
+date: '2014-03-13'
 layout: post
 draft: false
-path: "/posts/boris-the-missing-php-repl"
-category: "Programming"
+path: '/posts/boris-the-missing-php-repl'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Programming"
+  - 'PHP'
+  - 'Programming'
 description: "REPL(read-eval-print loop) can be great tools for quickly testing concepts, experimenting and getting quick feedback when learning a new language. Many languages and frameworks provide some sort of REPL like the rails console or laravel's artisan tinker."
 ---
 
 REPL(read-eval-print loop) can be great tools for quickly testing concepts, experimenting and getting quick feedback when learning a new language. Many languages and frameworks provide some sort of REPL like the rails console or laravel's artisan tinker.
 
-
-
 PHP by itself has the interactive shell that can be invoked with:
 
-````
+```
 php -a
-````
+```
+
 However the PHP Interactive Shell lacks several features that other modern languages have in their REPL's; like proper error handling, multi-line support and result output by default.
 
 # Meet Boris
 
->Python has one. Ruby has one. Clojure has one. Now PHP has one too. Boris is PHP's missing REPL (read-eval-print loop), allowing developers to experiment with PHP code in the terminal in an interactive manner. If you make a mistake, it doesn't matter, Boris will report the error and stand to attention for further input.
+> Python has one. Ruby has one. Clojure has one. Now PHP has one too. Boris is PHP's missing REPL (read-eval-print loop), allowing developers to experiment with PHP code in the terminal in an interactive manner. If you make a mistake, it doesn't matter, Boris will report the error and stand to attention for further input.
 
 [Boris](https://github.com/d11wtq/boris), was developed by [Chris Corbyn](https://github.com/d11wtq) a PHP developer that after making the transition to Ruby was disappointed by the lack of a true PHP REPL.
 

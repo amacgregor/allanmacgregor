@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "TDD is not Dead"
-date: "2015-09-03"
+title: 'TDD is not Dead'
+date: '2015-09-03'
 draft: false
-path: "/posts/tdd-is-not-dead"
-category: "Testing"
-tags: 
-    - "Testing"
-    - "Programming" 
-    - "TDD" 
-    - "BDD"
+path: '/posts/tdd-is-not-dead'
+category: 'Testing'
+tags:
+  - 'Testing'
+  - 'Programming'
+  - 'TDD'
+  - 'BDD'
 description: "TDD is not dead, not really. And it won't really ever be dead, it will change or be replaced with something better; in fact it already has, and in my MagentoTDD book we focus on Behavior Driven Development, an approach that emerged from the original TDD methodology."
 ---
 
@@ -30,18 +30,23 @@ TDD is not dead, not really. And it won't really ever be dead, it will change or
 I'll quickly address each of DHH's points:
 
 #### 1.- Developers make you feel like your is dirty if you don't practice TDD
+
 I agree, this sucks! **Developer shaming is never a good thing.** Rather than shaming a developer that doesn't do TDD or testing; teach and share. That's the best way to help the community grow.
 
 #### 2.- Driving design from unit tests is not a good idea
+
 I don't agree. Tools like **PHPSpec** do an incredible job helping us not only to test our code, but to drive our design and produce cleaner code.
 
 #### 3.- TDD notion of "fast tests" is shortsighted
+
 Well, not true at all. When working on a TDD cycle, you want your test to **run as fast as possible** (within reason) to get that constant feedback and validate your code.
 
 #### 4.- 100% coverage is silly.
+
 I have to agree on this one. Be pragmatic about your testing. Test only when it matters and think twice to see if your test is adding value.
 
 #### 5.- TDD created test-induced design damage.
+
 Again, I have to disagree. Properly used **TDD/BDD** can lead to clean, maintainable, and easy to understand designs. Blaming TDD for poor design is like blaming your IDE for poor code indentation; be pragmatic with your tools.
 
 ### Testing sounds like too much work / Testing will make my development slower

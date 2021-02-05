@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Back in the Saddle Again"
+title: 'Back in the Saddle Again'
 date: 2016-04-24T11:55:50-04:00
-path: "/posts/back-in-the-saddle-again"
-description: ""
+path: '/posts/back-in-the-saddle-again'
+description: ''
 
 draft: true
 type: post
@@ -12,7 +12,7 @@ featured: false
 author: allanmacgregor
 
 tags: [health, life, productivity]
-image: "/images/legacy/saddle_001.jpeg"
+image: '/images/legacy/saddle_001.jpeg'
 ---
 
 It has been over 4 months since I posted anything online, in the meantime the world has kept spinning and there are many updates, changes and news to talk about; so why did I suddenly decided to go silent? Well there are a myriad of reasons but primarily it was due to my change in role at Demac Media, for the last 5 months I been operating as the **Director of Engineering**.

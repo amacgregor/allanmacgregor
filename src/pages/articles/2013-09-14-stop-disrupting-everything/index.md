@@ -1,15 +1,15 @@
 ---
-title: "Stop Disrupting Everything"
-date: "2013-09-14"
+title: 'Stop Disrupting Everything'
+date: '2013-09-14'
 layout: post
 draft: false
-path: "/posts/stop-disrupting-everything"
-category: "Startup"
+path: '/posts/stop-disrupting-everything'
+category: 'Startup'
 tags:
-    - "Startup"
-    - "Technology"
-    - "Innovation"
-description: "The term disrupt is nothing more than the last on a long list of buzzwords that poison the start up scene."
+  - 'Startup'
+  - 'Technology'
+  - 'Innovation'
+description: 'The term disrupt is nothing more than the last on a long list of buzzwords that poison the start up scene.'
 ---
 
 If you have been hanging around in HackerNews for the last few months chances are that you have seen at least one post similar to the following ones:
@@ -21,9 +21,8 @@ If you have been hanging around in HackerNews for the last few months chances ar
 - Disrupt Sleep
 - Disrupt yourself
 
-
-
 and even
+
 - Indian Inventor Disrupts The Period Industry
 
 And the list goes on and on, **disrupt** is the new magical buzzword used by startups across the globe, and while I don't have a problem with the word disrupt or even the general use of buzzwords to describe concepts; I do have a problem with the inherited mentality that comes with the use of such _magical buzzwords_.
@@ -35,10 +34,10 @@ But wait a minute that can't be true, buzzwords are technical words or phrases t
 Let's put things into context and define what disrupt actually means and how is being used:
 
 > 1
-> 	a : to break apart : rupture
-> 	b : to throw into disorder agitators trying to disrupt the meeting
+> a : to break apart : rupture
+> b : to throw into disorder agitators trying to disrupt the meeting
 > 2
->	: to interrupt the normal course or unity of
+> : to interrupt the normal course or unity of
 > definition from [merria-webster.com](https://www.merriam-webster.com/dictionary/disrupt)
 
 Let that definition sink for a second, disrupt means break apart and interrupt; by that definition a majority of the articles, startups and new techs have been called disruptive are **NOT** actually disruptive.

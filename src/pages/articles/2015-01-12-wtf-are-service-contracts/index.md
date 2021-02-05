@@ -18,8 +18,6 @@ Now that Magento2 beta has been officially released, you are probably wondering
 what the hell are **Service Contracts** and more importantly why the hell do you
 need them.
 
-
-
 But before we jump into the nitty-gritty of service contracts let's get this out
 of the way:
 

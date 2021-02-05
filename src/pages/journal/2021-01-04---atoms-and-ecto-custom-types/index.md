@@ -1,14 +1,14 @@
 ---
 title: Atoms and Ecto custom types
-date: "2021-01-04"
+date: '2021-01-04'
 layout: journal
 draft: false
-path: "/til/atoms-and-ecto-custom-types"
+path: '/til/atoms-and-ecto-custom-types'
 category: Programming
 tags:
- - elixir
- - functional programming
- - ecto
+  - elixir
+  - functional programming
+  - ecto
 description: "Ecto doesn't handle atom by default and you can easily define custom ecto types"
 ---
 
@@ -58,8 +58,9 @@ defmodule Siteguardian.Util.AtomType do
   def dump(_), do: :error
 end
 ```
+
 The magic here happens on the `dump/1` and `load/1` functions; convert atom to string on the way in and convert string to atom on the way out.
 
-
 ## References:
+
 - [A quick dip into ecto types](https://www.glydergun.com/a-quick-dip-into-ecto-types/)

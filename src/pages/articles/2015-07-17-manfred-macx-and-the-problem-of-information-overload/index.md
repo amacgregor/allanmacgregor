@@ -1,15 +1,15 @@
 ---
-title: "Manfred Macx and the Problem of Information Overload"
-date: "2015-07-17"
+title: 'Manfred Macx and the Problem of Information Overload'
+date: '2015-07-17'
 layout: post
-draft: false 
-path: "/posts/the-problem-of-information-overload"
-category: "Technology"
+draft: false
+path: '/posts/the-problem-of-information-overload'
+category: 'Technology'
 tags:
-- "Futurology"
-- "Technology"
-- "Information Overload"
-description: "I have always been fascinated with the technology concepts presented on Charles Stross book Accelerando, artificial cats, downloads of consciousness, nanotechnology, etc. but of all of them one got my particular attention; Manfred Marcx glasses."
+  - 'Futurology'
+  - 'Technology'
+  - 'Information Overload'
+description: 'I have always been fascinated with the technology concepts presented on Charles Stross book Accelerando, artificial cats, downloads of consciousness, nanotechnology, etc. but of all of them one got my particular attention; Manfred Marcx glasses.'
 ---
 
 I've always been fascinated with the technology concepts presented on **Charles Stross** book _Accelerando_, artificial cats, downloads of consciousness, nanotechnology, etc. but of all of them one got my particular attention; Manfred Marcx glasses.
@@ -27,7 +27,6 @@ The attractive part here is not the augment reality glasses themselves but syste
 
 While we are still years if not decades away of being able to directly enhance our biological brain with help of external hardware, current technology should be more than sufficient for creating at least an early version of the software an exocortex system would need.
 
-
 ## Defining the implementation
 
 The first instinct for a project like this would be to go and develop a complex architecture, maybe a multi-agent system; yes that would be cool .... and also extremely complicated. But, what if switch the concept a little bit, what if instead of having a swarm of intelligent agents, we use a micro-service architecture.
@@ -39,20 +38,19 @@ The first instinct for a project like this would be to go and develop a complex 
 - fault tolerance
 - deployment complexity
 
-
 _**NOTE:** The system should not only help with data consumption and processing but also with information generation._
 
 > If we’re not doing something with the information we’re taking in, then we’re just pigs at the media trough.
 
 Here is where the challenge comes in, I can build a system that feeds me information, sure. But can I build a system that, helps me to generate content faster and more efficiently.
 
->The metacortex is the Web — our growing global network of information, people, sensors, and computing devices.
+> The metacortex is the Web — our growing global network of information, people, sensors, and computing devices.
 
 Also would that be considered an exocortex or more akin to a metacortex, all relevant questions but besides the point of an initial prototype implementation.
 
 More interesting are the advantages of a distributed system like this, and the mailability it could offer. A system that is comprised of microservices wouldn't care about the implementation of each service; as long as they respect the common contract for communication.
 
->The Web is literally a new layer of the human brain that transcends any individual brain. It is a global brain that connects all our brains together. It is intelligent. It is perhaps humanity’s greatest invention.  It collectively senses, reacts, interprets, learns, thinks, and acts in ways that we as individuals can barely comprehend or predict, and this activity comprises an emerging global mind. -- **Source: [Nova Spivak](https://www.novaspivack.com/web-3-0/a-new-layer-of-the-brain-is-evolving-the-metacortex)**
+> The Web is literally a new layer of the human brain that transcends any individual brain. It is a global brain that connects all our brains together. It is intelligent. It is perhaps humanity’s greatest invention. It collectively senses, reacts, interprets, learns, thinks, and acts in ways that we as individuals can barely comprehend or predict, and this activity comprises an emerging global mind. -- **Source: [Nova Spivak](https://www.novaspivack.com/web-3-0/a-new-layer-of-the-brain-is-evolving-the-metacortex)**
 
 Although even in a distributed service architecture there has to be a central point of orchestration, a system or process that is in charge of defining and running the tasks.
 
@@ -72,13 +70,13 @@ Although even in a distributed service architecture there has to be a central po
 At this point in time Option 2 seems more attractive, it also gives me the flexibility to integrate third party services into this structure without having to code the service myself. And I can leverage sites like [mashape.com](https://www.mashape.com) to help me with at least the initial implementation.
 
 > An exocortex is a theoretical artificial external information processing system that would augment a brain’s biological high-level cognitive processes.
-An individual’s exocortex would be composed of external memory modules, processors, IO devices and software systems that would interact with, and augment, a person’s biological brain. Typically this interaction is described as being conducted through a direct brain-computer interface, making these extensions functionally part of the individual’s mind. -- **Source: [Wikipedia](https://en.wikipedia.org/wiki/Exocortex)**
+> An individual’s exocortex would be composed of external memory modules, processors, IO devices and software systems that would interact with, and augment, a person’s biological brain. Typically this interaction is described as being conducted through a direct brain-computer interface, making these extensions functionally part of the individual’s mind. -- **Source: [Wikipedia](https://en.wikipedia.org/wiki/Exocortex)**
 
 ## Narrowing the Scope
 
 To measure progress and success, I need to define achievable goals first, in order to do that I have to narrow the scope and define what I want to gain from my "exocortex".
 
-***Do I want ...***
+**_Do I want ..._**
 
 - Better **memory** and indexation
 - Help with **data** consumption
@@ -120,7 +118,6 @@ WHEN
   {categories} HAVE ONE OF [tdd,bdd,agile]
   POST TO [Summarizer Queue]
 ```
-
 
 ## What's next?
 

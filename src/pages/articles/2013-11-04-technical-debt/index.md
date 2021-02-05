@@ -1,21 +1,18 @@
 ---
-title: "Technical Debt"
-date: "2013-11-04"
+title: 'Technical Debt'
+date: '2013-11-04'
 layout: post
 draft: false
-path: "/posts/technical-debt"
-category: "Programming"
+path: '/posts/technical-debt'
+category: 'Programming'
 tags:
-    - "Programming"
-    - "Best Practices"
-    - "Technical Debt"
-description: "Technical Debt, chances are that you as developer have heard that term at least once before; but ask yourself do you really understand technical debt and when is appropriate to use it."
+  - 'Programming'
+  - 'Best Practices'
+  - 'Technical Debt'
+description: 'Technical Debt, chances are that you as developer have heard that term at least once before; but ask yourself do you really understand technical debt and when is appropriate to use it.'
 ---
 
 Technical Debt, chances are that you as developer have heard that term at least once before; but ask yourself do you really understand technical debt and when is appropriate to use it.
-
-
-
 
 The term "technical debt" was first coined by Ward Cunningham who compared technical complexity and debt in a 1992 experience report:
 
@@ -25,10 +22,9 @@ Basically technical debt refers to the shortcuts or hacks that we do and that wi
 
 So if you ever had to hack things to make it work or skip testing just to meet a deadline; then you incurred into technical debt without knowing. Technical debt is usually paid inform of time and money spend fixing problems that could've been easily avoided if proper practices would've been followed.
 
-
 ## Technical debt is bad ... right ?
 
-So technical debt has to be bad since we are only generating problems for our future selfs correct? Well not exactly and this is a topic of much debate among developers, if properly managed technical debt can become and asset instead of problem.  
+So technical debt has to be bad since we are only generating problems for our future selfs correct? Well not exactly and this is a topic of much debate among developers, if properly managed technical debt can become and asset instead of problem.
 
 And while the previous point is highly controversial, modern companies seem to be embracing technical debt as part of their "Standard" methodologies for development, specially does who follow Agile practices. So what does this mean, does it mean that technical debt is desirable even to some extend ?
 
@@ -60,7 +56,6 @@ If we don't pay attention, technical debt has the tendency to hang around, and t
 If you are not paying attention debt will pile on without you even noticing, for that reason is recommended that you setup a debt ceiling, a maximum amount that you can 'borrow' from your projects quality.
 
 Setting a limit on how much debt a project can have helps keeps under control and forces you to think twice if that particular hack/change/compromise is really needed.
-
 
 ## Conclusion
 

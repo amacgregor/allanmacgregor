@@ -1,19 +1,21 @@
 ---
 title: Using Abbreviations instead of Aliases
-date: "2020-11-08"
+date: '2020-11-08'
 layout: post
 draft: false
-path: "/posts/using-abbreviations-instead-of-aliases"
+path: '/posts/using-abbreviations-instead-of-aliases'
 category: Linux
 tags:
- - linux
- - tips
- - shell
- - fish
-description: "Why you should start using abbreviations instead of aliases"
+  - linux
+  - tips
+  - shell
+  - fish
+description: 'Why you should start using abbreviations instead of aliases'
 ---
+
 <!--A great alternative to aliases-->
-I recently came across one of [Fish shell](https://github.com/fish-shell/fish-shell) best and likely most underrated features, **abbreviations**; a great alternative to **aliases** and dare I say a full replacement. 
+
+I recently came across one of [Fish shell](https://github.com/fish-shell/fish-shell) best and likely most underrated features, **abbreviations**; a great alternative to **aliases** and dare I say a full replacement.
 
 ## The Problem with Aliases
 
@@ -49,9 +51,9 @@ I converted this from an alias that I used on a daily basis for elixir developme
 ## Summary
 
 - `abbr` make for a better and more understandable `alias`
-- I'm replacing all my aliases with abbreviations 
+- I'm replacing all my aliases with abbreviations
 
-### Further Reading 
+### Further Reading
 
 - [Managing abbreviations - Fish](https://fishshell.com/docs/current/cmds/abbr.html)
 - [When an alias should actually be an abbr](https://www.sean.sh/log/when-an-alias-should-actually-be-an-abbr/)

@@ -1,20 +1,18 @@
 ---
-title: "Hello Hack"
-date: "2014-03-23"
+title: 'Hello Hack'
+date: '2014-03-23'
 layout: post
 draft: false
-path: "/posts/hello-hack"
-category: "Programming"
+path: '/posts/hello-hack'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "HHVM"
-    - "Hack"
-description: "Recently Facebook unveiled Hack, a new programming language that aims to provide developers with the tools to write and ship code quickly while catching errors on the fly."
+  - 'PHP'
+  - 'HHVM'
+  - 'Hack'
+description: 'Recently Facebook unveiled Hack, a new programming language that aims to provide developers with the tools to write and ship code quickly while catching errors on the fly.'
 ---
 
 Recently Facebook unveiled **Hack**, a new programming language that aims to provide developers with the tools to write and ship code quickly while catching errors on the fly.
-
-
 
 ## What is Hack?
 
@@ -22,7 +20,7 @@ Recently Facebook unveiled **Hack**, a new programming language that aims to pro
 
 > Hack has deep roots in PHP. In fact, most PHP files are already valid Hack files. [Facebook](https://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/)
 
-So does that mean that **Hack** is just a faster more efficient PHP implementation, right? Wrong, **Hack** is much more than that, the language brings features that are normally found in statically typed languages to the dynamically typed world of *PHP**.
+So does that mean that **Hack** is just a faster more efficient PHP implementation, right? Wrong, **Hack** is much more than that, the language brings features that are normally found in statically typed languages to the dynamically typed world of \*PHP\*\*.
 
 > Hack reconciles the fast development cycle of PHP with the discipline provided by static typing, while adding many features commonly found in other modern programming languages... [Facebook](https://code.facebook.com/posts/264544830379293/hack-a-new-proogramming-language-for-hhvm/)
 

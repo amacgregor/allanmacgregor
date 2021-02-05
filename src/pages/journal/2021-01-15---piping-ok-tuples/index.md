@@ -1,15 +1,15 @@
 ---
 title: Piping :ok tuples
-date: "2021-01-15"
+date: '2021-01-15'
 layout: journal
 draft: false
-path: "/til/piping-ok-tuples"
+path: '/til/piping-ok-tuples'
 category: Programming
 tags:
- - elixir
- - functional programming
- - programming
-description: "How to cleanly handle {:ok,_} tuples inside an elixir pipe"
+  - elixir
+  - functional programming
+  - programming
+description: 'How to cleanly handle {:ok,_} tuples inside an elixir pipe'
 ---
 
 <!--How to cleanly handle {:ok,_} tuples inside an elixir pipe-->
@@ -26,7 +26,7 @@ This is especially true when having to pipe functions that return an `{:ok, payl
 
 I found the last one most helpful, especially when dealing with the elixir DateTime library.
 
-```elixir 
+```elixir
     last_check =
       last_check
       |> DateTimeParser.parse_datetime()

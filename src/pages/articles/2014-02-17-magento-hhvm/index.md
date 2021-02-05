@@ -1,19 +1,17 @@
 ---
-title: "Magento and HHVM"
-date: "2014-02-17"
+title: 'Magento and HHVM'
+date: '2014-02-17'
 layout: post
 draft: false
-path: "/posts/magento-and-hhvm"
-category: "Programming"
+path: '/posts/magento-and-hhvm'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Programming"
-description: "If you are developer or system administrator working with Magento running one or more medium sized stores, chances are that you are familiar with the many challenges of optimizing and scaling Magento."
+  - 'PHP'
+  - 'Programming'
+description: 'If you are developer or system administrator working with Magento running one or more medium sized stores, chances are that you are familiar with the many challenges of optimizing and scaling Magento.'
 ---
 
 If you are developer or system administrator working with **Magento** running one or more medium sized stores, chances are that you are familiar with the many challenges of optimizing and scaling Magento.
-
-
 
 **Magento** is (in)famous for its performance, specially when scaling to a large numbers products, transactions or even catalog rules, seasoned Magento developers have probably hit at least one of this performance bottle necks more than once.
 
@@ -50,7 +48,6 @@ Daniel has been working for the last few months on **HHVM** and OSX compatibly, 
 
 As the time of this article publication, Magento can run on HHVM, but should still be approached with caution for production environments.
 
-
 ## Getting Things Up And Running
 
 So you want to run **Magento** on top of **HHVM**? If that's the case you're in luck, let's walkthrough the process for setting up, installing and running Magento+HHVM.
@@ -83,19 +80,19 @@ Next we will need to configure and compile **HHVM**:
 
 At this point we have a working hhvm binary that we can use to run php scripts, let's verify that our hhvm instance works by running, execute the following command:
 
-````
+```
 $ /path/to/my/installation/hhvm/hphp/hhvm/hhvm --help
-````
+```
+
 If everything is working correctly we should see the following output:
 
 <script src="https://gist.github.com/amacgregor/9056531.js"></script>
 
 Now if you want to be able to run **HHVM** easily from any location you can add it to the **PATH** by creating a symlink:
 
-````
+```
 $ ln -s /path/to/my/install/hhvm/hphp/hhvm/hhvm /usr/bin/hhvm
-````
-
+```
 
 ## Configuring HHVM for Magento
 
@@ -104,7 +101,6 @@ The next step will be setting up the basic configuration file for **HHVM** and r
 <script src="https://gist.github.com/amacgregor/0b7dd1f25e976b12713c.js"></script>
 
 <!-- Instructions for **HHVM** .hdf configuration -->
-
 
 > **HHVM** works around .hdf configuration files, HDF stands for **Hierarchical Data File** although in my opinion **Hiphop Definition File** would also make sense.
 
@@ -118,14 +114,15 @@ As we can see in the example file, there are 4 main configuration nodes:
 - StaticFile
 
 <!-- Settings Breakdown section -->
+
 #### Server
 
 The server node contains configuration that is specifically used when hhvm runs in server mode (surprising I know!), among these settings we have options like port, listening ip, hostname, number of threads to spawn and so on.
 
 The are 2 settings to which we should pay particular attention for our **Magento** installation, **SourceRoot** and **DefaultDocument**.
 
-- **SourceRoot** allows us to specify the **Magento** root folder, this would be the equivalent of Apache __DocumentRoot__.
-- **DefaultDocument** allow us to set the index file to be used automatically, this would be the equivalent of Apache __DirectyIndex__.
+- **SourceRoot** allows us to specify the **Magento** root folder, this would be the equivalent of Apache **DocumentRoot**.
+- **DefaultDocument** allow us to set the index file to be used automatically, this would be the equivalent of Apache **DirectyIndex**.
 
 #### Eval
 
@@ -135,14 +132,11 @@ The Eval node controls the JIT(Just In Time) Compiler settings in this case the 
 
 The Virtual host node allows us to set certain settings by virtual host like **ServerName** and **ServerVariables** in this specific case we need to set the rewrite rules to work with **Magento** rewrite settings, in order to resolve the assets and urls correctly.
 
-
 #### StaticFile
 
 The StaticFile node as the name describes allow us to configure how **HHVM** will handle and server files like css, js and image files.
 
-
 Now, that we have a working configuration file we can run our first test on **HHVM**.
-
 
 ### Running **Magento** with **HHVM**
 
@@ -150,11 +144,11 @@ Finally, we can get **Magento** up and running with **HHVM**, let's start HHVM u
 
 <!-- Insert Command for running hhvm -->
 
-````
+```
 $ hhvm -m server -c example.hdf
-````
-At this point, we should see our Magento website if we go to **https://localhost/**.
+```
 
+At this point, we should see our Magento website if we go to **https://localhost/**.
 
 ### Measuring the Speed
 
@@ -162,7 +156,7 @@ Finally, let's run a quick speed test with siege and compare the speeds of **HHV
 
 #### Apache2 and PHP-FPM
 
-````
+```
 $ siege -c20 -t1m localhost
 ** SIEGE 3.0.1
 ** Preparing 20 concurrent users for battle.
@@ -182,11 +176,11 @@ Failed transactions:           0
 Longest transaction:        3.06
 Shortest transaction:       0.51
 
-````
-
+```
 
 #### **HHVM** Build In Server
-````
+
+```
 $ siege -c20 -t1m localhost
 ** SIEGE 3.0.1
 ** Preparing 20 concurrent users for battle.
@@ -206,12 +200,11 @@ Failed transactions:           0
 Longest transaction:        0.47
 Shortest transaction:       0.07
 
-````
+```
 
 <div class="notice notice-warning">
     <strong>Notice:</strong> The previous tests are by no means comprehensive or accurate, and more than anything they try to showcase the speed difference between the two setups.
 </div>
-
 
 ## Summary
 

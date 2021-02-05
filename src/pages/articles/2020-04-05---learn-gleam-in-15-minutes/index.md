@@ -1,15 +1,15 @@
 ---
 title: Learn Gleam in 15 minutes
-date: "2020-04-05"
+date: '2020-04-05'
 layout: post
 draft: true
-path: "/posts/learn-gleam-in-15-minutes"
+path: '/posts/learn-gleam-in-15-minutes'
 category: Programming
 tags:
- - functional programming
- - programming
- - erlang
-description: "Gleam is a statically typed language for the Erlang VM that shows considerable promise"
+  - functional programming
+  - programming
+  - erlang
+description: 'Gleam is a statically typed language for the Erlang VM that shows considerable promise'
 ---
 
 <!--Gleam is a statically typed language for the Erlang VM that shows considerable promise-->

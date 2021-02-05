@@ -1,15 +1,15 @@
 ---
-title: "HHVM In The Wild"
-date: "2014-03-22"
+title: 'HHVM In The Wild'
+date: '2014-03-22'
 layout: post
 draft: false
-path: "/posts/hhvm-in-the-wild"
-category: "Programming"
+path: '/posts/hhvm-in-the-wild'
+category: 'Programming'
 tags:
-    - "HHVM"
-    - "Hack"
-    - "Programming"
-description: "HHVM is taking the PHP world by storm, and as PHP developer there many things to be excited about HHVM."
+  - 'HHVM'
+  - 'Hack'
+  - 'Programming'
+description: 'HHVM is taking the PHP world by storm, and as PHP developer there many things to be excited about HHVM.'
 ---
 
 HHVM is taking the PHP world by storm, and as PHP developer there many things to be excited about HHVM.
@@ -23,9 +23,8 @@ The following list shows how developers are using HHVM in the real world in very
 - [Symfony benchmark using HHVM](https://www.alexfu.it/2013/10/22/symfony-benchmark-on-hhvm.html)
 - [Magento and HHVM](https://coderoncode.com/2014/02/17/magento-hhvm.html)
 
-
-
 ## Additional Reading
+
 - [Speeding up PHP-based development with HHVM](https://www.facebook.com/notes/facebook-engineering/speeding-up-php-based-development-with-hiphop-vm/10151170460698920)
 - [An Introduction to HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html)
 - [First steps on HHVM](https://coderoncode.com/2013/07/27/first-steps-on-hhvm.html)

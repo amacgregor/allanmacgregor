@@ -1,15 +1,15 @@
 ---
 title: Piss-off script kiddies with SSH Tarpit
-date: "2021-01-10"
+date: '2021-01-10'
 layout: journal
 draft: false
-path: "/til/piss-off-script-kiddies-with-ssh-tarpit"
+path: '/til/piss-off-script-kiddies-with-ssh-tarpit'
 category: Devops
 tags:
- - devops
- - ssh
- - hacking
-description: "SSH tarpits are a thing to waste the time of automated scanners."
+  - devops
+  - ssh
+  - hacking
+description: 'SSH tarpits are a thing to waste the time of automated scanners.'
 ---
 
 <!--SSH tarpits are a thing to waste time from automated scanners-->
@@ -24,7 +24,7 @@ cd endlessh
 make && make install
 ```
 
-And now run it: 
+And now run it:
 
 ```bash
 endlessh -v >endlessh.log 2>endlessh.err

@@ -16,16 +16,18 @@ class NewsletterRoute extends React.Component {
     const description = pageDescription !== null ? pageDescription : subtitle
     const cta_content = {
       title: "Hi! I'm Allan",
-      subtitle: "This is where I write."
-    }    
+      subtitle: 'This is where I write.',
+    }
     return (
       <Layout>
         <div>
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
-            <script src="https://kit.fontawesome.com/9a1f3c9439.js" crossorigin="anonymous"></script>
-
+            <script
+              src="https://kit.fontawesome.com/9a1f3c9439.js"
+              crossorigin="anonymous"
+            ></script>
           </Helmet>
           <div className="max-w-screen-lg ">
             <MobileNav {...this.props} />
@@ -77,12 +79,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       limit: 6
-      filter: { 
-        frontmatter: { 
-          draft: { ne: true } 
-          layout: { eq: "post" }
-        } 
-      }
+      filter: { frontmatter: { draft: { ne: true }, layout: { eq: "post" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -104,12 +101,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    githubViewer { 
-      repositories{
+    githubViewer {
+      repositories {
         nodes {
           name
           description
-          languages{
+          languages {
             edges {
               node {
                 name
@@ -119,7 +116,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    allAirtable(filter: {table: {eq: "Main"}, data: {Enabled: {eq: true}}}) {
+    allAirtable(
+      filter: { table: { eq: "Main" }, data: { Enabled: { eq: true } } }
+    ) {
       nodes {
         data {
           Name

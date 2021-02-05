@@ -1,27 +1,23 @@
 ---
-title: "Magento Online Hackathon 2014"
-date: "2014-03-08"
+title: 'Magento Online Hackathon 2014'
+date: '2014-03-08'
 layout: post
 draft: false
-path: "/posts/magento-online-hackathon-2014"
-category: "Programming"
+path: '/posts/magento-online-hackathon-2014'
+category: 'Programming'
 tags:
-    - "Magento"
-    - "Programming"
-description: "This past weekend the Magento Community hosted the first Magento Online Hackathon, here is a quick recap of my experience."
+  - 'Magento'
+  - 'Programming'
+description: 'This past weekend the Magento Community hosted the first Magento Online Hackathon, here is a quick recap of my experience.'
 ---
 
 This past weekend the Magento Community hosted the first Magento Online Hackathon, here is a quick recap of my experience.
-
-
-
 
 ## The Community
 
 First and foremost a big shout out to the Magento Community, you guys are awesome. Very few other communities could and have organized themselves to run a Hackathon this size let alone an online one; It's truly amazing to see people from so many countries and in different timezones trying to work together.
 
 If anything at all was achieved in this event was to show that what makes Magento so unique and successful it's community and the people in it.
-
 
 ## The Hangouts
 
@@ -43,7 +39,6 @@ Normally in an offline hackathon rules are a bit more strict and people are easi
 In the end it was decided that rather than enforcing the team allocation, we would use the votes registered at [magento.corehack.de](magento.corehack.de) to build a initial team rooster based on each persons vote, this initial rooster is just a suggestion for the initial team organization and participants could switch and even start new projects.
 
 In the end, I'm happy to say that the teams where more than capable of organizing themselves and there very few if any problems at all.
-
 
 ## The Projects
 

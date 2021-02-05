@@ -1,25 +1,25 @@
 ---
-title: "Exploring Elixir Recursion and Lists"
+title: 'Exploring Elixir Recursion and Lists'
 date: 2016-01-17T15:46:54-05:00
 layout: post
 draft: false
-path: "/posts/exploring-elixir-recursion-lists"
-category: "Programming"
+path: '/posts/exploring-elixir-recursion-lists'
+category: 'Programming'
 tags:
-  - "Elixir"
-  - "Functional Programming"
-description: "Exploration of recursion in elixir with lists"
+  - 'Elixir'
+  - 'Functional Programming'
+description: 'Exploration of recursion in elixir with lists'
 ---
 
-Recently, I've been playing with a new language called [Elixir](https://elixir-lang.org/). Elixir is a **functional programming language** specifically designed with the intention of creating scalable and maintainable applications. 
+Recently, I've been playing with a new language called [Elixir](https://elixir-lang.org/). Elixir is a **functional programming language** specifically designed with the intention of creating scalable and maintainable applications.
 
 As many developers my main experience with programming languages and paradigms has been with **object oriented programming**; functional programming is a completely different beast and as I explore and learn more, the more fascinating I find the promises and ideas behind functional programming.
 
-One of the things that has been messing with my head considerably is the fact that functional programming relies heavily on recursion. Now, technically speaking elixir is not a purely functionaly language and the way they implement **immutability** is a bit different; that being said in elxir as in any other functional programming language **there are no loops**. 
+One of the things that has been messing with my head considerably is the fact that functional programming relies heavily on recursion. Now, technically speaking elixir is not a purely functionaly language and the way they implement **immutability** is a bit different; that being said in elxir as in any other functional programming language **there are no loops**.
 
-No loops!? no **foreach**, no **for**, no **while** instead we get recursion; where a function gets called recursively until a condition is reached that stops the recursive action from ocurring again — for example processing each element in a list until the list is empty. 
+No loops!? no **foreach**, no **for**, no **while** instead we get recursion; where a function gets called recursively until a condition is reached that stops the recursive action from ocurring again — for example processing each element in a list until the list is empty.
 
-Sounds confusing right? Let's look at an example: 
+Sounds confusing right? Let's look at an example:
 
 <script src="https://gist.github.com/amacgregor/93b23d7260b62a0b72e5.js"></script>
 
@@ -39,7 +39,7 @@ All we are doing at this point is taking out the first element of the list passi
 
 ```elixir
 count([1,2,3,4,5])                           #returns 4 + 1
-  "this in turn calls" -> count([2,3,4,5])   #returns 3 + 1 
+  "this in turn calls" -> count([2,3,4,5])   #returns 3 + 1
   "this in turn calls" -> count([3,4,5])     #returns 2 + 1
   "this in turn calls" -> count([4,5])       #returns 1 + 1
   "this in turn calls" -> count([5])         #returns 0 + 1

@@ -1,20 +1,18 @@
 ---
-title: "Design Patterns in PHP: Singletons"
-date: "2014-01-27"
+title: 'Design Patterns in PHP: Singletons'
+date: '2014-01-27'
 layout: post
 draft: false
-path: "/posts/design-patterns-in-php-singletons"
-category: "Programming"
+path: '/posts/design-patterns-in-php-singletons'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Design Patterns"
-    - "Programming"
-description: "The singleton pattern is useful when we need to make sure we only have a single instance of a class for the entire request lifecycle in a web application. This typically occurs when we have global objects (such as a Configuration class) or a shared resource (such as an event queue)."
+  - 'PHP'
+  - 'Design Patterns'
+  - 'Programming'
+description: 'The singleton pattern is useful when we need to make sure we only have a single instance of a class for the entire request lifecycle in a web application. This typically occurs when we have global objects (such as a Configuration class) or a shared resource (such as an event queue).'
 ---
 
 The singleton pattern is used to restrict the instantiation of a class to a single object, which can be useful when only one object is required across the system.
-
-
 
 <!-- Patterns are still patterns, poor usage that ends ineffective and complex code which makes them into anti-patterns -->
 
@@ -49,7 +47,6 @@ There are several reasons why **Singletons** are considered an Anti-pattern, let
 This first problem that we encounter when using **Singletons** is that their usage breaks the **Single Responsibility Principle**.
 
 Singleton objects are responsible of both their purpose and controlling the number of instances the produce, while the **Single Responsibility Principle** states that:
-
 
 > ... every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class.
 

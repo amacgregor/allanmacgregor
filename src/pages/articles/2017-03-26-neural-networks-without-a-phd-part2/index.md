@@ -1,14 +1,14 @@
 ---
-title: "Neural Networks Without a PhD: Components of a Neural Network"
+title: 'Neural Networks Without a PhD: Components of a Neural Network'
 date: 2017-03-26T07:38:13-04:00
 layout: post
 draft: false
-path: "/posts/neural-networks-without-a-phd-components-of-a-neural-networks"
-category: "Programming"
+path: '/posts/neural-networks-without-a-phd-components-of-a-neural-networks'
+category: 'Programming'
 tags:
-    - "Machine Learning"
-    - "Programming"
-    - "Neural Networks"
+  - 'Machine Learning'
+  - 'Programming'
+  - 'Neural Networks'
 description: "A series focused on presenting Neural Networks and the related concepts in layman's terms, that is to say without specialized knowledge in math or machine learning."
 ---
 
@@ -18,7 +18,6 @@ description: "A series focused on presenting Neural Networks and the related con
 {% excerpt %}
 In essence **Neural networks** are digital representations of their biological counterparts, and while that sounds intimidating – unless you have a strong background in statistics or cognitive science – NN are not that complicated once you understand the individual building blocks for a Neural Net.
 {% endexcerpt %}
-
 
 For illustration purposes let's take a look at the simplest possible Neural Network, the **perceptron**:
 
@@ -102,7 +101,9 @@ Running trained Network against Test Data
 ```
 
 ## The result
+
 Can you spot the pattern that the Neural Network is supposed to predict? Leave a comment if you think you figure out the pattern and how well our perceptron did.
 
 # Summary
+
 We covered a lot of content in this second post of the series and we now have a much **better understanding** of the individual elements in neural networks, next we are going to cover **ANN topology** or how to put organize and connect all of our Neurons.

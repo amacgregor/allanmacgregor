@@ -1,16 +1,16 @@
 ---
-title: "Machine Learning: A Simple Neural Network"
+title: 'Machine Learning: A Simple Neural Network'
 date: 2016-06-06T08:31:46-04:00
 layout: post
 draft: false
-path: "/posts/a-simple-neural-network"
-category: "Programming"
+path: '/posts/a-simple-neural-network'
+category: 'Programming'
 tags:
-    - "Machine Learning"
-    - "Programming"
-    - "Neural Networks"
-    - "Python"
-description: "A simple neural network implementation in python with numpy"
+  - 'Machine Learning'
+  - 'Programming'
+  - 'Neural Networks'
+  - 'Python'
+description: 'A simple neural network implementation in python with numpy'
 ---
 
 For the last few months I've been slowly getting my head around the concepts of machine learning, artificial intelligence and neural networks. The impact that machine learning could potentially have on everyday tasks and the way we develop and interact with applications is incredibly exciting; for that reason I been slowly trying to spend as much of my free time as possible trying to learn this big and complex field.
@@ -55,7 +55,6 @@ In our case we will be training against a know dataset, so the process will roug
 - Based on the error adjust the weights slightly.
 - Rinse and repeat, 10,000 times
 
-
 By doing this will eventually come to an optimal set of weights for our training set; assuming that our unknown examples follow the same patter then the neuron should be able to make an accurate prediction. This in a nutshell is what we call backpropagation.
 
 ## The Math
@@ -75,7 +74,7 @@ The plotted result of the above function will look like the following curve:
 
 Keep in mind that this is not the only type of neuron, and depending on the kind of neural network and job we are giving it we might use other kinds of functions to calculated the output.
 
-###  Adjusting the weights
+### Adjusting the weights
 
 The second part to this neuron code is to be able to adjust the synaptic weights during training, in order to do that we need to provide a second function that will calculate the adjustment.
 
@@ -123,6 +122,7 @@ Which should generated something like the following:
  [ 0.44064899]
  [-0.99977125]]
 ```
+
 It doesn't matter how many times we run our example our initial weights will always be the same.
 
 Now, what would happen if we where to run our neural network without training? What do you think would happen? Would be get an accurate result?
@@ -174,7 +174,6 @@ Bam! I would said that is a pretty accurate result. Experiment tweaking some of 
 # Conclusion
 
 You made it to the end of the post!! Congratulations! This one was a long one and by no means a necessarily easy one to follow. However, keep in mind we are just scratching the surface, I skimmed on a lot of concepts and theory, the math alone could take several posts to start from scratch.
-
 
 #### References
 

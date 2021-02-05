@@ -1,15 +1,15 @@
 ---
-title: "Is HHVM/Hack the new face of PHP?"
-date: "2014-04-08"
+title: 'Is HHVM/Hack the new face of PHP?'
+date: '2014-04-08'
 layout: post
 draft: false
-path: "/posts/is-hhvm-the-new-face-of-php"
-category: "Programming"
+path: '/posts/is-hhvm-the-new-face-of-php'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "HHVM"
-    - "Programming"
-    - "HHVM"
+  - 'PHP'
+  - 'HHVM'
+  - 'Programming'
+  - 'HHVM'
 description: "HHVM could change (is already at some extent) the way developers see and think about PHP performance, and how PHP should work. Even if you don't care and never plan to use HHVM or HACK in any of your projects the mere fact that they exist is a good thing for the PHP community."
 ---
 
@@ -17,9 +17,6 @@ description: "HHVM could change (is already at some extent) the way developers s
 
 - [An Introduction to HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html)
 - [First steps on HHVM](https://coderoncode.com/2013/07/24/introduction-hhvm.html)
-
-
-
 
 ## Why Should I Care?
 

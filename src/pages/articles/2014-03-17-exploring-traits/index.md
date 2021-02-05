@@ -1,23 +1,20 @@
 ---
-title: "Exploring Traits"
-date: "2014-03-17"
+title: 'Exploring Traits'
+date: '2014-03-17'
 layout: post
 draft: false
-path: "/posts/exploring-php-traits"
-category: "Programming"
+path: '/posts/exploring-php-traits'
+category: 'Programming'
 tags:
-    - "Programming"
-    - "Traits"
-    - "Best Practices"
-description: "Traits are a mechanism for code reuse in single inheritance languages such as PHP. A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of methods freely in several independent classes living in different class hierarchies. The semantics of the combination of Traits and classes is defined in a way which reduces complexity, and avoids the typical problems associated with multiple inheritance and Mixins."
+  - 'Programming'
+  - 'Traits'
+  - 'Best Practices'
+description: 'Traits are a mechanism for code reuse in single inheritance languages such as PHP. A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of methods freely in several independent classes living in different class hierarchies. The semantics of the combination of Traits and classes is defined in a way which reduces complexity, and avoids the typical problems associated with multiple inheritance and Mixins.'
 ---
-
 
 Among the new features and fixes that come with **PHP5.4** we have the addition of traits to the PHP language, PHP is a single inheritance language this means that classes and only inheriting from single parent class, in practice this complicates code organization and can lead to code duplicity.
 
 Languages like **C++** or **Python** manage this problem by allowing inheritance from multiple classes, Ruby in the other hand uses **Mixins** to address this issue. Regardless of the technique the problem remains the same; Traits are another approach to this problem and are commonly used in the languages like **Perl** and **Scala**.
-
-
 
 Although PHP5.4(and Traits) has been around since early 2012, a lot of php developers might not be familiar with the concept and power behind Traits; In this article I want to explore traits, their usage, advantages and disadvantages.
 
@@ -32,8 +29,6 @@ The **diamond problem** gets its name from the shape that the class inheritance 
 So assuming **PHP** would allow for multiple class inheritance(which it doesn't) the diamond problem would look something like this:
 
 `gist:amacgregor/9456741`
-
-
 
 Whoops at that point (if PHP actually had multiple inheritance) we would get an error saying, since **PHP** wouldn't know which **roar()** implementation to call.
 
@@ -51,18 +46,15 @@ As we mentioned before Traits are similar to Abstract classes, for example they 
 
 `gist:amacgregor/9573105`
 
-
 Now, if you are thinking that could you have done the same by creatin a **Cat** class that extends the **Animal** class and extending our **Tiger** class from there; take the following example into consideration:
 
 `gist:9573275`
-
 
 Wasn't that cool? Try to do that with single inheritance.
 
 The best part about traits is that it makes sense from a structural point of view, think about it Cats and BigCats share many traits among them but not all of them, for example we could break it down even further:
 
 `gist:9573439`
-
 
 ## Conclusion
 

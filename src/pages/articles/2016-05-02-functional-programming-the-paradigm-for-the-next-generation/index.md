@@ -1,16 +1,16 @@
 ---
-title: "Functional Programming: The Paradigm for the Next Generation"
+title: 'Functional Programming: The Paradigm for the Next Generation'
 date: 2016-05-02T13:05:11-04:00
 layout: post
 draft: false
-path: "/posts/functional-programming-paradigm-next-generation"
-category: "Programming"
+path: '/posts/functional-programming-paradigm-next-generation'
+category: 'Programming'
 tags:
-    - "Programming"
-    - "Functional Programming"
-    - "Software Engineering"
-    - "Elixir"
-description: "Functional programming is often treated as the fad of hipster mustachioed programmers, and more often is dismissed without much consideration"
+  - 'Programming'
+  - 'Functional Programming'
+  - 'Software Engineering'
+  - 'Elixir'
+description: 'Functional programming is often treated as the fad of hipster mustachioed programmers, and more often is dismissed without much consideration'
 ---
 
 Functional programming is often treated as the fad of hipster mustachioed programmers, and more often is dismissed without much consideration; after all Object Oriented Programming is superior. Well, at least that use to be the trend but in recent years Functional programming has experienced a renaissance and as result functional programming languages are gaining more and more adoption.
@@ -27,7 +27,7 @@ For some developers this is a huge change, one of herculean proportions; but I'm
 
 ## Functional Thinking
 
-Functional Thinking? What do we mean by that exactly? Well, I could go into detail about what functional thinking is how writing *functional* code is more than just the selection of the programming language but also affects how we design our code, how we structure reusable blocks of code, what trade-offs we accept and so on.
+Functional Thinking? What do we mean by that exactly? Well, I could go into detail about what functional thinking is how writing _functional_ code is more than just the selection of the programming language but also affects how we design our code, how we structure reusable blocks of code, what trade-offs we accept and so on.
 
 However, I believe the simplest way to clarify the concepts of functional programming and thinking is by comparing two solutions to the same problem, one solution using an imperative language and the other one using a functional language.
 
@@ -41,7 +41,7 @@ Simple enough, by using the foreach loop we iterate across every single item in 
 
 <iframe src='https://glot.io/snippets/ee2hjw0uer/embed' frameborder='0' scrolling='no' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts' width='100%' height='450'></iframe>
 
-Now, your initial reaction might be something like ***What in Knuts name is that?!***, ***Why are there two declarations of the same function?!***. If this is your first time seeing any **Elixir** code the above snippet might look awfully confusing and hardly making any sense.
+Now, your initial reaction might be something like **_What in Knuts name is that?!_**, **_Why are there two declarations of the same function?!_**. If this is your first time seeing any **Elixir** code the above snippet might look awfully confusing and hardly making any sense.
 
 But in reality it's actually very simple code, taking advantage of a common patter in FP and one of Elixir strongest features; pattern matching. Let's start by breaking down the code:
 
@@ -70,7 +70,7 @@ This technique is extremely common in elixir, handle each edge case in a separat
 Now, I could argue the resulting code is cleaner and I dare to say more elegant, but before making statements like that, let's make our example more interesting, and change the array to the following values:
 
 ```php
-$sumList = [5,'four',2,'ten','one',28,6,'five'];
+$sumList = [5, 'four', 2, 'ten', 'one', 28, 6, 'five'];
 ```
 
 Perfect, so now our code has to check if the value is a string or an integer and then convert the string representation into an integer for addition. To make things a little easier we are going add another array with integer values so we don't have to worry about the conversion.

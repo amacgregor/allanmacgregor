@@ -1,20 +1,18 @@
 ---
 title: The Thing Most Developers Get Wrong On Interviews
-date: "2020-04-13"
+date: '2020-04-13'
 layout: post
 draft: false
-path: "/posts/the-thing-most-developers-get-wrong-on-interviews"
+path: '/posts/the-thing-most-developers-get-wrong-on-interviews'
 category: Career
 tags:
- - career
- - soft skills
- - interviewing
-description: "Most developers focus a lot on technical skills but often fail to prepare for the most basic of soft skills interviews"
+  - career
+  - soft skills
+  - interviewing
+description: 'Most developers focus a lot on technical skills but often fail to prepare for the most basic of soft skills interviews'
 ---
 
 <!--Most developers focus a lot on technical skills but often fail to prepare for the most basic of soft skills interviews-->
-
-
 
 <blockquote className="p-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
 As an interviewee your main priority is to help the interviewer visualize what kind of employee you'll be at their company, and how your previous experience and achievements makes you a great for the position.
@@ -22,11 +20,11 @@ As an interviewee your main priority is to help the interviewer visualize what k
 
 One of the things that I still find surprising after years of hiring and interviewing engineers, is how poorly software engineers prepare in average for the behavioral and soft part of the interview.
 
-As a hiring manager, I'm looking for software engineers that are flexible, that can perform under pressure, and above all adapt to their environment. Therefore, assessing soft skills, is a crucial part of the evaluation process.  
+As a hiring manager, I'm looking for software engineers that are flexible, that can perform under pressure, and above all adapt to their environment. Therefore, assessing soft skills, is a crucial part of the evaluation process.
 
 Now chances are that if you are an engineer actively interview, you had been asked some of the following behavioral questions:
 
-- Could tell about a challenging problem that you had to solve in the last year or so? 
+- Could tell about a challenging problem that you had to solve in the last year or so?
 - Could you share with me an instance where you had to deal with conflict within your team and how you handle it?
 - Can you walk me through a difficult bug you had to solve?
 
@@ -51,11 +49,11 @@ Now, there is a particular section of the behavioral interview that more often t
 
 ## Why Us
 
-I cannot stress this enough, before you prepare for anything **research the company** you'll be asked your reason for applying for the role or why you are interested to work for company X. 
+I cannot stress this enough, before you prepare for anything **research the company** you'll be asked your reason for applying for the role or why you are interested to work for company X.
 
 Many candidates give generic answers that could apply to hundred of other companies; at worst some candidates will come so poorly prepared that won't even have the faintest idea of what the company actually does.
 
-As a candidate you want to show your interviewer that you're excited about their company and the problem they are tackling. 
+As a candidate you want to show your interviewer that you're excited about their company and the problem they are tackling.
 
 Part of the your interview preparation should include reading about the company and trying to answer the following questions:
 
@@ -64,7 +62,7 @@ Part of the your interview preparation should include reading about the company 
 - What excites me about working on the industry?
 - What are the company core values?
 
-### Be Engaging 
+### Be Engaging
 
 In this day an age, the myth of the lone curmudgeon developer on the basement of the company is long death; you need to show that you have the skills for the job and that you are good team member.
 

@@ -1,15 +1,15 @@
 ---
-title: "Laravel Learning Resources"
-date: "2014-03-15"
+title: 'Laravel Learning Resources'
+date: '2014-03-15'
 layout: post
-draft: false 
-path: "/posts/laravel-learning-resources"
-category: "Programming"
+draft: false
+path: '/posts/laravel-learning-resources'
+category: 'Programming'
 tags:
-    - "Laravel"
-    - "Programming"
-    - "Learning"
-description: "Collection of resources for learning Laravel"
+  - 'Laravel'
+  - 'Programming'
+  - 'Learning'
+description: 'Collection of resources for learning Laravel'
 ---
 
 For the last couple of months I been working with Laravel and learning a lot, here are some of my favorite resources:
@@ -20,15 +20,11 @@ For the last couple of months I been working with Laravel and learning a lot, he
 - [Laravel: From Apprentice To Artisan](https://leanpub.com/laravel)
 - [Laravel 4 Cookbook](https://leanpub.com/laravel4cookbook)
 
-
-
-
 ## Blogs
 
 - [Laravel Weekly - Newsletter](https://laravelweekly.com/)
 - [Jeffrey Way](https://jeffrey-way.com/)
 - [Taylor Otwell](https://taylorotwell.com/)
-
 
 ## Screencasts and Podcasts
 

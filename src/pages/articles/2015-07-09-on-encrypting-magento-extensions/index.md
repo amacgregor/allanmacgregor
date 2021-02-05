@@ -1,15 +1,15 @@
 ---
 title: On Encrypting Magento Extensions
-date: "2015-07-09"
+date: '2015-07-09'
 layout: post
 draft: false
-path: "/posts/on-encrypting-magento-extensions"
-category: "Programming"
+path: '/posts/on-encrypting-magento-extensions'
+category: 'Programming'
 tags:
-    - "Magento"
-    - "Programming"
-    - "DRM"
-description: "Should Magento Connect Allow encrypted extensions"
+  - 'Magento'
+  - 'Programming'
+  - 'DRM'
+description: 'Should Magento Connect Allow encrypted extensions'
 ---
 
 > The opinions expressed here represent my own and not those of my employer.
@@ -25,11 +25,11 @@ My reasons for hating obfuscated/encrypted code are much more practical and mund
 
 ## Control
 
-As developer any third party extension paid or not that goes into any of my projects has to go through several tools like php-metrics, php-codesniffer, php-messdetector and so on to make  sure that the code meets certain standards. Code quality, stability and adherence to standards  are things that I consider important and the lack off quality in Connect extensions was my main motivator to create [triplecheck.io](https://www.triplecheck.io)
+As developer any third party extension paid or not that goes into any of my projects has to go through several tools like php-metrics, php-codesniffer, php-messdetector and so on to make sure that the code meets certain standards. Code quality, stability and adherence to standards are things that I consider important and the lack off quality in Connect extensions was my main motivator to create [triplecheck.io](https://www.triplecheck.io)
 
 Encryption puts code whatever quality it might be on a black box where we cannot check, test or fix it; worse comes to worse we are still responsible for supporting an maintaining the sites running said extension. Moreover, believe me, not every merchant is going to be understanding enough when you tell them
 
-> “Well there is nothing I can do to fix the extension, I  have to wait for the extension developer to answer back; with luck it will be in a week.
+> “Well there is nothing I can do to fix the extension, I have to wait for the extension developer to answer back; with luck it will be in a week.
 > Please close your business for the meantime.”
 
 ## Flexibility

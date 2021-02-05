@@ -1,23 +1,20 @@
 ---
-title: "The Transhumanist Revolution: Hubris"
-date: "2014-01-01"
+title: 'The Transhumanist Revolution: Hubris'
+date: '2014-01-01'
 layout: post
 draft: true
-path: "/posts/hubris-the-transhumanist-revolution"
-category: "Technology"
+path: '/posts/hubris-the-transhumanist-revolution'
+category: 'Technology'
 tags:
-    - "Technology"
-    - "Transhumanism"
-    - "Futurology"
-description: "Why is **transhumanism** a revolution? The word revolution evokes strong and most likely violent imagery; conflict and war are also typically associated with the word revolution; and I named this article that way for an opposite reason."
+  - 'Technology'
+  - 'Transhumanism'
+  - 'Futurology'
+description: 'Why is **transhumanism** a revolution? The word revolution evokes strong and most likely violent imagery; conflict and war are also typically associated with the word revolution; and I named this article that way for an opposite reason.'
 ---
 
 > **transhumanism** (abbreviated as H+ or h+) is an international cultural and intellectual movement with an eventual goal of fundamentally transforming the human condition by developing and making widely available technologies to greatly enhance human intellectual, physical, and psychological capacities.
 >
 > **en.wikipedia.org/wiki/transhumanism**
-
-
-
 
 <br/>
 
@@ -25,14 +22,13 @@ description: "Why is **transhumanism** a revolution? The word revolution evokes 
 
 <br/>
 
-
 ## What is the **transhumanist** Revolution?
 
 Or even better why is **transhumanism** a revolution? The word revolution evokes strong and most likely violent imagery; conflict and war are also typically associated with the word revolution; and I named this article that way for an opposite reason.
 
 Is not that I want to associate violence and conflict with the **transhumanist** movement, quite the opposite; {% excerpt %}I believe that the **transhumanist** movement will only keep gaining strength and that it would be beneficial and in the best interest for humanity. {% endexcerpt %}
 
-But that being said  what better way of addressing the most negatives arguments against **transhumanism** than tackling the head on, this is the first on a series of articles where I attempt to address the main arguments and criticism against transhumanity.
+But that being said what better way of addressing the most negatives arguments against **transhumanism** than tackling the head on, this is the first on a series of articles where I attempt to address the main arguments and criticism against transhumanity.
 
 ## Hubris
 

@@ -1,19 +1,17 @@
 ---
-title: "The Async Software Development Manifesto Revised"
-date: "2014-09-29"
+title: 'The Async Software Development Manifesto Revised'
+date: '2014-09-29'
 layout: post
 draft: false
-path: "/posts/the-async-software-development-manifesto-revised"
-category: "Programming"
+path: '/posts/the-async-software-development-manifesto-revised'
+category: 'Programming'
 tags:
-    - "Programming"
-    - "Software Engineering"
-description: "The Async Software Development Manifesto has been making the rounds on sites like HackerNews and /r/programming; and while I dont agree entirely with all that is proposed, some of the points made by the author made so much sense that I felt motivated to break them down and make some contributions of my own."
+  - 'Programming'
+  - 'Software Engineering'
+description: 'The Async Software Development Manifesto has been making the rounds on sites like HackerNews and /r/programming; and while I dont agree entirely with all that is proposed, some of the points made by the author made so much sense that I felt motivated to break them down and make some contributions of my own.'
 ---
 
 The ['Async Software Development Manifesto'](https://asyncmanifesto.org/) has been making the rounds on sites like HackerNews and /r/programming; and while I don't agree entirely with all that is proposed, some of the points made by the author made so much sense that I felt motivated to break them down and make some contributions of my own.
-
-
 
 ## Async Software Development Manifesto
 
@@ -48,7 +46,6 @@ So in this case, I think the principle should be revised to:
 
 <div style="font-size:60px; text-align:center">Use tools that work for you</div>
 
-
 ### Meetings only as a last resort
 
 According to the ASDM **"meetings are very costly to your business"** due the time that they take away from developers and the cost of constant interruptions, several articles like [programmer interrupted](https://blog.ninlabs.com/2013/01/programmer-interrupted/), [why you shouldn't interrupt developers](https://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer) and [the high cost of interruptions](https://www.infoq.com/news/2013/01/Interruptions) deal with the same concept; there is a cost that hidden when interrupting developers; so I agree with this part of the principle.
@@ -71,7 +68,6 @@ There is however a valuable point to be made about constant interruptions and th
 So in this case, I think the principle should be revised to:
 
 <div style="font-size:60px; text-align:center">Use meetings wisely</div>
-
 
 ### Flexible work environments
 

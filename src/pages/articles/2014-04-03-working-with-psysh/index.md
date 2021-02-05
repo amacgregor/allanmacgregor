@@ -1,22 +1,20 @@
 ---
-title: "Working with Psysh"
-date: "2014-04-03"
+title: 'Working with Psysh'
+date: '2014-04-03'
 layout: post
 draft: false
-path: "/posts/working-with-psysh"
-category: "Programming"
+path: '/posts/working-with-psysh'
+category: 'Programming'
 tags:
-    - "PHP"
-    - "Programming"
-    - "Tooling"
-description: "I previously mentioned Boris, a terrific REPL for PHP, and while Boris is a great and functional REPL, is not the only available"
+  - 'PHP'
+  - 'Programming'
+  - 'Tooling'
+description: 'I previously mentioned Boris, a terrific REPL for PHP, and while Boris is a great and functional REPL, is not the only available'
 ---
 
 I previously mentioned Boris, a terrific REPL for PHP, and while Boris is a great and functional REPL, is not the only available.
 
 **Psysh** is actually more than a simple REPL it's also an interactive debugger; which means you can say goodbye to the endless barrage of var_dump() and die() statements.
-
-
 
 But do we really need another REPL for PHP, well honestly we could probably get by with the solutions currently available however **Psysh** has an extremely interesting Ace under the sleeve, it can also function as a realtime debugger.
 
