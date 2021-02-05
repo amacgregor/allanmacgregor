@@ -3,7 +3,7 @@ const pxtorem = require('postcss-pxtorem')
 
 const url = 'https://allanmacgregor.com'
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -12,7 +12,8 @@ module.exports = {
     url,
     siteUrl: url,
     title: 'Allan MacGregor',
-    description: 'Hi, I\'m Allan, this is where I write. I\'m an experienced software engineer and manager, currently looking for my next opportunity. I also run several side projects under the umbrella of Bloccs.io',
+    description:
+      "Hi, I'm Allan, this is where I write. I'm an experienced software engineer and manager, currently looking for my next opportunity. I also run several side projects under the umbrella of Bloccs.io",
     subtitle:
       'Expert Software Engineer and Manager • Writer • Functional Programming Advocate',
     copyright: 'Copyright Allan MacGregor © 2020',
@@ -24,7 +25,7 @@ module.exports = {
       },
       {
         label: 'Blog',
-        path: '/blog'
+        path: '/blog',
       },
       {
         label: 'TIL',
@@ -32,15 +33,15 @@ module.exports = {
       },
       {
         label: 'About me',
-        path: '/about'
+        path: '/about',
       },
       {
         label: 'Digital Garden',
-        path: 'https://publish.obsidian.md/allanmacgregor/'
+        path: 'https://publish.obsidian.md/allanmacgregor/',
       },
       {
         label: 'Stack Overflow',
-        path: 'https://stackoverflow.com/users/801506/allan-macgregor'
+        path: 'https://stackoverflow.com/users/801506/allan-macgregor',
       },
       // {
       //   label: 'Long Form',
@@ -84,8 +85,8 @@ module.exports = {
       options: {
         host: 'https://allanmacgregor.com',
         sitemap: 'https://allanmacgregor.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-plugin-plausible`,
@@ -109,23 +110,23 @@ module.exports = {
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
           },
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: 'gatsby-remark-external-links',
             options: {
-              target: "_blank",
-              rel: "nofollow"
-            }
+              target: '_blank',
+              rel: 'nofollow',
+            },
           },
           {
-            resolve: "gatsby-remark-embed-gist",
+            resolve: 'gatsby-remark-embed-gist',
             options: {
               username: 'amacgregor',
-              includeDefaultCss: true
-            }
+              includeDefaultCss: true,
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumuers: false,
@@ -137,12 +138,12 @@ module.exports = {
             options: {
               blocks: {
                 snippet: {
-                  classes: `snippet`
-                }
-              }
-            }
+                  classes: `snippet`,
+                },
+              },
+            },
           },
-          `gatsby-remark-reading-time`, 
+          `gatsby-remark-reading-time`,
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
@@ -150,13 +151,13 @@ module.exports = {
             options: {
               title: {
                 // This is the frontmatter field the title should come from
-                field: "title",
+                field: 'title',
                 // Currently only supports DejaVuSansCondensed
                 // More fonts coming soon!
-                font: "DejaVuSansCondensed",
-                color: "white", // black|white
+                font: 'DejaVuSansCondensed',
+                color: 'white', // black|white
                 size: 48, // 16|24|32|48|64
-                style: "bold", // normal|bold|italic
+                style: 'bold', // normal|bold|italic
                 x: null, // Will default to xMargin
                 y: null, // Will default to yMargin
               },
@@ -171,26 +172,26 @@ module.exports = {
                 // the category set. Any field can be used as parts
                 // Note: Only pass the "format" property on date fields
                 parts: [
-                  "- ",
-                  { field: "author" },
-                  " » ",
-                  { field: "date", format: "mmmm dS" },
+                  '- ',
+                  { field: 'author' },
+                  ' » ',
+                  { field: 'date', format: 'mmmm dS' },
                 ],
                 // Currently only supports DejaVuSansCondensed
                 // More fonts coming soon!
-                font: "DejaVuSansCondensed",
-                color: "white", // black|white
+                font: 'DejaVuSansCondensed',
+                color: 'white', // black|white
                 size: 24, // 16|24|32|48|64
-                style: "normal", // normal|bold|italic
+                style: 'normal', // normal|bold|italic
                 x: null, // Will default to xMargin
                 y: null, // Will default to cardHeight - yMargin - size
               },
-              background: "#42389d", // Background color for the card
+              background: '#42389d', // Background color for the card
               xMargin: 24, // Edge margin used when x value is not set
-              yMargin: 24,// Edge margin used when y value is not set
-            }
-          }
-        ]
+              yMargin: 24, // Edge margin used when y value is not set
+            },
+          },
+        ],
       },
     },
     'gatsby-transformer-sharp',
@@ -205,7 +206,7 @@ module.exports = {
         fonts: [
           'roboto:400,400i,500,700',
           'Merriweather:400,400i,500,700',
-          'Open Sans:400,400i,500,700'
+          'Open Sans:400,400i,500,700',
         ],
       },
     },
@@ -268,15 +269,15 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
+              return allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }]
-                });
-              });
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                })
+              })
             },
             query: `
               {
@@ -298,21 +299,21 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
+            output: '/rss.xml',
             title: "Allan's Feed",
-            match: "^/posts/"
+            match: '^/posts/',
           },
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
+              return allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }]
-                });
-              });
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                })
+              })
             },
             query: `
               {
@@ -334,12 +335,12 @@ module.exports = {
                 }
               }
             `,
-            output: "/feed.xml",
+            output: '/feed.xml',
             title: "Allan's Feed",
-            match: "^/posts/"
-          }
-        ]
-      }
+            match: '^/posts/',
+          },
+        ],
+      },
     },
     {
       resolve: '@dschau/gatsby-source-github',
@@ -381,17 +382,17 @@ module.exports = {
           {
             baseId: `app2VUGGs2kEZDzfu`,
             tableName: `Main`,
-            queryName: "ActiveProjects"
-          }
-        ]
-      }
+            queryName: 'ActiveProjects',
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
         siteUrl: `https://allanmacgregor.com`,
-        stripQueryString: true
-      }
+        stripQueryString: true,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -415,9 +416,9 @@ module.exports = {
             type: `image/png`,
           },
         ],
-      }
-    }
-    // { 
+      },
+    },
+    // {
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: {
     //     printRejected: true, // Print removed selectors and processed file names
@@ -427,6 +428,6 @@ module.exports = {
     //     ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
     //     // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
     //   }
-    // }    
+    // }
   ],
 }

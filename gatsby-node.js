@@ -19,10 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
     // Main articles
     graphql(`
       {
-        allMdx(
-          limit: 1000
-          filter: { frontmatter: { draft: { ne: true } } }
-        ) {
+        allMdx(limit: 1000, filter: { frontmatter: { draft: { ne: true } } }) {
           edges {
             node {
               fields {
@@ -37,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       if (result.errors) {
         console.log(result.errors)
         reject(result.errors)
@@ -50,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
           path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-          component: path.resolve("./src/templates/blog-template.jsx"),
+          component: path.resolve('./src/templates/blog-template.jsx'),
           context: {
             limit: postsPerPage,
             skip: i * postsPerPage,
@@ -60,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-      _.each(result.data.allMdx.edges, edge => {
+      _.each(result.data.allMdx.edges, (edge) => {
         if (_.get(edge, 'node.frontmatter.layout') === 'page') {
           createPage({
             path: edge.node.fields.slug,
@@ -80,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
 
           tags = _.uniq(tags)
-          _.each(tags, tag => {
+          _.each(tags, (tag) => {
             const tagPath = `/tags/${_.kebabCase(tag)}/`
             createPage({
               path: tagPath,
@@ -95,7 +92,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
 
           categories = _.uniq(categories)
-          _.each(categories, category => {
+          _.each(categories, (category) => {
             const categoryPath = `/categories/${_.kebabCase(category)}/`
             createPage({
               path: categoryPath,
@@ -114,8 +111,10 @@ exports.createPages = ({ graphql, actions }) => {
       {
         allMdx(
           limit: 1000
-          filter: { frontmatter: { layout: { eq: "essay" }, draft: { ne: true } } }
-          ) {
+          filter: {
+            frontmatter: { layout: { eq: "essay" }, draft: { ne: true } }
+          }
+        ) {
           edges {
             node {
               fields {
@@ -130,7 +129,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       if (result.errors) {
         console.log(result.errors)
         reject(result.errors)
@@ -142,7 +141,7 @@ exports.createPages = ({ graphql, actions }) => {
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
           path: i === 0 ? `/essays` : `/essays/${i + 1}`,
-          component: path.resolve("./src/templates/essays-template.jsx"),
+          component: path.resolve('./src/templates/essays-template.jsx'),
           context: {
             limit: essaysPerPage,
             skip: i * essaysPerPage,
@@ -152,8 +151,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-
-      _.each(result.data.allMdx.edges, edge => {
+      _.each(result.data.allMdx.edges, (edge) => {
         if (_.get(edge, 'node.frontmatter.layout') === 'essay') {
           createPage({
             path: edge.node.fields.slug,
@@ -167,7 +165,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
 
           tags = _.uniq(tags)
-          _.each(tags, tag => {
+          _.each(tags, (tag) => {
             const tagPath = `/tags/${_.kebabCase(tag)}/`
             createPage({
               path: tagPath,
@@ -175,7 +173,7 @@ exports.createPages = ({ graphql, actions }) => {
               context: { tag },
             })
           })
-        } 
+        }
       })
 
       resolve()
@@ -186,8 +184,10 @@ exports.createPages = ({ graphql, actions }) => {
       {
         allMdx(
           limit: 1000
-          filter: { frontmatter: { layout: { eq: "journal" }, draft: { ne: true } } }
-          ) {
+          filter: {
+            frontmatter: { layout: { eq: "journal" }, draft: { ne: true } }
+          }
+        ) {
           edges {
             node {
               fields {
@@ -202,7 +202,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       if (result.errors) {
         console.log(result.errors)
         reject(result.errors)
@@ -214,7 +214,7 @@ exports.createPages = ({ graphql, actions }) => {
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
           path: i === 0 ? `/til` : `/til/${i + 1}`,
-          component: path.resolve("./src/templates/til-template.jsx"),
+          component: path.resolve('./src/templates/til-template.jsx'),
           context: {
             limit: journalsPerPage,
             skip: i * journalsPerPage,
@@ -224,7 +224,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-      _.each(result.data.allMdx.edges, edge => {
+      _.each(result.data.allMdx.edges, (edge) => {
         if (_.get(edge, 'node.frontmatter.layout') === 'journal') {
           createPage({
             path: edge.node.fields.slug,
@@ -238,7 +238,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
 
           tags = _.uniq(tags)
-          _.each(tags, tag => {
+          _.each(tags, (tag) => {
             const tagPath = `/tags/${_.kebabCase(tag)}/`
             createPage({
               path: tagPath,
@@ -246,12 +246,11 @@ exports.createPages = ({ graphql, actions }) => {
               context: { tag },
             })
           })
-        } 
+        }
       })
 
       resolve()
     })
-
   })
 }
 
@@ -262,10 +261,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const parsedFilePath = path.parse(node.absolutePath)
     let slug = `/${parsedFilePath.dir.split('---')[1]}/`
     createNodeField({ node, name: 'slug', value: slug })
-  } else if (
-    node.internal.type === 'Mdx'&&
-    typeof node.slug === 'undefined' 
-  ) {
+  } else if (node.internal.type === 'Mdx' && typeof node.slug === 'undefined') {
     const fileNode = getNode(node.parent)
     if (typeof node.frontmatter.path !== 'undefined') {
       slug = node.frontmatter.path
@@ -279,12 +275,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: 'modifiedTime',
-      value: fileNode.mtime
-    });
+      value: fileNode.mtime,
+    })
 
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
-        tag => `/tags/${_.kebabCase(tag)}/`
+        (tag) => `/tags/${_.kebabCase(tag)}/`
       )
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
@@ -297,7 +293,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
   } else if (
     node.internal.type === 'MarkdownRemark' &&
-    typeof node.slug === 'undefined' 
+    typeof node.slug === 'undefined'
   ) {
     const fileNode = getNode(node.parent)
     let slug = fileNode.fields.slug
@@ -312,7 +308,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
-        tag => `/tags/${_.kebabCase(tag)}/`
+        (tag) => `/tags/${_.kebabCase(tag)}/`
       )
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
@@ -324,7 +320,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({ node, name: 'categorySlug', value: categorySlug })
     }
   }
-
 }
 
 // gatsby-node.js
