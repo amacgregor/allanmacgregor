@@ -14,9 +14,9 @@ description: "How to cleanly handle {:ok,_} tuples inside an elixir pipe"
 
 <!--How to cleanly handle {:ok,_} tuples inside an elixir pipe-->
 
-The pipe operator `|>` is probably my favorite part of the elixir language, programming more often than not, can get messy and really confusing for people new to the language.
+The pipe operator `|>` is probably my favorite part of the elixir language; programming, more often than not, it can get messy and confusing for people new to the language.
 
-This is specially true when having to pipe functions that return an `{:ok, payload}` tuple, deadling with it can be tricky but there are a few easy ways to do so:
+This is especially true when having to pipe functions that return an `{:ok, payload}` tuple; dealing with it can be tricky, but there are a few easy ways to do so:
 
 - Use `with` rather than piping
 - Use an exclamation mark version of the function if available
@@ -24,7 +24,7 @@ This is specially true when having to pipe functions that return an `{:ok, paylo
 - Use an anonymous function in the pipe
 - Pipe into elem/2
 
-Personally I found the last one most helpful specially when dealing with the elixir DateTime library.
+I found the last one most helpful, especially when dealing with the elixir DateTime library.
 
 ```elixir 
     last_check =
