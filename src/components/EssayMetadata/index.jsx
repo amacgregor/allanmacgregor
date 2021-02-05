@@ -27,25 +27,25 @@ const EssayMetadata = ({
     <p className="p-0 m-0" id="information">
       <span className="pr-4 font-bold" id="created_at">
         Created:{' '}
-        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-gray-100 text-gray-800">
+        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm leading-5 bg-gray-100 text-gray-800">
           {created_at}
         </span>
       </span>
       <span className="pr-4 font-bold" id="updated_at">
         Updated:{' '}
-        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-gray-100 text-gray-800">
+        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm leading-5 bg-gray-100 text-gray-800">
           {updated_at}
         </span>
       </span>
       <span className="pr-4 font-bold" id="status">
         Status:{' '}
-        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-gray-100 text-gray-800">
+        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm leading-5 bg-gray-100 text-gray-800">
           {status}
         </span>
       </span>
       <span className="pr-4 font-bold" id="confidence">
         Confidence:{' '}
-        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-gray-100 text-gray-800">
+        <span className="font-normal nline-flex items-center px-3 py-0.5 rounded-full text-sm leading-5 bg-gray-100 text-gray-800">
           {confidence}
         </span>
       </span>
