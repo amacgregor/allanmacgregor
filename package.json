@@ -34,6 +34,7 @@
     "bufferutil": "^4.0.1",
     "eslint-config-react-app": "^5.1.0",
     "gatsby": "^2.20.21",
+    "gatsby-cli": "^2.19.1",
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-excerpts": "^1.1.0",
     "gatsby-plugin-feed": "^2.3.25",
