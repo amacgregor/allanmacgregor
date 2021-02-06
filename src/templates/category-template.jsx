@@ -3,19 +3,26 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
-import CategoryTemplateDetails from '../components/CategoryTemplateDetails'
+import RecentPublications from '../components/Tailwind/PageSection/RecentPublications'
 
 class CategoryTemplate extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
     const { category } = this.props.pageContext
+    const { toLaxTitleCase } = require('titlecase')
 
     return (
       <Layout>
-        <div className="h-screen flex overflow-hidden bg-gray-100">
+        <div className="lg:h-screen lg:flex lg:overflow-hidden bg-white">
           <Helmet title={`${category} - ${title}`} />
           <Sidebar {...this.props} />
-          <CategoryTemplateDetails {...this.props} />
+          <main className="overflow-y-auto">
+            <RecentPublications
+                title={toLaxTitleCase(category)}
+                subtext={''}
+                {...this.props}
+              />
+          </main>
         </div>
       </Layout>
     )
@@ -63,6 +70,8 @@ export const pageQuery = graphql`
             slug
             categorySlug
           }
+          excerpt(pruneLength: 200)
+          timeToRead
           frontmatter {
             title
             date

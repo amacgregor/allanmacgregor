@@ -3,20 +3,27 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
-import TagTemplateDetails from '../components/TagTemplateDetails'
+import RecentPublications from '../components/Tailwind/PageSection/RecentPublications'
 
 class TagTemplate extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
     const { tag } = this.props.pageContext
+    const { toLaxTitleCase } = require('titlecase')
 
     return (
       <Layout>
-        <div>
-          <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
-          <Sidebar {...this.props} />
-          <TagTemplateDetails {...this.props} />
-        </div>
+      <div className="lg:h-screen lg:flex lg:overflow-hidden bg-white">
+      <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
+        <Sidebar {...this.props} />
+        <main className="overflow-y-auto">
+          <RecentPublications
+              title={toLaxTitleCase(tag)}
+              subtext={''}
+              {...this.props}
+            />
+        </main>
+      </div>
       </Layout>
     )
   }
@@ -63,6 +70,8 @@ export const pageQuery = graphql`
             slug
             categorySlug
           }
+          excerpt(pruneLength: 200)
+          timeToRead
           frontmatter {
             title
             date
