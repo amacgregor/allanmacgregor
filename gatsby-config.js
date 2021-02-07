@@ -143,6 +143,7 @@ module.exports = {
               },
             },
           },
+          `gatsby-plugin-remove-trailing-slashes`,
           `gatsby-remark-reading-time`,
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
@@ -391,6 +392,7 @@ module.exports = {
       options: {
         siteUrl: `https://allanmacgregor.com`,
         stripQueryString: true,
+        noTrailingSlash: true
       },
     },
     // {
