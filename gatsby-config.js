@@ -394,30 +394,30 @@ module.exports = {
         stripQueryString: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Allan MacGregor`,
-        short_name: `allanmacgregor.com`,
-        start_url: `/`,
-        background_color: `#42389d`,
-        theme_color: `#161e2e`,
-        display: `standalone`,
-        icon: `src/assets/images/favicon-16x16.png`, // This path is relative to the root of the site.
-        icons: [
-          {
-            src: `src/assets/images/favicon-32x32.png`,
-            sizes: `32x32`,
-            type: `image/png`,
-          },
-          {
-            src: `src/assets/images/favicon-96x96.png`,
-            sizes: `96x96`,
-            type: `image/png`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Allan MacGregor`,
+    //     short_name: `allanmacgregor.com`,
+    //     start_url: `/`,
+    //     background_color: `#42389d`,
+    //     theme_color: `#161e2e`,
+    //     display: `standalone`,
+    //     icon: `src/assets/images/favicon-16x16.png`, // This path is relative to the root of the site.
+    //     icons: [
+    //       {
+    //         src: `src/assets/images/favicon-32x32.png`,
+    //         sizes: `32x32`,
+    //         type: `image/png`,
+    //       },
+    //       {
+    //         src: `src/assets/images/favicon-96x96.png`,
+    //         sizes: `96x96`,
+    //         type: `image/png`,
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: {
