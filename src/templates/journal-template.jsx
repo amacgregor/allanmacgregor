@@ -18,6 +18,11 @@ class JournalTemplate extends React.Component {
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:image"
+              content={`${this.props.data.site.siteMetadata.siteUrl}${page.fields.slug}/twitter-card.jpg`}
+            />
             <script
               src="https://kit.fontawesome.com/9a1f3c9439.js"
               crossorigin="anonymous"
@@ -39,6 +44,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        siteUrl
         menu {
           label
           path
